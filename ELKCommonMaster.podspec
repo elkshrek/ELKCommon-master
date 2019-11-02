@@ -26,7 +26,7 @@ Pod::Spec.new do |spec|
       weSpec.source_files = 'ELKCommonMaster/ELKWeChat/**/*.{h,m}'
       weSpec.vendored_libraries  = "ELKCommonMaster/ELKWeChat/WeChatSDK/*.a"
       weSpec.frameworks = "Security", "CoreGraphics", "WebKit"
-      weSpec.libraries   = "iconv", "z", "c++", "sqlite3", "libc++", "libiconv"
+      weSpec.libraries   = "iconv", "z", "c++", "sqlite3"
       
     #  weSpec.dependency 'WechatOpenSDK'
     #  weSpec.ios.frameworks = 'Foundation', 'UIKit'
@@ -36,7 +36,7 @@ Pod::Spec.new do |spec|
       tenSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
       tenSpec.ios.vendored_frameworks = "ELKCommonMaster/ELKTencent/TencentSDK/*.framework"
       tenSpec.frameworks = "Security", "SystemConfiguration", "CoreGraphics", "CoreTelephony", "WebKit"
-      tenSpec.libraries   = "iconv", "z", "c++", "sqlite3", "libc++", "libiconv"
+      tenSpec.libraries   = "iconv", "z", "c++", "sqlite3"
     #  tenSpec.dependency 'ELKTencentOpenSDK'
      # tenSpec.ios.frameworks = 'Foundation', 'UIKit'
   end
@@ -60,7 +60,7 @@ Pod::Spec.new do |spec|
   spec.source_files  = "ELKCommonMaster", "ELKCommonMaster/ELKCommonMaster.{h,m}"
  # spec.source_files  = "ELKCommonMaster", "ELKCommonMaster/**/*.{h,m}"
   spec.ios.frameworks = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
-  spec.libraries           = 'sqlite3', 'z', 'libc++', 'libiconv'
+  spec.libraries           = 'sqlite3', 'z', 'c++', 'iconv'
   
 #  spec.dependency 'WechatOpenSDK'
 #  spec.dependency 'ELKTencentOpenSDK'
