@@ -22,33 +22,41 @@ Pod::Spec.new do |spec|
 
 
   
- # spec.subspec 'ELKWeChat' do |weSpec|
-  #    weSpec.source_files = 'ELKCommonMaster/ELKWeChat/**/*.{h,m}'
+  spec.subspec 'ELKWeChat' do |weSpec|
+      weSpec.source_files = 'ELKCommonMaster/ELKWeChat/**/*.{h,m}'
+      weSpec.vendored_libraries  = "ELKCommonMaster/ELKWeChat/WeChatSDK/*.a"
     #  weSpec.dependency 'WechatOpenSDK'
-   #   weSpec.ios.frameworks = 'Foundation', 'UIKit'
- # end
+    #  weSpec.ios.frameworks = 'Foundation', 'UIKit'
+  end
   
- # spec.subspec 'ELKTencent' do |tenSpec|
-  #    tenSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
+  spec.subspec 'ELKTencent' do |tenSpec|
+      tenSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
+      tenSpec.ios.vendored_frameworks = "ELKCommonMaster/ELKTencent/TencentSDK/*.framework"
     #  tenSpec.dependency 'ELKTencentOpenSDK'
-   #   tenSpec.ios.frameworks = 'Foundation', 'UIKit'
- # end
+     # tenSpec.ios.frameworks = 'Foundation', 'UIKit'
+  end
   
- # spec.subspec 'ELKSina' do |sinaSpec|
-  #    sinaSpec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
+  spec.subspec 'ELKSina' do |sinaSpec|
+      sinaSpec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
+      sinaSpec.vendored_libraries  = "ELKCommonMaster/ELKSina/SinaSDK/*.a"
+      sinaSpec.resources           = "ELKCommonMaster/ELKSina/SinaSDK/*.bundle"
     #  sinaSpec.dependency 'ELKWeiboSDK'
-   #   sinaSpec.ios.frameworks = 'Foundation', 'UIKit'
-  #end
+     # sinaSpec.ios.frameworks = 'Foundation', 'UIKit'
+  end
   
-#  spec.subspec 'ELKModule' do |modSpec|
-  #    modSpec.source_files = 'ELKCommonMaster/ELKModule/**/*.{h,m}'
+  spec.subspec 'ELKModule' do |modSpec|
+      modSpec.source_files = 'ELKCommonMaster/ELKModule/**/*.{h,m}'
   #    modSpec.ios.frameworks = 'Foundation', 'UIKit'
- # end
+  end
   
-  #spec.source_files  = "ELKCommonMaster", "ELKCommonMaster/ELKCommonMaster.{h,m}"
-  spec.source_files  = "ELKCommonMaster", "ELKCommonMaster/**/*.{h,m}"
-  spec.ios.frameworks = 'Foundation', 'UIKit'
+  spec.source_files  = "ELKCommonMaster", "ELKCommonMaster/ELKCommonMaster.{h,m}"
+ # spec.source_files  = "ELKCommonMaster", "ELKCommonMaster/**/*.{h,m}"
+  spec.ios.frameworks = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
+  spec.libraries           = 'sqlite3', 'z', 'libc++', 'libiconv'
   
+#  spec.dependency 'WechatOpenSDK'
+#  spec.dependency 'ELKTencentOpenSDK'
+ # spec.dependency 'ELKWeiboSDK'
   
   spec.requires_arc = true
   
