@@ -24,19 +24,19 @@ Pod::Spec.new do |spec|
   
   spec.subspec 'ELKWeChat' do |weSpec|
       weSpec.source_files = 'ELKCommon-master/ELKCommonMaster/ELKWeChat/**/*.{h,m}'
-      weSpec.dependency 'WechatOpenSDK'
+    #  weSpec.dependency 'WechatOpenSDK'
       weSpec.ios.frameworks = 'Foundation', 'UIKit'
   end
   
   spec.subspec 'ELKTencent' do |tenSpec|
       tenSpec.source_files = 'ELKCommon-master/ELKCommonMaster/ELKTencent/**/*.{h,m}'
-      tenSpec.dependency 'ELKTencentOpenSDK'
+    #  tenSpec.dependency 'ELKTencentOpenSDK'
       tenSpec.ios.frameworks = 'Foundation', 'UIKit'
   end
   
   spec.subspec 'ELKSina' do |sinaSpec|
       sinaSpec.source_files = 'ELKCommon-master/ELKCommonMaster/ELKSina/**/*.{h,m}'
-      sinaSpec.dependency 'ELKWeiboSDK'
+    #  sinaSpec.dependency 'ELKWeiboSDK'
       sinaSpec.ios.frameworks = 'Foundation', 'UIKit'
   end
   
@@ -48,6 +48,7 @@ Pod::Spec.new do |spec|
   spec.source_files  = "ELKCommonMaster", "ELKCommon-master/ELKCommonMaster/ELKCommonMaster.{h,m}"
   # spec.ios.frameworks = 'Foundation', 'UIKit'
   
+  spec.dependency 'ELKChainedAlloy'
   
   spec.requires_arc = true
   

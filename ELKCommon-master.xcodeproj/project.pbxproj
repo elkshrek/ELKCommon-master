@@ -310,6 +310,7 @@
 				AB2DC83B236C472F0037D043 /* Frameworks */,
 				AB2DC83C236C472F0037D043 /* Resources */,
 				3F6E42E0FA019859D784F88B /* [CP] Embed Pods Frameworks */,
+				C7FEA16C1DEE1F32BE425CF5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -441,6 +442,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ELKCommon-master/Pods-ELKCommon-master-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7FEA16C1DEE1F32BE425CF5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ELKCommon-master/Pods-ELKCommon-master-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ELKCommon-master/Pods-ELKCommon-master-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ELKCommon-master/Pods-ELKCommon-master-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FDD15302E53A5CF359A906F2 /* [CP] Check Pods Manifest.lock */ = {
