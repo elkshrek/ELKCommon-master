@@ -16,18 +16,18 @@
 		AB2DC854236C47310037D043 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2DC853236C47310037D043 /* main.m */; };
 		AB2DC85E236C47310037D043 /* ELKCommon_masterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2DC85D236C47310037D043 /* ELKCommon_masterTests.m */; };
 		AB2DC869236C47310037D043 /* ELKCommon_masterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2DC868236C47310037D043 /* ELKCommon_masterUITests.m */; };
-		ABF0C09D236D7A8E00DCEC8D /* UIImage+ELKMCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0C059236D7A8D00DCEC8D /* UIImage+ELKMCommon.m */; };
-		ABF0C09E236D7A8E00DCEC8D /* ELKTencentSDKMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0C05C236D7A8D00DCEC8D /* ELKTencentSDKMaster.m */; };
-		ABF0C09F236D7A8E00DCEC8D /* ELKTencentShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0C05F236D7A8D00DCEC8D /* ELKTencentShareModel.m */; };
-		ABF0C0A0236D7A8E00DCEC8D /* ELKTencentUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0C060236D7A8D00DCEC8D /* ELKTencentUserInfo.m */; };
-		ABF0C0A1236D7A8E00DCEC8D /* ELKCommonMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0C063236D7A8D00DCEC8D /* ELKCommonMaster.m */; };
-		ABF0C0A2236D7A8E00DCEC8D /* ELKWeChatSDKMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0C065236D7A8D00DCEC8D /* ELKWeChatSDKMaster.m */; };
-		ABF0C0A3236D7A8E00DCEC8D /* ELKWeChatPayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0C068236D7A8D00DCEC8D /* ELKWeChatPayModel.m */; };
-		ABF0C0A4236D7A8E00DCEC8D /* ELKWeChatUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0C069236D7A8D00DCEC8D /* ELKWeChatUserInfo.m */; };
-		ABF0C0A5236D7A8E00DCEC8D /* ELKWeChatShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0C06A236D7A8D00DCEC8D /* ELKWeChatShareModel.m */; };
-		ABF0C0A6236D7A8E00DCEC8D /* ELKSinaUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0C072236D7A8D00DCEC8D /* ELKSinaUserInfo.m */; };
-		ABF0C0A7236D7A8E00DCEC8D /* ELKSinaShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0C073236D7A8D00DCEC8D /* ELKSinaShareModel.m */; };
-		ABF0C0A8236D7A8E00DCEC8D /* ELKSinaSDKMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0C075236D7A8D00DCEC8D /* ELKSinaSDKMaster.m */; };
+		ABE0C7AC236DE4DA00D42841 /* UIImage+ELKMCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE0C78E236DE4DA00D42841 /* UIImage+ELKMCommon.m */; };
+		ABE0C7AD236DE4DA00D42841 /* ELKTencentSDKMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE0C792236DE4DA00D42841 /* ELKTencentSDKMaster.m */; };
+		ABE0C7AE236DE4DA00D42841 /* ELKTencentShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE0C795236DE4DA00D42841 /* ELKTencentShareModel.m */; };
+		ABE0C7AF236DE4DA00D42841 /* ELKTencentUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE0C796236DE4DA00D42841 /* ELKTencentUserInfo.m */; };
+		ABE0C7B0236DE4DA00D42841 /* ELKCommonMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE0C798236DE4DA00D42841 /* ELKCommonMaster.m */; };
+		ABE0C7B1236DE4DA00D42841 /* ELKWeChatPayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE0C79C236DE4DA00D42841 /* ELKWeChatPayModel.m */; };
+		ABE0C7B2236DE4DA00D42841 /* ELKWeChatUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE0C79D236DE4DA00D42841 /* ELKWeChatUserInfo.m */; };
+		ABE0C7B3236DE4DA00D42841 /* ELKWeChatShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE0C79E236DE4DA00D42841 /* ELKWeChatShareModel.m */; };
+		ABE0C7B4236DE4DA00D42841 /* ELKWeChatSDKMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE0C7A2236DE4DA00D42841 /* ELKWeChatSDKMaster.m */; };
+		ABE0C7B5236DE4DA00D42841 /* ELKSinaSDKMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE0C7A4236DE4DA00D42841 /* ELKSinaSDKMaster.m */; };
+		ABE0C7B6236DE4DA00D42841 /* ELKSinaUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE0C7A7236DE4DA00D42841 /* ELKSinaUserInfo.m */; };
+		ABE0C7B7236DE4DA00D42841 /* ELKSinaShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE0C7A8236DE4DA00D42841 /* ELKSinaShareModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,30 +65,30 @@
 		AB2DC864236C47310037D043 /* ELKCommon-masterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ELKCommon-masterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2DC868236C47310037D043 /* ELKCommon_masterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELKCommon_masterUITests.m; sourceTree = "<group>"; };
 		AB2DC86A236C47310037D043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABF0C059236D7A8D00DCEC8D /* UIImage+ELKMCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ELKMCommon.m"; sourceTree = "<group>"; };
-		ABF0C05A236D7A8D00DCEC8D /* UIImage+ELKMCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ELKMCommon.h"; sourceTree = "<group>"; };
-		ABF0C05C236D7A8D00DCEC8D /* ELKTencentSDKMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKTencentSDKMaster.m; sourceTree = "<group>"; };
-		ABF0C05E236D7A8D00DCEC8D /* ELKTencentUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKTencentUserInfo.h; sourceTree = "<group>"; };
-		ABF0C05F236D7A8D00DCEC8D /* ELKTencentShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKTencentShareModel.m; sourceTree = "<group>"; };
-		ABF0C060236D7A8D00DCEC8D /* ELKTencentUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKTencentUserInfo.m; sourceTree = "<group>"; };
-		ABF0C061236D7A8D00DCEC8D /* ELKTencentShareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKTencentShareModel.h; sourceTree = "<group>"; };
-		ABF0C062236D7A8D00DCEC8D /* ELKTencentSDKMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKTencentSDKMaster.h; sourceTree = "<group>"; };
-		ABF0C063236D7A8D00DCEC8D /* ELKCommonMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKCommonMaster.m; sourceTree = "<group>"; };
-		ABF0C065236D7A8D00DCEC8D /* ELKWeChatSDKMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKWeChatSDKMaster.m; sourceTree = "<group>"; };
-		ABF0C066236D7A8D00DCEC8D /* ELKWeChatSDKMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKWeChatSDKMaster.h; sourceTree = "<group>"; };
-		ABF0C068236D7A8D00DCEC8D /* ELKWeChatPayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKWeChatPayModel.m; sourceTree = "<group>"; };
-		ABF0C069236D7A8D00DCEC8D /* ELKWeChatUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKWeChatUserInfo.m; sourceTree = "<group>"; };
-		ABF0C06A236D7A8D00DCEC8D /* ELKWeChatShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKWeChatShareModel.m; sourceTree = "<group>"; };
-		ABF0C06B236D7A8D00DCEC8D /* ELKWeChatPayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKWeChatPayModel.h; sourceTree = "<group>"; };
-		ABF0C06C236D7A8D00DCEC8D /* ELKWeChatUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKWeChatUserInfo.h; sourceTree = "<group>"; };
-		ABF0C06D236D7A8D00DCEC8D /* ELKWeChatShareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKWeChatShareModel.h; sourceTree = "<group>"; };
-		ABF0C06F236D7A8D00DCEC8D /* ELKSinaSDKMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKSinaSDKMaster.h; sourceTree = "<group>"; };
-		ABF0C071236D7A8D00DCEC8D /* ELKSinaShareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKSinaShareModel.h; sourceTree = "<group>"; };
-		ABF0C072236D7A8D00DCEC8D /* ELKSinaUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKSinaUserInfo.m; sourceTree = "<group>"; };
-		ABF0C073236D7A8D00DCEC8D /* ELKSinaShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKSinaShareModel.m; sourceTree = "<group>"; };
-		ABF0C074236D7A8D00DCEC8D /* ELKSinaUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKSinaUserInfo.h; sourceTree = "<group>"; };
-		ABF0C075236D7A8D00DCEC8D /* ELKSinaSDKMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKSinaSDKMaster.m; sourceTree = "<group>"; };
-		ABF0C076236D7A8D00DCEC8D /* ELKCommonMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKCommonMaster.h; sourceTree = "<group>"; };
+		ABE0C78E236DE4DA00D42841 /* UIImage+ELKMCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ELKMCommon.m"; sourceTree = "<group>"; };
+		ABE0C78F236DE4DA00D42841 /* UIImage+ELKMCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ELKMCommon.h"; sourceTree = "<group>"; };
+		ABE0C791236DE4DA00D42841 /* ELKTencentSDKMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKTencentSDKMaster.h; sourceTree = "<group>"; };
+		ABE0C792236DE4DA00D42841 /* ELKTencentSDKMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKTencentSDKMaster.m; sourceTree = "<group>"; };
+		ABE0C794236DE4DA00D42841 /* ELKTencentUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKTencentUserInfo.h; sourceTree = "<group>"; };
+		ABE0C795236DE4DA00D42841 /* ELKTencentShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKTencentShareModel.m; sourceTree = "<group>"; };
+		ABE0C796236DE4DA00D42841 /* ELKTencentUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKTencentUserInfo.m; sourceTree = "<group>"; };
+		ABE0C797236DE4DA00D42841 /* ELKTencentShareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKTencentShareModel.h; sourceTree = "<group>"; };
+		ABE0C798236DE4DA00D42841 /* ELKCommonMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKCommonMaster.m; sourceTree = "<group>"; };
+		ABE0C79A236DE4DA00D42841 /* ELKWeChatSDKMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKWeChatSDKMaster.h; sourceTree = "<group>"; };
+		ABE0C79C236DE4DA00D42841 /* ELKWeChatPayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKWeChatPayModel.m; sourceTree = "<group>"; };
+		ABE0C79D236DE4DA00D42841 /* ELKWeChatUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKWeChatUserInfo.m; sourceTree = "<group>"; };
+		ABE0C79E236DE4DA00D42841 /* ELKWeChatShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKWeChatShareModel.m; sourceTree = "<group>"; };
+		ABE0C79F236DE4DA00D42841 /* ELKWeChatPayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKWeChatPayModel.h; sourceTree = "<group>"; };
+		ABE0C7A0236DE4DA00D42841 /* ELKWeChatUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKWeChatUserInfo.h; sourceTree = "<group>"; };
+		ABE0C7A1236DE4DA00D42841 /* ELKWeChatShareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKWeChatShareModel.h; sourceTree = "<group>"; };
+		ABE0C7A2236DE4DA00D42841 /* ELKWeChatSDKMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKWeChatSDKMaster.m; sourceTree = "<group>"; };
+		ABE0C7A4236DE4DA00D42841 /* ELKSinaSDKMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKSinaSDKMaster.m; sourceTree = "<group>"; };
+		ABE0C7A6236DE4DA00D42841 /* ELKSinaShareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKSinaShareModel.h; sourceTree = "<group>"; };
+		ABE0C7A7236DE4DA00D42841 /* ELKSinaUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKSinaUserInfo.m; sourceTree = "<group>"; };
+		ABE0C7A8236DE4DA00D42841 /* ELKSinaShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKSinaShareModel.m; sourceTree = "<group>"; };
+		ABE0C7A9236DE4DA00D42841 /* ELKSinaUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKSinaUserInfo.h; sourceTree = "<group>"; };
+		ABE0C7AA236DE4DA00D42841 /* ELKSinaSDKMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKSinaSDKMaster.h; sourceTree = "<group>"; };
+		ABE0C7AB236DE4DA00D42841 /* ELKCommonMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKCommonMaster.h; sourceTree = "<group>"; };
 		ABF0C0B5236D97AC00DCEC8D /* ELKPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELKPrefixHeader.pch; sourceTree = "<group>"; };
 		D8655F343ED8FA2FECA9DC2E /* Pods-ELKCommon-master.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELKCommon-master.release.xcconfig"; path = "Target Support Files/Pods-ELKCommon-master/Pods-ELKCommon-master.release.xcconfig"; sourceTree = "<group>"; };
 		D8D80153B5C28980059C7404 /* Pods_ELKCommon_master.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ELKCommon_master.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,7 +149,7 @@
 				AB2DC842236C47300037D043 /* AppDelegate.m */,
 				AB2DC847236C47300037D043 /* ARootViewController.h */,
 				AB2DC848236C47300037D043 /* ARootViewController.m */,
-				ABF0C057236D7A8D00DCEC8D /* ELKCommonMaster */,
+				ABE0C78C236DE4DA00D42841 /* ELKCommonMaster */,
 				ABF0C0B3236D7EAA00DCEC8D /* Others */,
 				ABF0C0B4236D7EC300DCEC8D /* Resources */,
 			);
@@ -174,89 +174,89 @@
 			path = "ELKCommon-masterUITests";
 			sourceTree = "<group>";
 		};
-		ABF0C057236D7A8D00DCEC8D /* ELKCommonMaster */ = {
+		ABE0C78C236DE4DA00D42841 /* ELKCommonMaster */ = {
 			isa = PBXGroup;
 			children = (
-				ABF0C076236D7A8D00DCEC8D /* ELKCommonMaster.h */,
-				ABF0C063236D7A8D00DCEC8D /* ELKCommonMaster.m */,
-				ABF0C058236D7A8D00DCEC8D /* ELKModule */,
-				ABF0C06E236D7A8D00DCEC8D /* ELKSina */,
-				ABF0C05B236D7A8D00DCEC8D /* ELKTencent */,
-				ABF0C064236D7A8D00DCEC8D /* ELKWeChat */,
+				ABE0C78D236DE4DA00D42841 /* ELKModule */,
+				ABE0C790236DE4DA00D42841 /* ELKTencent */,
+				ABE0C798236DE4DA00D42841 /* ELKCommonMaster.m */,
+				ABE0C799236DE4DA00D42841 /* ELKWeChat */,
+				ABE0C7A3236DE4DA00D42841 /* ELKSina */,
+				ABE0C7AB236DE4DA00D42841 /* ELKCommonMaster.h */,
 			);
 			path = ELKCommonMaster;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
-		ABF0C058236D7A8D00DCEC8D /* ELKModule */ = {
+		ABE0C78D236DE4DA00D42841 /* ELKModule */ = {
 			isa = PBXGroup;
 			children = (
-				ABF0C05A236D7A8D00DCEC8D /* UIImage+ELKMCommon.h */,
-				ABF0C059236D7A8D00DCEC8D /* UIImage+ELKMCommon.m */,
+				ABE0C78E236DE4DA00D42841 /* UIImage+ELKMCommon.m */,
+				ABE0C78F236DE4DA00D42841 /* UIImage+ELKMCommon.h */,
 			);
 			path = ELKModule;
 			sourceTree = "<group>";
 		};
-		ABF0C05B236D7A8D00DCEC8D /* ELKTencent */ = {
+		ABE0C790236DE4DA00D42841 /* ELKTencent */ = {
 			isa = PBXGroup;
 			children = (
-				ABF0C062236D7A8D00DCEC8D /* ELKTencentSDKMaster.h */,
-				ABF0C05C236D7A8D00DCEC8D /* ELKTencentSDKMaster.m */,
-				ABF0C05D236D7A8D00DCEC8D /* Model */,
+				ABE0C791236DE4DA00D42841 /* ELKTencentSDKMaster.h */,
+				ABE0C792236DE4DA00D42841 /* ELKTencentSDKMaster.m */,
+				ABE0C793236DE4DA00D42841 /* Model */,
 			);
 			path = ELKTencent;
 			sourceTree = "<group>";
 		};
-		ABF0C05D236D7A8D00DCEC8D /* Model */ = {
+		ABE0C793236DE4DA00D42841 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				ABF0C061236D7A8D00DCEC8D /* ELKTencentShareModel.h */,
-				ABF0C05F236D7A8D00DCEC8D /* ELKTencentShareModel.m */,
-				ABF0C05E236D7A8D00DCEC8D /* ELKTencentUserInfo.h */,
-				ABF0C060236D7A8D00DCEC8D /* ELKTencentUserInfo.m */,
+				ABE0C794236DE4DA00D42841 /* ELKTencentUserInfo.h */,
+				ABE0C795236DE4DA00D42841 /* ELKTencentShareModel.m */,
+				ABE0C796236DE4DA00D42841 /* ELKTencentUserInfo.m */,
+				ABE0C797236DE4DA00D42841 /* ELKTencentShareModel.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		ABF0C064236D7A8D00DCEC8D /* ELKWeChat */ = {
+		ABE0C799236DE4DA00D42841 /* ELKWeChat */ = {
 			isa = PBXGroup;
 			children = (
-				ABF0C066236D7A8D00DCEC8D /* ELKWeChatSDKMaster.h */,
-				ABF0C065236D7A8D00DCEC8D /* ELKWeChatSDKMaster.m */,
-				ABF0C067236D7A8D00DCEC8D /* Model */,
+				ABE0C79A236DE4DA00D42841 /* ELKWeChatSDKMaster.h */,
+				ABE0C79B236DE4DA00D42841 /* Model */,
+				ABE0C7A2236DE4DA00D42841 /* ELKWeChatSDKMaster.m */,
 			);
 			path = ELKWeChat;
 			sourceTree = "<group>";
 		};
-		ABF0C067236D7A8D00DCEC8D /* Model */ = {
+		ABE0C79B236DE4DA00D42841 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				ABF0C06B236D7A8D00DCEC8D /* ELKWeChatPayModel.h */,
-				ABF0C068236D7A8D00DCEC8D /* ELKWeChatPayModel.m */,
-				ABF0C06D236D7A8D00DCEC8D /* ELKWeChatShareModel.h */,
-				ABF0C06A236D7A8D00DCEC8D /* ELKWeChatShareModel.m */,
-				ABF0C06C236D7A8D00DCEC8D /* ELKWeChatUserInfo.h */,
-				ABF0C069236D7A8D00DCEC8D /* ELKWeChatUserInfo.m */,
+				ABE0C79C236DE4DA00D42841 /* ELKWeChatPayModel.m */,
+				ABE0C79D236DE4DA00D42841 /* ELKWeChatUserInfo.m */,
+				ABE0C79E236DE4DA00D42841 /* ELKWeChatShareModel.m */,
+				ABE0C79F236DE4DA00D42841 /* ELKWeChatPayModel.h */,
+				ABE0C7A0236DE4DA00D42841 /* ELKWeChatUserInfo.h */,
+				ABE0C7A1236DE4DA00D42841 /* ELKWeChatShareModel.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		ABF0C06E236D7A8D00DCEC8D /* ELKSina */ = {
+		ABE0C7A3236DE4DA00D42841 /* ELKSina */ = {
 			isa = PBXGroup;
 			children = (
-				ABF0C06F236D7A8D00DCEC8D /* ELKSinaSDKMaster.h */,
-				ABF0C075236D7A8D00DCEC8D /* ELKSinaSDKMaster.m */,
-				ABF0C070236D7A8D00DCEC8D /* Model */,
+				ABE0C7A4236DE4DA00D42841 /* ELKSinaSDKMaster.m */,
+				ABE0C7A5236DE4DA00D42841 /* Model */,
+				ABE0C7AA236DE4DA00D42841 /* ELKSinaSDKMaster.h */,
 			);
 			path = ELKSina;
 			sourceTree = "<group>";
 		};
-		ABF0C070236D7A8D00DCEC8D /* Model */ = {
+		ABE0C7A5236DE4DA00D42841 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				ABF0C071236D7A8D00DCEC8D /* ELKSinaShareModel.h */,
-				ABF0C073236D7A8D00DCEC8D /* ELKSinaShareModel.m */,
-				ABF0C074236D7A8D00DCEC8D /* ELKSinaUserInfo.h */,
-				ABF0C072236D7A8D00DCEC8D /* ELKSinaUserInfo.m */,
+				ABE0C7A6236DE4DA00D42841 /* ELKSinaShareModel.h */,
+				ABE0C7A7236DE4DA00D42841 /* ELKSinaUserInfo.m */,
+				ABE0C7A8236DE4DA00D42841 /* ELKSinaShareModel.m */,
+				ABE0C7A9236DE4DA00D42841 /* ELKSinaUserInfo.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -490,21 +490,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABF0C0A5236D7A8E00DCEC8D /* ELKWeChatShareModel.m in Sources */,
 				AB2DC849236C47300037D043 /* ARootViewController.m in Sources */,
-				ABF0C09D236D7A8E00DCEC8D /* UIImage+ELKMCommon.m in Sources */,
-				ABF0C0A8236D7A8E00DCEC8D /* ELKSinaSDKMaster.m in Sources */,
-				ABF0C0A7236D7A8E00DCEC8D /* ELKSinaShareModel.m in Sources */,
+				ABE0C7B7236DE4DA00D42841 /* ELKSinaShareModel.m in Sources */,
+				ABE0C7B4236DE4DA00D42841 /* ELKWeChatSDKMaster.m in Sources */,
+				ABE0C7AC236DE4DA00D42841 /* UIImage+ELKMCommon.m in Sources */,
+				ABE0C7B1236DE4DA00D42841 /* ELKWeChatPayModel.m in Sources */,
+				ABE0C7B6236DE4DA00D42841 /* ELKSinaUserInfo.m in Sources */,
 				AB2DC843236C47300037D043 /* AppDelegate.m in Sources */,
-				ABF0C0A4236D7A8E00DCEC8D /* ELKWeChatUserInfo.m in Sources */,
 				AB2DC854236C47310037D043 /* main.m in Sources */,
-				ABF0C0A6236D7A8E00DCEC8D /* ELKSinaUserInfo.m in Sources */,
-				ABF0C0A0236D7A8E00DCEC8D /* ELKTencentUserInfo.m in Sources */,
-				ABF0C0A3236D7A8E00DCEC8D /* ELKWeChatPayModel.m in Sources */,
-				ABF0C0A1236D7A8E00DCEC8D /* ELKCommonMaster.m in Sources */,
-				ABF0C09F236D7A8E00DCEC8D /* ELKTencentShareModel.m in Sources */,
-				ABF0C09E236D7A8E00DCEC8D /* ELKTencentSDKMaster.m in Sources */,
-				ABF0C0A2236D7A8E00DCEC8D /* ELKWeChatSDKMaster.m in Sources */,
+				ABE0C7B2236DE4DA00D42841 /* ELKWeChatUserInfo.m in Sources */,
+				ABE0C7AF236DE4DA00D42841 /* ELKTencentUserInfo.m in Sources */,
+				ABE0C7B0236DE4DA00D42841 /* ELKCommonMaster.m in Sources */,
+				ABE0C7AE236DE4DA00D42841 /* ELKTencentShareModel.m in Sources */,
+				ABE0C7B5236DE4DA00D42841 /* ELKSinaSDKMaster.m in Sources */,
+				ABE0C7B3236DE4DA00D42841 /* ELKWeChatShareModel.m in Sources */,
+				ABE0C7AD236DE4DA00D42841 /* ELKTencentSDKMaster.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
