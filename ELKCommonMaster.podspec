@@ -22,31 +22,31 @@ Pod::Spec.new do |spec|
 
 
   
-  spec.subspec 'ELKWeChat' do |weSpec|
-      weSpec.source_files = 'ELKCommonMaster/ELKWeChat/**/*.{h,m}'
+ # spec.subspec 'ELKWeChat' do |weSpec|
+  #    weSpec.source_files = 'ELKCommonMaster/ELKWeChat/**/*.{h,m}'
     #  weSpec.dependency 'WechatOpenSDK'
-      weSpec.ios.frameworks = 'Foundation', 'UIKit'
-  end
+   #   weSpec.ios.frameworks = 'Foundation', 'UIKit'
+ # end
   
-  spec.subspec 'ELKTencent' do |tenSpec|
-      tenSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
+ # spec.subspec 'ELKTencent' do |tenSpec|
+  #    tenSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
     #  tenSpec.dependency 'ELKTencentOpenSDK'
-      tenSpec.ios.frameworks = 'Foundation', 'UIKit'
-  end
+   #   tenSpec.ios.frameworks = 'Foundation', 'UIKit'
+ # end
   
-  spec.subspec 'ELKSina' do |sinaSpec|
-      sinaSpec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
+ # spec.subspec 'ELKSina' do |sinaSpec|
+  #    sinaSpec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
     #  sinaSpec.dependency 'ELKWeiboSDK'
-      sinaSpec.ios.frameworks = 'Foundation', 'UIKit'
-  end
+   #   sinaSpec.ios.frameworks = 'Foundation', 'UIKit'
+  #end
   
-  spec.subspec 'ELKModule' do |modSpec|
-      modSpec.source_files = 'ELKCommonMaster/ELKModule/**/*.{h,m}'
-      modSpec.ios.frameworks = 'Foundation', 'UIKit'
-  end
+#  spec.subspec 'ELKModule' do |modSpec|
+  #    modSpec.source_files = 'ELKCommonMaster/ELKModule/**/*.{h,m}'
+  #    modSpec.ios.frameworks = 'Foundation', 'UIKit'
+ # end
   
-  spec.source_files  = "ELKCommonMaster", "ELKCommonMaster/ELKCommonMaster.{h,m}"
- # spec.source_files  = "ELKCommonMaster", "ELKCommon-master/ELKCommonMaster/**/*.{h,m}"
+  #spec.source_files  = "ELKCommonMaster", "ELKCommonMaster/ELKCommonMaster.{h,m}"
+  spec.source_files  = "ELKCommonMaster", "ELKCommonMaster/**/*.{h,m}"
   spec.ios.frameworks = 'Foundation', 'UIKit'
   
   spec.dependency 'ELKChainedAlloy'
