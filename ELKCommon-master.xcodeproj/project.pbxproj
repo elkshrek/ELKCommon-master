@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A86292566017671C32E792A4 /* Pods_ELKCommon_master.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D80153B5C28980059C7404 /* Pods_ELKCommon_master.framework */; };
+		AB2DC843236C47300037D043 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2DC842236C47300037D043 /* AppDelegate.m */; };
+		AB2DC849236C47300037D043 /* ARootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2DC848236C47300037D043 /* ARootViewController.m */; };
+		AB2DC84C236C47300037D043 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2DC84A236C47300037D043 /* Main.storyboard */; };
+		AB2DC84E236C47310037D043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB2DC84D236C47310037D043 /* Assets.xcassets */; };
+		AB2DC851236C47310037D043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2DC84F236C47310037D043 /* LaunchScreen.storyboard */; };
+		AB2DC854236C47310037D043 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2DC853236C47310037D043 /* main.m */; };
+		AB2DC85E236C47310037D043 /* ELKCommon_masterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2DC85D236C47310037D043 /* ELKCommon_masterTests.m */; };
+		AB2DC869236C47310037D043 /* ELKCommon_masterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2DC868236C47310037D043 /* ELKCommon_masterUITests.m */; };
+		ABF0C09D236D7A8E00DCEC8D /* UIImage+ELKMCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0C059236D7A8D00DCEC8D /* UIImage+ELKMCommon.m */; };
+		ABF0C09E236D7A8E00DCEC8D /* ELKTencentSDKMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0C05C236D7A8D00DCEC8D /* ELKTencentSDKMaster.m */; };
+		ABF0C09F236D7A8E00DCEC8D /* ELKTencentShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0C05F236D7A8D00DCEC8D /* ELKTencentShareModel.m */; };
+		ABF0C0A0236D7A8E00DCEC8D /* ELKTencentUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0C060236D7A8D00DCEC8D /* ELKTencentUserInfo.m */; };
+		ABF0C0A1236D7A8E00DCEC8D /* ELKCommonMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0C063236D7A8D00DCEC8D /* ELKCommonMaster.m */; };
+		ABF0C0A2236D7A8E00DCEC8D /* ELKWeChatSDKMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0C065236D7A8D00DCEC8D /* ELKWeChatSDKMaster.m */; };
+		ABF0C0A3236D7A8E00DCEC8D /* ELKWeChatPayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0C068236D7A8D00DCEC8D /* ELKWeChatPayModel.m */; };
+		ABF0C0A4236D7A8E00DCEC8D /* ELKWeChatUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0C069236D7A8D00DCEC8D /* ELKWeChatUserInfo.m */; };
+		ABF0C0A5236D7A8E00DCEC8D /* ELKWeChatShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0C06A236D7A8D00DCEC8D /* ELKWeChatShareModel.m */; };
+		ABF0C0A6236D7A8E00DCEC8D /* ELKSinaUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0C072236D7A8D00DCEC8D /* ELKSinaUserInfo.m */; };
+		ABF0C0A7236D7A8E00DCEC8D /* ELKSinaShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0C073236D7A8D00DCEC8D /* ELKSinaShareModel.m */; };
+		ABF0C0A8236D7A8E00DCEC8D /* ELKSinaSDKMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF0C075236D7A8D00DCEC8D /* ELKSinaSDKMaster.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB2DC85A236C47310037D043 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB2DC836236C472F0037D043 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB2DC83D236C472F0037D043;
+			remoteInfo = "ELKCommon-master";
+		};
+		AB2DC865236C47310037D043 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB2DC836236C472F0037D043 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB2DC83D236C472F0037D043;
+			remoteInfo = "ELKCommon-master";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9CE56F46A26DA2D72E9B0E02 /* Pods-ELKCommon-master.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELKCommon-master.debug.xcconfig"; path = "Target Support Files/Pods-ELKCommon-master/Pods-ELKCommon-master.debug.xcconfig"; sourceTree = "<group>"; };
+		AB2DC83E236C47300037D043 /* ELKCommon-master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ELKCommon-master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2DC841236C47300037D043 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AB2DC842236C47300037D043 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AB2DC847236C47300037D043 /* ARootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARootViewController.h; sourceTree = "<group>"; };
+		AB2DC848236C47300037D043 /* ARootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARootViewController.m; sourceTree = "<group>"; };
+		AB2DC84B236C47300037D043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB2DC84D236C47310037D043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB2DC850236C47310037D043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB2DC852236C47310037D043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB2DC853236C47310037D043 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB2DC859236C47310037D043 /* ELKCommon-masterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ELKCommon-masterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2DC85D236C47310037D043 /* ELKCommon_masterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELKCommon_masterTests.m; sourceTree = "<group>"; };
+		AB2DC85F236C47310037D043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB2DC864236C47310037D043 /* ELKCommon-masterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ELKCommon-masterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2DC868236C47310037D043 /* ELKCommon_masterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELKCommon_masterUITests.m; sourceTree = "<group>"; };
+		AB2DC86A236C47310037D043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABF0C059236D7A8D00DCEC8D /* UIImage+ELKMCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ELKMCommon.m"; sourceTree = "<group>"; };
+		ABF0C05A236D7A8D00DCEC8D /* UIImage+ELKMCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ELKMCommon.h"; sourceTree = "<group>"; };
+		ABF0C05C236D7A8D00DCEC8D /* ELKTencentSDKMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKTencentSDKMaster.m; sourceTree = "<group>"; };
+		ABF0C05E236D7A8D00DCEC8D /* ELKTencentUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKTencentUserInfo.h; sourceTree = "<group>"; };
+		ABF0C05F236D7A8D00DCEC8D /* ELKTencentShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKTencentShareModel.m; sourceTree = "<group>"; };
+		ABF0C060236D7A8D00DCEC8D /* ELKTencentUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKTencentUserInfo.m; sourceTree = "<group>"; };
+		ABF0C061236D7A8D00DCEC8D /* ELKTencentShareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKTencentShareModel.h; sourceTree = "<group>"; };
+		ABF0C062236D7A8D00DCEC8D /* ELKTencentSDKMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKTencentSDKMaster.h; sourceTree = "<group>"; };
+		ABF0C063236D7A8D00DCEC8D /* ELKCommonMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKCommonMaster.m; sourceTree = "<group>"; };
+		ABF0C065236D7A8D00DCEC8D /* ELKWeChatSDKMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKWeChatSDKMaster.m; sourceTree = "<group>"; };
+		ABF0C066236D7A8D00DCEC8D /* ELKWeChatSDKMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKWeChatSDKMaster.h; sourceTree = "<group>"; };
+		ABF0C068236D7A8D00DCEC8D /* ELKWeChatPayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKWeChatPayModel.m; sourceTree = "<group>"; };
+		ABF0C069236D7A8D00DCEC8D /* ELKWeChatUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKWeChatUserInfo.m; sourceTree = "<group>"; };
+		ABF0C06A236D7A8D00DCEC8D /* ELKWeChatShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKWeChatShareModel.m; sourceTree = "<group>"; };
+		ABF0C06B236D7A8D00DCEC8D /* ELKWeChatPayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKWeChatPayModel.h; sourceTree = "<group>"; };
+		ABF0C06C236D7A8D00DCEC8D /* ELKWeChatUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKWeChatUserInfo.h; sourceTree = "<group>"; };
+		ABF0C06D236D7A8D00DCEC8D /* ELKWeChatShareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKWeChatShareModel.h; sourceTree = "<group>"; };
+		ABF0C06F236D7A8D00DCEC8D /* ELKSinaSDKMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKSinaSDKMaster.h; sourceTree = "<group>"; };
+		ABF0C071236D7A8D00DCEC8D /* ELKSinaShareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKSinaShareModel.h; sourceTree = "<group>"; };
+		ABF0C072236D7A8D00DCEC8D /* ELKSinaUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKSinaUserInfo.m; sourceTree = "<group>"; };
+		ABF0C073236D7A8D00DCEC8D /* ELKSinaShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKSinaShareModel.m; sourceTree = "<group>"; };
+		ABF0C074236D7A8D00DCEC8D /* ELKSinaUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKSinaUserInfo.h; sourceTree = "<group>"; };
+		ABF0C075236D7A8D00DCEC8D /* ELKSinaSDKMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKSinaSDKMaster.m; sourceTree = "<group>"; };
+		ABF0C076236D7A8D00DCEC8D /* ELKCommonMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKCommonMaster.h; sourceTree = "<group>"; };
+		ABF0C0B5236D97AC00DCEC8D /* ELKPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELKPrefixHeader.pch; sourceTree = "<group>"; };
+		D8655F343ED8FA2FECA9DC2E /* Pods-ELKCommon-master.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELKCommon-master.release.xcconfig"; path = "Target Support Files/Pods-ELKCommon-master/Pods-ELKCommon-master.release.xcconfig"; sourceTree = "<group>"; };
+		D8D80153B5C28980059C7404 /* Pods_ELKCommon_master.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ELKCommon_master.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB2DC83B236C472F0037D043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A86292566017671C32E792A4 /* Pods_ELKCommon_master.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2DC856236C47310037D043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2DC861236C47310037D043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB2DC835236C472F0037D043 = {
+			isa = PBXGroup;
+			children = (
+				AB2DC840236C47300037D043 /* ELKCommon-master */,
+				AB2DC85C236C47310037D043 /* ELKCommon-masterTests */,
+				AB2DC867236C47310037D043 /* ELKCommon-masterUITests */,
+				AB2DC83F236C47300037D043 /* Products */,
+				D4A318AE498177B8A3E59258 /* Pods */,
+				C90847CC23B15EEE2C434A71 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AB2DC83F236C47300037D043 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB2DC83E236C47300037D043 /* ELKCommon-master.app */,
+				AB2DC859236C47310037D043 /* ELKCommon-masterTests.xctest */,
+				AB2DC864236C47310037D043 /* ELKCommon-masterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB2DC840236C47300037D043 /* ELKCommon-master */ = {
+			isa = PBXGroup;
+			children = (
+				AB2DC841236C47300037D043 /* AppDelegate.h */,
+				AB2DC842236C47300037D043 /* AppDelegate.m */,
+				AB2DC847236C47300037D043 /* ARootViewController.h */,
+				AB2DC848236C47300037D043 /* ARootViewController.m */,
+				ABF0C057236D7A8D00DCEC8D /* ELKCommonMaster */,
+				ABF0C0B3236D7EAA00DCEC8D /* Others */,
+				ABF0C0B4236D7EC300DCEC8D /* Resources */,
+			);
+			path = "ELKCommon-master";
+			sourceTree = "<group>";
+		};
+		AB2DC85C236C47310037D043 /* ELKCommon-masterTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB2DC85D236C47310037D043 /* ELKCommon_masterTests.m */,
+				AB2DC85F236C47310037D043 /* Info.plist */,
+			);
+			path = "ELKCommon-masterTests";
+			sourceTree = "<group>";
+		};
+		AB2DC867236C47310037D043 /* ELKCommon-masterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AB2DC868236C47310037D043 /* ELKCommon_masterUITests.m */,
+				AB2DC86A236C47310037D043 /* Info.plist */,
+			);
+			path = "ELKCommon-masterUITests";
+			sourceTree = "<group>";
+		};
+		ABF0C057236D7A8D00DCEC8D /* ELKCommonMaster */ = {
+			isa = PBXGroup;
+			children = (
+				ABF0C076236D7A8D00DCEC8D /* ELKCommonMaster.h */,
+				ABF0C063236D7A8D00DCEC8D /* ELKCommonMaster.m */,
+				ABF0C058236D7A8D00DCEC8D /* ELKModule */,
+				ABF0C06E236D7A8D00DCEC8D /* ELKSina */,
+				ABF0C05B236D7A8D00DCEC8D /* ELKTencent */,
+				ABF0C064236D7A8D00DCEC8D /* ELKWeChat */,
+			);
+			path = ELKCommonMaster;
+			sourceTree = "<group>";
+		};
+		ABF0C058236D7A8D00DCEC8D /* ELKModule */ = {
+			isa = PBXGroup;
+			children = (
+				ABF0C05A236D7A8D00DCEC8D /* UIImage+ELKMCommon.h */,
+				ABF0C059236D7A8D00DCEC8D /* UIImage+ELKMCommon.m */,
+			);
+			path = ELKModule;
+			sourceTree = "<group>";
+		};
+		ABF0C05B236D7A8D00DCEC8D /* ELKTencent */ = {
+			isa = PBXGroup;
+			children = (
+				ABF0C062236D7A8D00DCEC8D /* ELKTencentSDKMaster.h */,
+				ABF0C05C236D7A8D00DCEC8D /* ELKTencentSDKMaster.m */,
+				ABF0C05D236D7A8D00DCEC8D /* Model */,
+			);
+			path = ELKTencent;
+			sourceTree = "<group>";
+		};
+		ABF0C05D236D7A8D00DCEC8D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABF0C061236D7A8D00DCEC8D /* ELKTencentShareModel.h */,
+				ABF0C05F236D7A8D00DCEC8D /* ELKTencentShareModel.m */,
+				ABF0C05E236D7A8D00DCEC8D /* ELKTencentUserInfo.h */,
+				ABF0C060236D7A8D00DCEC8D /* ELKTencentUserInfo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ABF0C064236D7A8D00DCEC8D /* ELKWeChat */ = {
+			isa = PBXGroup;
+			children = (
+				ABF0C066236D7A8D00DCEC8D /* ELKWeChatSDKMaster.h */,
+				ABF0C065236D7A8D00DCEC8D /* ELKWeChatSDKMaster.m */,
+				ABF0C067236D7A8D00DCEC8D /* Model */,
+			);
+			path = ELKWeChat;
+			sourceTree = "<group>";
+		};
+		ABF0C067236D7A8D00DCEC8D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABF0C06B236D7A8D00DCEC8D /* ELKWeChatPayModel.h */,
+				ABF0C068236D7A8D00DCEC8D /* ELKWeChatPayModel.m */,
+				ABF0C06D236D7A8D00DCEC8D /* ELKWeChatShareModel.h */,
+				ABF0C06A236D7A8D00DCEC8D /* ELKWeChatShareModel.m */,
+				ABF0C06C236D7A8D00DCEC8D /* ELKWeChatUserInfo.h */,
+				ABF0C069236D7A8D00DCEC8D /* ELKWeChatUserInfo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ABF0C06E236D7A8D00DCEC8D /* ELKSina */ = {
+			isa = PBXGroup;
+			children = (
+				ABF0C06F236D7A8D00DCEC8D /* ELKSinaSDKMaster.h */,
+				ABF0C075236D7A8D00DCEC8D /* ELKSinaSDKMaster.m */,
+				ABF0C070236D7A8D00DCEC8D /* Model */,
+			);
+			path = ELKSina;
+			sourceTree = "<group>";
+		};
+		ABF0C070236D7A8D00DCEC8D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABF0C071236D7A8D00DCEC8D /* ELKSinaShareModel.h */,
+				ABF0C073236D7A8D00DCEC8D /* ELKSinaShareModel.m */,
+				ABF0C074236D7A8D00DCEC8D /* ELKSinaUserInfo.h */,
+				ABF0C072236D7A8D00DCEC8D /* ELKSinaUserInfo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ABF0C0B3236D7EAA00DCEC8D /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				ABF0C0B5236D97AC00DCEC8D /* ELKPrefixHeader.pch */,
+				AB2DC852236C47310037D043 /* Info.plist */,
+				AB2DC84F236C47310037D043 /* LaunchScreen.storyboard */,
+				AB2DC853236C47310037D043 /* main.m */,
+				AB2DC84A236C47300037D043 /* Main.storyboard */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		ABF0C0B4236D7EC300DCEC8D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB2DC84D236C47310037D043 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C90847CC23B15EEE2C434A71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8D80153B5C28980059C7404 /* Pods_ELKCommon_master.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4A318AE498177B8A3E59258 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9CE56F46A26DA2D72E9B0E02 /* Pods-ELKCommon-master.debug.xcconfig */,
+				D8655F343ED8FA2FECA9DC2E /* Pods-ELKCommon-master.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB2DC83D236C472F0037D043 /* ELKCommon-master */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB2DC86D236C47310037D043 /* Build configuration list for PBXNativeTarget "ELKCommon-master" */;
+			buildPhases = (
+				FDD15302E53A5CF359A906F2 /* [CP] Check Pods Manifest.lock */,
+				AB2DC83A236C472F0037D043 /* Sources */,
+				AB2DC83B236C472F0037D043 /* Frameworks */,
+				AB2DC83C236C472F0037D043 /* Resources */,
+				3F6E42E0FA019859D784F88B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ELKCommon-master";
+			productName = "ELKCommon-master";
+			productReference = AB2DC83E236C47300037D043 /* ELKCommon-master.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB2DC858236C47310037D043 /* ELKCommon-masterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB2DC870236C47310037D043 /* Build configuration list for PBXNativeTarget "ELKCommon-masterTests" */;
+			buildPhases = (
+				AB2DC855236C47310037D043 /* Sources */,
+				AB2DC856236C47310037D043 /* Frameworks */,
+				AB2DC857236C47310037D043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB2DC85B236C47310037D043 /* PBXTargetDependency */,
+			);
+			name = "ELKCommon-masterTests";
+			productName = "ELKCommon-masterTests";
+			productReference = AB2DC859236C47310037D043 /* ELKCommon-masterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AB2DC863236C47310037D043 /* ELKCommon-masterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB2DC873236C47310037D043 /* Build configuration list for PBXNativeTarget "ELKCommon-masterUITests" */;
+			buildPhases = (
+				AB2DC860236C47310037D043 /* Sources */,
+				AB2DC861236C47310037D043 /* Frameworks */,
+				AB2DC862236C47310037D043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB2DC866236C47310037D043 /* PBXTargetDependency */,
+			);
+			name = "ELKCommon-masterUITests";
+			productName = "ELKCommon-masterUITests";
+			productReference = AB2DC864236C47310037D043 /* ELKCommon-masterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB2DC836236C472F0037D043 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = wing;
+				TargetAttributes = {
+					AB2DC83D236C472F0037D043 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					AB2DC858236C47310037D043 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = AB2DC83D236C472F0037D043;
+					};
+					AB2DC863236C47310037D043 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = AB2DC83D236C472F0037D043;
+					};
+				};
+			};
+			buildConfigurationList = AB2DC839236C472F0037D043 /* Build configuration list for PBXProject "ELKCommon-master" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB2DC835236C472F0037D043;
+			productRefGroup = AB2DC83F236C47300037D043 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB2DC83D236C472F0037D043 /* ELKCommon-master */,
+				AB2DC858236C47310037D043 /* ELKCommon-masterTests */,
+				AB2DC863236C47310037D043 /* ELKCommon-masterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB2DC83C236C472F0037D043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2DC851236C47310037D043 /* LaunchScreen.storyboard in Resources */,
+				AB2DC84E236C47310037D043 /* Assets.xcassets in Resources */,
+				AB2DC84C236C47300037D043 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2DC857236C47310037D043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2DC862236C47310037D043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F6E42E0FA019859D784F88B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ELKCommon-master/Pods-ELKCommon-master-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ELKCommon-master/Pods-ELKCommon-master-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ELKCommon-master/Pods-ELKCommon-master-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDD15302E53A5CF359A906F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ELKCommon-master-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB2DC83A236C472F0037D043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF0C0A5236D7A8E00DCEC8D /* ELKWeChatShareModel.m in Sources */,
+				AB2DC849236C47300037D043 /* ARootViewController.m in Sources */,
+				ABF0C09D236D7A8E00DCEC8D /* UIImage+ELKMCommon.m in Sources */,
+				ABF0C0A8236D7A8E00DCEC8D /* ELKSinaSDKMaster.m in Sources */,
+				ABF0C0A7236D7A8E00DCEC8D /* ELKSinaShareModel.m in Sources */,
+				AB2DC843236C47300037D043 /* AppDelegate.m in Sources */,
+				ABF0C0A4236D7A8E00DCEC8D /* ELKWeChatUserInfo.m in Sources */,
+				AB2DC854236C47310037D043 /* main.m in Sources */,
+				ABF0C0A6236D7A8E00DCEC8D /* ELKSinaUserInfo.m in Sources */,
+				ABF0C0A0236D7A8E00DCEC8D /* ELKTencentUserInfo.m in Sources */,
+				ABF0C0A3236D7A8E00DCEC8D /* ELKWeChatPayModel.m in Sources */,
+				ABF0C0A1236D7A8E00DCEC8D /* ELKCommonMaster.m in Sources */,
+				ABF0C09F236D7A8E00DCEC8D /* ELKTencentShareModel.m in Sources */,
+				ABF0C09E236D7A8E00DCEC8D /* ELKTencentSDKMaster.m in Sources */,
+				ABF0C0A2236D7A8E00DCEC8D /* ELKWeChatSDKMaster.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2DC855236C47310037D043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2DC85E236C47310037D043 /* ELKCommon_masterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB2DC860236C47310037D043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2DC869236C47310037D043 /* ELKCommon_masterUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB2DC85B236C47310037D043 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB2DC83D236C472F0037D043 /* ELKCommon-master */;
+			targetProxy = AB2DC85A236C47310037D043 /* PBXContainerItemProxy */;
+		};
+		AB2DC866236C47310037D043 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB2DC83D236C472F0037D043 /* ELKCommon-master */;
+			targetProxy = AB2DC865236C47310037D043 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB2DC84A236C47300037D043 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB2DC84B236C47300037D043 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB2DC84F236C47310037D043 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB2DC850236C47310037D043 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB2DC86B236C47310037D043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AB2DC86C236C47310037D043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB2DC86E236C47310037D043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CE56F46A26DA2D72E9B0E02 /* Pods-ELKCommon-master.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8BTB638K2;
+				GCC_PREFIX_HEADER = "ELKCommon-master/Others/ELKPrefixHeader.pch";
+				INFOPLIST_FILE = "ELKCommon-master/Others/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stardream.chenhe.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AB2DC86F236C47310037D043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8655F343ED8FA2FECA9DC2E /* Pods-ELKCommon-master.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8BTB638K2;
+				GCC_PREFIX_HEADER = "ELKCommon-master/Others/ELKPrefixHeader.pch";
+				INFOPLIST_FILE = "ELKCommon-master/Others/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stardream.chenhe.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		AB2DC871236C47310037D043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8BTB638K2;
+				INFOPLIST_FILE = "ELKCommon-masterTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elk.ELKCommon-masterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ELKCommon-master.app/ELKCommon-master";
+			};
+			name = Debug;
+		};
+		AB2DC872236C47310037D043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8BTB638K2;
+				INFOPLIST_FILE = "ELKCommon-masterTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elk.ELKCommon-masterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ELKCommon-master.app/ELKCommon-master";
+			};
+			name = Release;
+		};
+		AB2DC874236C47310037D043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8BTB638K2;
+				INFOPLIST_FILE = "ELKCommon-masterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elk.ELKCommon-masterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ELKCommon-master";
+			};
+			name = Debug;
+		};
+		AB2DC875236C47310037D043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8BTB638K2;
+				INFOPLIST_FILE = "ELKCommon-masterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.elk.ELKCommon-masterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ELKCommon-master";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB2DC839236C472F0037D043 /* Build configuration list for PBXProject "ELKCommon-master" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2DC86B236C47310037D043 /* Debug */,
+				AB2DC86C236C47310037D043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB2DC86D236C47310037D043 /* Build configuration list for PBXNativeTarget "ELKCommon-master" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2DC86E236C47310037D043 /* Debug */,
+				AB2DC86F236C47310037D043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB2DC870236C47310037D043 /* Build configuration list for PBXNativeTarget "ELKCommon-masterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2DC871236C47310037D043 /* Debug */,
+				AB2DC872236C47310037D043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB2DC873236C47310037D043 /* Build configuration list for PBXNativeTarget "ELKCommon-masterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2DC874236C47310037D043 /* Debug */,
+				AB2DC875236C47310037D043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB2DC836236C472F0037D043 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module ELKChainedAlloy {
+  umbrella header "ELKChainedAlloy-umbrella.h"
+
+  export *
+  module * { export * }
+}

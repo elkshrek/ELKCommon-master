@@ -1,0 +1,32 @@
+//
+//  ELKPrefixHeader.pch
+//  ELKCommon-master
+//
+//  Created by wing on 2019/11/2.
+//  Copyright © 2019 wing. All rights reserved.
+//
+
+#ifndef ELKPrefixHeader_pch
+#define ELKPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Masonry.h>
+#import "ELKCommonMaster.h"
+#import <ELKChainedAlloy/ELKChainedAlloy.h>
+
+
+// QQ
+#define ELKTencentAppId  @"1105810719"
+
+// WeChat
+#define ELKWeChatAppId   @"wx8c9f6d3071edba08"
+#define ELKWeChatSecret  @"a48785ce479b2b2081570b9ca7a10975"
+#define ELKWeChatUniLink  @"https://elk.stardream.com/elkstardream/"
+
+// Sina
+#define ELKSinaAppId     @"3421723789"
+
+
+#endif /* ELKPrefixHeader_pch */
