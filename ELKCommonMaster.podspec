@@ -25,6 +25,9 @@ Pod::Spec.new do |spec|
   spec.subspec 'ELKWeChat' do |weSpec|
       weSpec.source_files = 'ELKCommonMaster/ELKWeChat/**/*.{h,m}'
       weSpec.vendored_libraries  = "ELKCommonMaster/ELKWeChat/WeChatSDK/*.a"
+      weSpec.frameworks = "Security", "CoreGraphics", "WebKit"
+      weSpec.libraries   = "iconv", "z", "c++", "sqlite3", "libc++", "libiconv"
+      
     #  weSpec.dependency 'WechatOpenSDK'
     #  weSpec.ios.frameworks = 'Foundation', 'UIKit'
   end
@@ -32,6 +35,8 @@ Pod::Spec.new do |spec|
   spec.subspec 'ELKTencent' do |tenSpec|
       tenSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
       tenSpec.ios.vendored_frameworks = "ELKCommonMaster/ELKTencent/TencentSDK/*.framework"
+      tenSpec.frameworks = "Security", "SystemConfiguration", "CoreGraphics", "CoreTelephony", "WebKit"
+      tenSpec.libraries   = "iconv", "z", "c++", "sqlite3", "libc++", "libiconv"
     #  tenSpec.dependency 'ELKTencentOpenSDK'
      # tenSpec.ios.frameworks = 'Foundation', 'UIKit'
   end
@@ -40,6 +45,9 @@ Pod::Spec.new do |spec|
       sinaSpec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
       sinaSpec.vendored_libraries  = "ELKCommonMaster/ELKSina/SinaSDK/*.a"
       sinaSpec.resources           = "ELKCommonMaster/ELKSina/SinaSDK/*.bundle"
+      
+      sinaSpec.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
+      sinaSpec.libraries           = 'sqlite3', 'z'
     #  sinaSpec.dependency 'ELKWeiboSDK'
      # sinaSpec.ios.frameworks = 'Foundation', 'UIKit'
   end
