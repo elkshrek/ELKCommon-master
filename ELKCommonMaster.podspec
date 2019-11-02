@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
                     通用三方库集成：1）微信登录、分享、支付功能；2）QQ登录、分享功能；3）新浪微博登录、分享功能
                    DESC
 
-  spec.homepage     = "https://github.com/elkshrek/ELKChained-master"
+  spec.homepage     = "https://github.com/elkshrek/ELKCommon-master"
 
   spec.license      = "MIT"
 
@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios
   
 
-  spec.source       = { :git => "https://github.com/elkshrek/ELKChained-master.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/elkshrek/ELKCommon-master.git", :tag => "#{spec.version}" }
 
 
   
@@ -46,7 +46,8 @@ Pod::Spec.new do |spec|
   end
   
   spec.source_files  = "ELKCommonMaster", "ELKCommon-master/ELKCommonMaster/ELKCommonMaster.{h,m}"
-  # spec.ios.frameworks = 'Foundation', 'UIKit'
+ # spec.source_files  = "ELKCommonMaster", "ELKCommon-master/ELKCommonMaster/**/*.{h,m}"
+  spec.ios.frameworks = 'Foundation', 'UIKit'
   
   spec.dependency 'ELKChainedAlloy'
   
