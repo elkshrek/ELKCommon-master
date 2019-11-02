@@ -49,7 +49,6 @@ Pod::Spec.new do |spec|
   spec.source_files  = "ELKCommonMaster", "ELKCommonMaster/**/*.{h,m}"
   spec.ios.frameworks = 'Foundation', 'UIKit'
   
-  spec.dependency 'ELKChainedAlloy'
   
   spec.requires_arc = true
   
