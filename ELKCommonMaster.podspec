@@ -46,8 +46,9 @@ Pod::Spec.new do |spec|
     
 #  end
   
-  spec.subspec 'ELKTencentSDK' do |tenSDKSpec|
+  spec.subspec 'ELKTencent' do |tenSDKSpec|
 
+    tenSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
     tenSDKSpec.ios.vendored_frameworks = "ELKCommonSDK/ELKTencentSDK/TencentOpenAPI.framework"
 
     tenSDKSpec.ios.frameworks = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
@@ -74,14 +75,14 @@ Pod::Spec.new do |spec|
     
 #  end
   
-  spec.subspec 'ELKTencent' do |tenSpec|
+#  spec.subspec 'ELKTencent' do |tenSpec|
     
-    tenSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
+#    tenSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
     
    # tenSpec.dependency 'ELKCommonMaster/ELKModule'
-    tenSpec.dependency 'ELKCommonMaster/ELKTencentSDK'
+#    tenSpec.dependency 'ELKCommonMaster/ELKTencentSDK'
 
-  end
+#  end
   
 #  spec.subspec 'ELKWeChat' do |weSpec|
   
