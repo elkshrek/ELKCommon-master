@@ -65,14 +65,14 @@ Pod::Spec.new do |spec|
 
   end
   
- # spec.subspec 'ELKSina' do |sinaSpec|
+  spec.subspec 'ELKSina' do |sinaSpec|
   
-  #  sinaSpec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
+    sinaSpec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
     
- #   sinaSpec.dependency 'ELKCommonMaster/ELKModule'
- #   sinaSpec.dependency 'ELKCommonMaster/ELKSinaSDK'
+    sinaSpec.ios.dependency 'ELKCommonMaster/ELKModule'
+    sinaSpec.ios.dependency 'ELKCommonMaster/ELKSinaSDK'
     
- # end
+  end
   
  # spec.subspec 'ELKTencent' do |tenSpec|
     
