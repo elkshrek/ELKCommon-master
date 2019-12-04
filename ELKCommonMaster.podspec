@@ -35,17 +35,17 @@ Pod::Spec.new do |spec|
     
   end
   
-#  spec.subspec 'ELKSina' do |sinaSDKSpec|
+  spec.subspec 'ELKSina' do |sinaSDKSpec|
   
-#    sinaSDKSpec.source_files = 'ELKCommonSDK/ELKSina/**/*.{h,m}'
-#    sinaSDKSpec.vendored_libraries  = 'ELKCommonSDK/ELKSina/libWeiboSDK.a'
-#    sinaSDKSpec.resources           = 'ELKCommonSDK/ELKSina/WeiboSDK.bundle'
+    sinaSDKSpec.source_files = 'ELKCommonSDK/ELKSina/**/*.{h,m}'
+    sinaSDKSpec.vendored_libraries  = 'ELKCommonSDK/ELKSina/libWeiboSDK.a'
+    sinaSDKSpec.resources           = 'ELKCommonSDK/ELKSina/WeiboSDK.bundle'
     
-#    sinaSDKSpec.ios.dependency 'ELKCommonMaster/ELKModule'
-#    sinaSDKSpec.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
-#    sinaSDKSpec.libraries           = 'sqlite3', 'z'
+    sinaSDKSpec.ios.dependency 'ELKCommonMaster/ELKModule'
+    sinaSDKSpec.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
+    sinaSDKSpec.libraries           = 'sqlite3', 'z'
     
-#  end
+  end
   
 #  spec.subspec 'ELKTencent' do |tenSDKSpec|
 
