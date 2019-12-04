@@ -28,33 +28,34 @@ Pod::Spec.new do |spec|
  # spec.source_files = 'ELKCommonMaster/ELKCommonMaster.{h,m}'
   
   
-#  spec.subspec 'ELKModule' do |modSpec|
+  spec.subspec 'ELKModule' do |modSpec|
   
-#    modSpec.source_files = 'ELKCommonMaster/ELKModule/**/*.{h,m}'
-#    modSpec.ios.frameworks = 'Foundation', 'UIKit'
+    modSpec.source_files = 'ELKCommonMaster/ELKModule/**/*.{h,m}'
+    modSpec.ios.frameworks = 'Foundation', 'UIKit'
     
-#  end
-  
-#  spec.subspec 'ELKSinaSDK' do |sinaSDKSpec|
-  
-#    sinaSDKSpec.source_files = 'ELKCommonSDK/ELKSinaSDK/**/*.{h,m}'
-#    sinaSDKSpec.vendored_libraries  = 'ELKCommonSDK/ELKSinaSDK/libWeiboSDK.a'
-#    sinaSDKSpec.resources           = 'ELKCommonSDK/ELKSinaSDK/WeiboSDK.bundle'
-         
-#   sinaSDKSpec.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
-#    sinaSDKSpec.libraries           = 'sqlite3', 'z'
-    
-#  end
-  
-  spec.subspec 'ELKTencent' do |tenSDKSpec|
-
-    tenSDKSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
-    tenSDKSpec.ios.vendored_frameworks = "ELKCommonSDK/ELKTencentSDK/TencentOpenAPI.framework"
-
-    tenSDKSpec.ios.frameworks = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
-    tenSDKSpec.libraries           = 'sqlite3', 'z', 'c++', 'iconv'
-
   end
+  
+  spec.subspec 'ELKSina' do |sinaSDKSpec|
+  
+    sinaSDKSpec.source_files = 'ELKCommonSDK/ELKSina/**/*.{h,m}'
+    sinaSDKSpec.vendored_libraries  = 'ELKCommonSDK/ELKSina/libWeiboSDK.a'
+    sinaSDKSpec.resources           = 'ELKCommonSDK/ELKSina/WeiboSDK.bundle'
+    
+    sinaSDKSpec.ios.dependency 'ELKCommonMaster/ELKModule'
+    sinaSDKSpec.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
+    sinaSDKSpec.libraries           = 'sqlite3', 'z'
+    
+  end
+  
+#  spec.subspec 'ELKTencent' do |tenSDKSpec|
+
+#    tenSDKSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
+#    tenSDKSpec.ios.vendored_frameworks = "ELKCommonSDK/ELKTencentSDK/TencentOpenAPI.framework"
+
+#    tenSDKSpec.ios.frameworks = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
+#    tenSDKSpec.libraries           = 'sqlite3', 'z', 'c++', 'iconv'
+
+#  end
 
 #  spec.subspec 'ELKWeChatSDK' do |weSDKSpec|
 
