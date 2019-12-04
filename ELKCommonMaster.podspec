@@ -48,7 +48,7 @@ Pod::Spec.new do |spec|
   
   spec.subspec 'ELKTencent' do |tenSDKSpec|
 
-    tenSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
+    tenSDKSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
     tenSDKSpec.ios.vendored_frameworks = "ELKCommonSDK/ELKTencentSDK/TencentOpenAPI.framework"
 
     tenSDKSpec.ios.frameworks = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
