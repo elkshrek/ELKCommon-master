@@ -24,6 +24,8 @@ Pod::Spec.new do |spec|
   
   spec.requires_arc = true
   
+ # spec.public_header_files = 'ELKCommonMaster/ELKCommonMaster.h'
+  spec.source_files = 'ELKCommonMaster/ELKCommonMaster.{h,m}'
   
   
   spec.subspec 'ELKModule' do |modSpec|
