@@ -46,6 +46,25 @@ Pod::Spec.new do |spec|
     
   end
   
+  spec.subspec 'ELKTencentSDK' do |tenSDKSpec|
+
+    tenSDKSpec.ios.vendored_frameworks = "ELKCommonSDK/ELKTencentSDK/TencentOpenAPI.framework"
+
+    tenSDKSpec.ios.frameworks = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
+    tenSDKSpec.libraries           = 'sqlite3', 'z', 'c++', 'iconv'
+
+  end
+
+  spec.subspec 'ELKWeChatSDK' do |weSDKSpec|
+
+    weSDKSpec.source_files = 'ELKCommonSDK/ELKWeChatSDK/**/*.{h,m}'
+    weSDKSpec.vendored_libraries  = 'ELKCommonSDK/ELKWeChatSDK/libWeChatSDK.a'
+
+    weSDKSpec.ios.frameworks = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
+    weSDKSpec.libraries           = 'sqlite3', 'z', 'c++', 'iconv'
+
+  end
+  
   spec.subspec 'ELKSina' do |sinaSpec|
   
     sinaSpec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
@@ -55,7 +74,23 @@ Pod::Spec.new do |spec|
     
   end
   
-  
-  
+  spec.subspec 'ELKTencent' do |tenSpec|
+    
+    tenSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
+    
+    tenSpec.dependency 'ELKCommonMaster/ELKModule'
+    tenSpec.dependency 'ELKCommonMaster/ELKTencentSDK'
 
+  end
+  
+  spec.subspec 'ELKWeChat' do |weSpec|
+  
+    weSpec.source_files = 'ELKCommonMaster/ELKWeChat/**/*.{h,m}'
+    
+    weSpec.dependency 'ELKCommonMaster/ELKModule'
+    weSpec.dependency 'ELKCommonMaster/ELKWeChatSDK'
+    
+  end
+  
+  
 end
