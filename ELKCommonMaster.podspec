@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   
  # spec.public_header_files = 'ELKCommonMaster/ELKCommonMaster.h'
-  spec.source_files = 'ELKCommonMaster/ELKCommonMaster.{h,m}'
+ # spec.source_files = 'ELKCommonMaster/ELKCommonMaster.{h,m}'
   
   
   spec.subspec 'ELKModule' do |modSpec|
@@ -65,32 +65,32 @@ Pod::Spec.new do |spec|
 
   end
   
-  spec.subspec 'ELKSina' do |sinaSpec|
+ # spec.subspec 'ELKSina' do |sinaSpec|
   
-    sinaSpec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
+  #  sinaSpec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
     
-    sinaSpec.dependency 'ELKCommonMaster/ELKModule'
-    sinaSpec.dependency 'ELKCommonMaster/ELKSinaSDK'
+ #   sinaSpec.dependency 'ELKCommonMaster/ELKModule'
+ #   sinaSpec.dependency 'ELKCommonMaster/ELKSinaSDK'
     
-  end
+ # end
   
-  spec.subspec 'ELKTencent' do |tenSpec|
+ # spec.subspec 'ELKTencent' do |tenSpec|
     
-    tenSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
+ #   tenSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
     
-    tenSpec.dependency 'ELKCommonMaster/ELKModule'
-    tenSpec.dependency 'ELKCommonMaster/ELKTencentSDK'
+  #  tenSpec.dependency 'ELKCommonMaster/ELKModule'
+   # tenSpec.dependency 'ELKCommonMaster/ELKTencentSDK'
 
-  end
+#  end
   
-  spec.subspec 'ELKWeChat' do |weSpec|
+#  spec.subspec 'ELKWeChat' do |weSpec|
   
-    weSpec.source_files = 'ELKCommonMaster/ELKWeChat/**/*.{h,m}'
+#    weSpec.source_files = 'ELKCommonMaster/ELKWeChat/**/*.{h,m}'
     
-    weSpec.dependency 'ELKCommonMaster/ELKModule'
-    weSpec.dependency 'ELKCommonMaster/ELKWeChatSDK'
+#    weSpec.dependency 'ELKCommonMaster/ELKModule'
+#    weSpec.dependency 'ELKCommonMaster/ELKWeChatSDK'
     
-  end
+#  end
   
   
 end
