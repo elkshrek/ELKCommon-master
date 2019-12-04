@@ -49,7 +49,7 @@ Pod::Spec.new do |spec|
     sinaSpec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
     
     sinaSpec.dependency 'ELKCommonMaster/ELKModule'
-    sinaSpec.dependency 'ELKCommonSDK/ELKSinaSDK'
+    sinaSpec.dependency 'ELKCommonMaster/ELKSinaSDK'
     
   end
   
