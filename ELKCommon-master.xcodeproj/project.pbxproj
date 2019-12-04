@@ -251,15 +251,18 @@
 			path = ELKSina;
 			sourceTree = "<group>";
 		};
-		ABB1F5AE23978FF100503B39 /* ELKWeChatSDK */ = {
+		ABB1F5AE23978FF100503B39 /* ELKWeChat */ = {
 			isa = PBXGroup;
 			children = (
+				ABE0C79A236DE4DA00D42841 /* ELKWeChatSDKMaster.h */,
+				ABE0C7A2236DE4DA00D42841 /* ELKWeChatSDKMaster.m */,
+				ABB1F5B223978FF100503B39 /* libWeChatSDK.a */,
+				ABE0C79B236DE4DA00D42841 /* Model */,
+				ABB1F5B123978FF100503B39 /* WechatAuthSDK.h */,
 				ABB1F5AF23978FF100503B39 /* WXApi.h */,
 				ABB1F5B023978FF100503B39 /* WXApiObject.h */,
-				ABB1F5B123978FF100503B39 /* WechatAuthSDK.h */,
-				ABB1F5B223978FF100503B39 /* libWeChatSDK.a */,
 			);
-			path = ELKWeChatSDK;
+			path = ELKWeChat;
 			sourceTree = "<group>";
 		};
 		ABE0C78C236DE4DA00D42841 /* ELKCommonMaster */ = {
@@ -269,7 +272,6 @@
 				ABE0C798236DE4DA00D42841 /* ELKCommonMaster.m */,
 				ABE0C78D236DE4DA00D42841 /* ELKModule */,
 				ABE0C790236DE4DA00D42841 /* ELKTencent */,
-				ABE0C799236DE4DA00D42841 /* ELKWeChat */,
 			);
 			path = ELKCommonMaster;
 			sourceTree = SOURCE_ROOT;
@@ -304,16 +306,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		ABE0C799236DE4DA00D42841 /* ELKWeChat */ = {
-			isa = PBXGroup;
-			children = (
-				ABE0C79A236DE4DA00D42841 /* ELKWeChatSDKMaster.h */,
-				ABE0C7A2236DE4DA00D42841 /* ELKWeChatSDKMaster.m */,
-				ABE0C79B236DE4DA00D42841 /* Model */,
-			);
-			path = ELKWeChat;
-			sourceTree = "<group>";
-		};
 		ABE0C79B236DE4DA00D42841 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -343,7 +335,7 @@
 			children = (
 				ABB1F5A923978FF100503B39 /* ELKSina */,
 				ABB1F5A623978FB600503B39 /* ELKTencentSDK */,
-				ABB1F5AE23978FF100503B39 /* ELKWeChatSDK */,
+				ABB1F5AE23978FF100503B39 /* ELKWeChat */,
 			);
 			path = ELKCommonSDK;
 			sourceTree = SOURCE_ROOT;

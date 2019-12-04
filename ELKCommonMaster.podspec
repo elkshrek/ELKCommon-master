@@ -35,17 +35,17 @@ Pod::Spec.new do |spec|
     
   end
   
-  spec.subspec 'ELKSina' do |sinaSDKSpec|
+#  spec.subspec 'ELKSina' do |sinaSDKSpec|
   
-    sinaSDKSpec.source_files = 'ELKCommonSDK/ELKSina/**/*.{h,m}'
-    sinaSDKSpec.vendored_libraries  = 'ELKCommonSDK/ELKSina/libWeiboSDK.a'
-    sinaSDKSpec.resources           = 'ELKCommonSDK/ELKSina/WeiboSDK.bundle'
+#    sinaSDKSpec.source_files = 'ELKCommonSDK/ELKSina/**/*.{h,m}'
+#    sinaSDKSpec.vendored_libraries  = 'ELKCommonSDK/ELKSina/libWeiboSDK.a'
+#    sinaSDKSpec.resources           = 'ELKCommonSDK/ELKSina/WeiboSDK.bundle'
     
-    sinaSDKSpec.ios.dependency 'ELKCommonMaster/ELKModule'
-    sinaSDKSpec.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
-    sinaSDKSpec.libraries           = 'sqlite3', 'z'
+#    sinaSDKSpec.ios.dependency 'ELKCommonMaster/ELKModule'
+#    sinaSDKSpec.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
+#    sinaSDKSpec.libraries           = 'sqlite3', 'z'
     
-  end
+#  end
   
 #  spec.subspec 'ELKTencent' do |tenSDKSpec|
 
@@ -57,15 +57,17 @@ Pod::Spec.new do |spec|
 
 #  end
 
-#  spec.subspec 'ELKWeChatSDK' do |weSDKSpec|
+  spec.subspec 'ELKWeChat' do |weSDKSpec|
 
-#    weSDKSpec.source_files = 'ELKCommonSDK/ELKWeChatSDK/**/*.{h,m}'
-#    weSDKSpec.vendored_libraries  = 'ELKCommonSDK/ELKWeChatSDK/libWeChatSDK.a'
+    weSDKSpec.source_files = 'ELKCommonSDK/ELKWeChat/**/*.{h,m}'
+    weSDKSpec.vendored_libraries  = 'ELKCommonSDK/ELKWeChat/libWeChatSDK.a'
+    
+    weSDKSpec.dependency 'ELKCommonMaster/ELKModule'
+    
+    weSDKSpec.ios.frameworks = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
+    weSDKSpec.libraries           = 'sqlite3', 'z', 'c++', 'iconv'
 
-#    weSDKSpec.ios.frameworks = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
-#    weSDKSpec.libraries           = 'sqlite3', 'z', 'c++', 'iconv'
-
-#  end
+  end
   
 #  spec.subspec 'ELKSina' do |sinaSpec|
   
