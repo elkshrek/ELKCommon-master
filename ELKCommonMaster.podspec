@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = "ELKCommonMaster"
-    spec.version      = "0.0.5"
+    spec.version      = "0.0.1"
     spec.summary      = "简单易用通用三方库集成：1）微信登录、分享、支付；2）QQ登录、分享；3）新浪微博登录、分享"
 
     spec.description  = <<-DESC
@@ -25,8 +25,8 @@ Pod::Spec.new do |spec|
   
   
   
-    spec.public_header_files = 'ELKCommonMaster/**/*.h'
-    spec.source_files = 'ELKCommonMaster/**/*.{h,m}'
+#    spec.public_header_files = 'ELKCommonMaster/**/*.h'
+#    spec.source_files = 'ELKCommonMaster/**/*.{h,m}'
 
  #   spec.subspec 'ELKModule' do |modSpec|
  #       modSpec.source_files = 'ELKCommonMaster/ELKModule/**/*.{h,m}'
@@ -50,12 +50,12 @@ Pod::Spec.new do |spec|
 #        sinaSpec.dependency 'ELKCommonMaster/ELKModule'
  #   end
     
-    spec.subspec 'ELKTencentOpenSDK' do |tenSDKSpec|
-        tenSDKSpec.ios.vendored_frameworks = 'ELKSDK/ELKTencentSDK/TencentOpenAPI.framework'
+#    spec.subspec 'ELKTencentOpenSDK' do |tenSDKSpec|
+ #       tenSDKSpec.ios.vendored_frameworks = 'ELKSDK/ELKTencentSDK/TencentOpenAPI.framework'
         
-        tenSDKSpec.ios.frameworks      = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
-        tenSDKSpec.libraries           = 'sqlite3', 'z', 'c++', 'iconv'
-    end
+ #       tenSDKSpec.ios.frameworks      = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
+ #       tenSDKSpec.libraries           = 'sqlite3', 'z', 'c++', 'iconv'
+ #   end
     
 #    spec.subspec 'ELKTencent' do |tenSpec|
  #       tenSpec.source_files = 'ELKCommonMaster/ELKTencent/ELKTencent/**/*.{h,m}'
@@ -64,13 +64,13 @@ Pod::Spec.new do |spec|
  #       tenSpec.dependency 'ELKCommonMaster/ELKModule'
  #   end
     
-    spec.subspec 'ELKWechatOpenSDK' do |tenSDKSpec|
-        tenSDKSpec.vendored_libraries  = 'ELKSDK/ELKWechatSDK/libWeChatSDK.a'
-        tenSDKSpec.source_files        = 'ELKSDK/ELKWechatSDK/**/*.{h,m}'
+ #   spec.subspec 'ELKWechatOpenSDK' do |tenSDKSpec|
+ #       tenSDKSpec.vendored_libraries  = 'ELKSDK/ELKWechatSDK/libWeChatSDK.a'
+ #       tenSDKSpec.source_files        = 'ELKSDK/ELKWechatSDK/**/*.{h,m}'
 
-        tenSDKSpec.ios.frameworks = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
-        tenSDKSpec.libraries     = 'sqlite3', 'z', 'c++', 'iconv'
-    end
+#        tenSDKSpec.ios.frameworks = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
+#        tenSDKSpec.libraries     = 'sqlite3', 'z', 'c++', 'iconv'
+#    end
     
 #    spec.subspec 'ELKWeChat' do |weSpec|
 #       weSpec.source_files = 'ELKCommonMaster/ELKWeChat/ELKWeChat/**/*.{h,m}'
