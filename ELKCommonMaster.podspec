@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = "ELKCommonMaster"
-    spec.version      = "0.0.2"
+    spec.version      = "0.0.3"
     spec.summary      = "简单易用通用三方库集成：1）微信登录、分享、支付；2）QQ登录、分享；3）新浪微博登录、分享"
 
     spec.description  = <<-DESC
@@ -39,7 +39,7 @@ Pod::Spec.new do |spec|
         sinaSpec.public_header_files = 'ELKCommonMaster/ELKSina/**/*.h'
 
         sinaSpec.dependency 'ELKCommonMaster/ELKModule'
-        sinaSpec.dependency 'ELKWeiboSDK'
+        sinaSpec.vendored_libraries 'ELKWeiboSDK'
         
         sinaSpec.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
         sinaSpec.libraries           = 'sqlite3', 'z'
@@ -50,7 +50,7 @@ Pod::Spec.new do |spec|
         tenSpec.public_header_files = 'ELKCommonMaster/ELKTencent/**/*.h'
         
         tenSpec.dependency 'ELKCommonMaster/ELKModule'
-        tenSpec.dependency "ELKTencentOpenSDK"
+        tenSpec.vendored_frameworks "ELKTencentOpenSDK"
         
         tenSpec.ios.frameworks = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
         tenSpec.libraries           = 'sqlite3', 'z', 'c++', 'iconv'
@@ -61,7 +61,7 @@ Pod::Spec.new do |spec|
         weSpec.public_header_files = 'ELKCommonMaster/ELKWeChat/**/*.h'
 
         weSpec.dependency 'ELKCommonMaster/ELKModule'
-        weSpec.dependency "WechatOpenSDK"
+        weSpec.vendored_libraries 'WechatOpenSDK'
 
         weSpec.ios.frameworks = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
         weSpec.libraries     = 'sqlite3', 'z', 'c++', 'iconv'
