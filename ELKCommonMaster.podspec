@@ -43,13 +43,13 @@ Pod::Spec.new do |spec|
         sinaSDKSpec.libraries           = 'sqlite3', 'z'
     end
     
-    spec.subspec 'ELKSina' do |sinaSpec|
-        sinaSpec.source_files = 'ELKCommonMaster/ELKSina/ELKSina/**/*.{h,m}'
-        sinaSpec.public_header_files = 'ELKCommonMaster/ELKSina/ELKSina/**/*.h'
+#    spec.subspec 'ELKSina' do |sinaSpec|
+        spec.source_files = 'ELKCommonMaster/ELKSina/ELKSina/**/*.{h,m}'
+        spec.public_header_files = 'ELKCommonMaster/ELKSina/ELKSina/**/*.h'
 
-        sinaSpec.dependency 'ELKCommonMaster/ELKModule'
-        sinaSpec.dependency 'ELKWeiboSDK'
-    end
+ #       sinaSpec.dependency 'ELKCommonMaster/ELKModule'
+  #      sinaSpec.dependency 'ELKWeiboSDK'
+#    end
     
 #    spec.subspec 'ELKTencentOpenSDK' do |tenSDKSpec|
  #       tenSDKSpec.ios.vendored_frameworks = 'ELKSDK/ELKTencentSDK/TencentOpenAPI.framework'
