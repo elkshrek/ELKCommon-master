@@ -85,9 +85,4 @@ Pod::Spec.new do |spec|
         
    # end
     
-    
-    spec.dependency 'ELKCommonMaster/ELKWechatOpenSDK'
-    spec.dependency 'ELKCommonMaster/ELKTencentOpenSDK'
-    spec.dependency 'ELKCommonMaster/ELKWeiboSDK'
-    
 end
