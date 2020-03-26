@@ -7,9 +7,9 @@ target 'ELKCommon-master' do
     pod 'Masonry'
     pod 'ELKChainedAlloy'
 
-    pod 'ELKTencentOpenSDK'
-    pod 'ELKWeiboSDK'
-    pod 'WechatOpenSDK'
+#    pod 'ELKTencentOpenSDK'
+#    pod 'ELKWeiboSDK'
+#    pod 'WechatOpenSDK'
     
      
 

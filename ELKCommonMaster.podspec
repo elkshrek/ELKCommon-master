@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = "ELKCommonMaster"
-    spec.version      = "0.0.3"
+    spec.version      = "0.0.4"
     spec.summary      = "简单易用通用三方库集成：1）微信登录、分享、支付；2）QQ登录、分享；3）新浪微博登录、分享"
 
     spec.description  = <<-DESC
@@ -39,7 +39,9 @@ Pod::Spec.new do |spec|
         sinaSpec.public_header_files = 'ELKCommonMaster/ELKSina/**/*.h'
 
         sinaSpec.dependency 'ELKCommonMaster/ELKModule'
-        sinaSpec.vendored_libraries = 'ELKWeiboSDK'
+        sinaSpec.vendored_libraries  = "ELKCommonMaster/ELKWeiboSDK/libWeiboSDK.a"
+        sinaSpec.resources           = "ELKCommonMaster/ELKWeiboSDK/WeiboSDK.bundle"
+        sinaSpec.source_files        = "ELKCommonMaster/ELKWeiboSDK/**/*.{h,m}"
         
         sinaSpec.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
         sinaSpec.libraries           = 'sqlite3', 'z'
@@ -50,7 +52,7 @@ Pod::Spec.new do |spec|
         tenSpec.public_header_files = 'ELKCommonMaster/ELKTencent/**/*.h'
         
         tenSpec.dependency 'ELKCommonMaster/ELKModule'
-        tenSpec.vendored_frameworks = "ELKTencentOpenSDK"
+        tenSpec.ios.vendored_frameworks = "ELKCommonMaster/ELKTencentOpenSDK/*.framework"
         
         tenSpec.ios.frameworks = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
         tenSpec.libraries           = 'sqlite3', 'z', 'c++', 'iconv'
@@ -61,7 +63,8 @@ Pod::Spec.new do |spec|
         weSpec.public_header_files = 'ELKCommonMaster/ELKWeChat/**/*.h'
 
         weSpec.dependency 'ELKCommonMaster/ELKModule'
-        weSpec.vendored_libraries = 'WechatOpenSDK'
+        weSpec.vendored_libraries  = "ELKCommonMaster/WechatOpenSDK/libWeChatSDK.a"
+        weSpec.source_files        = "ELKCommonMaster/WechatOpenSDK/**/*.{h,m}"
 
         weSpec.ios.frameworks = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
         weSpec.libraries     = 'sqlite3', 'z', 'c++', 'iconv'

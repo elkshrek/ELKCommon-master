@@ -4,33 +4,21 @@ PODS:
     - ELKChainedAlloy/UIKit (= 1.1.4)
   - ELKChainedAlloy/Foundation (1.1.4)
   - ELKChainedAlloy/UIKit (1.1.4)
-  - ELKTencentOpenSDK (3.3.7.1)
-  - ELKWeiboSDK (3.2.6)
   - Masonry (1.1.0)
-  - WechatOpenSDK (1.8.6.2)
 
 DEPENDENCIES:
   - ELKChainedAlloy
-  - ELKTencentOpenSDK
-  - ELKWeiboSDK
   - Masonry
-  - WechatOpenSDK
 
 SPEC REPOS:
   trunk:
     - ELKChainedAlloy
-    - ELKTencentOpenSDK
-    - ELKWeiboSDK
     - Masonry
-    - WechatOpenSDK
 
 SPEC CHECKSUMS:
   ELKChainedAlloy: f4524fc982d7f95d3646a6f2ac5d9e6e476a413d
-  ELKTencentOpenSDK: 9f8daec306286c57e49a3aacbc39e016adb7cc95
-  ELKWeiboSDK: 928fdd439a16cf5f98b0b57254a00dcb0b02d00a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  WechatOpenSDK: 8b3ba4239193d1112205c139c94e21934e8f369a
 
-PODFILE CHECKSUM: f3ef9166015100593299f8885d40f6bb91a993fe
+PODFILE CHECKSUM: 9133f01c1a69428b4c51b3e251d1316d7b906619
 
 COCOAPODS: 1.9.0.beta.2
