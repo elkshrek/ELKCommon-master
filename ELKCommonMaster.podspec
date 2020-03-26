@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = "ELKCommonMaster"
-    spec.version      = "0.0.4"
+    spec.version      = "0.0.5"
     spec.summary      = "简单易用通用三方库集成：1）微信登录、分享、支付；2）QQ登录、分享；3）新浪微博登录、分享"
 
     spec.description  = <<-DESC
@@ -33,41 +33,56 @@ Pod::Spec.new do |spec|
         modSpec.public_header_files = 'ELKCommonMaster/ELKModule/**/*.h'
         modSpec.ios.frameworks = 'Foundation', 'UIKit'
     end
-
+    
+    spec.subspec 'ELKWeiboSDK' do |sinaSDKSpec|
+        sinaSDKSpec.vendored_libraries  = 'ELKCommonMaster/ELKWeiboSDK/libWeiboSDK.a'
+        sinaSDKSpec.resources           = 'ELKCommonMaster/ELKWeiboSDK/WeiboSDK.bundle'
+        sinaSDKSpec.source_files        = 'ELKCommonMaster/ELKWeiboSDK/**/*.{h,m}'
+        
+        sinaSDKSpec.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
+        sinaSDKSpec.libraries           = 'sqlite3', 'z'
+    end
+    
     spec.subspec 'ELKSina' do |sinaSpec|
         sinaSpec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
         sinaSpec.public_header_files = 'ELKCommonMaster/ELKSina/**/*.h'
 
         sinaSpec.dependency 'ELKCommonMaster/ELKModule'
-        sinaSpec.vendored_libraries  = "ELKCommonMaster/ELKWeiboSDK/libWeiboSDK.a"
-        sinaSpec.resources           = "ELKCommonMaster/ELKWeiboSDK/WeiboSDK.bundle"
-        sinaSpec.source_files        = "ELKCommonMaster/ELKWeiboSDK/**/*.{h,m}"
+        sinaSpec.dependency 'ELKCommonMaster/ELKWeiboSDK'
         
-        sinaSpec.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
-        sinaSpec.libraries           = 'sqlite3', 'z'
     end
-
+    
+    spec.subspec 'ELKTencentOpenSDK' do |tenSDKSpec|
+        tenSDKSpec.ios.vendored_frameworks = 'ELKCommonMaster/ELKTencentOpenSDK/*.framework'
+        
+        tenSDKSpec.ios.frameworks      = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
+        tenSDKSpec.libraries           = 'sqlite3', 'z', 'c++', 'iconv'
+    end
+    
     spec.subspec 'ELKTencent' do |tenSpec|
         tenSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
         tenSpec.public_header_files = 'ELKCommonMaster/ELKTencent/**/*.h'
         
         tenSpec.dependency 'ELKCommonMaster/ELKModule'
-        tenSpec.ios.vendored_frameworks = "ELKCommonMaster/ELKTencentOpenSDK/*.framework"
+        tenSpec.dependency 'ELKCommonMaster/ELKTencentOpenSDK'
         
-        tenSpec.ios.frameworks = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
-        tenSpec.libraries           = 'sqlite3', 'z', 'c++', 'iconv'
     end
+    
+    spec.subspec 'ELKWechatOpenSDK' do |tenSDKSpec|
+        tenSDKSpec.vendored_libraries  = 'ELKCommonMaster/ELKTencentOpenSDK/libWeChatSDK.a'
+        tenSDKSpec.source_files        = 'ELKCommonMaster/ELKTencentOpenSDK/**/*.{h,m}'
 
+        tenSDKSpec.ios.frameworks = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
+        tenSDKSpec.libraries     = 'sqlite3', 'z', 'c++', 'iconv'
+    end
+    
     spec.subspec 'ELKWeChat' do |weSpec|
         weSpec.source_files = 'ELKCommonMaster/ELKWeChat/**/*.{h,m}'
         weSpec.public_header_files = 'ELKCommonMaster/ELKWeChat/**/*.h'
 
         weSpec.dependency 'ELKCommonMaster/ELKModule'
-        weSpec.vendored_libraries  = "ELKCommonMaster/WechatOpenSDK/libWeChatSDK.a"
-        weSpec.source_files        = "ELKCommonMaster/WechatOpenSDK/**/*.{h,m}"
-
-        weSpec.ios.frameworks = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
-        weSpec.libraries     = 'sqlite3', 'z', 'c++', 'iconv'
+        weSpec.dependency 'ELKCommonMaster/ELKWechatOpenSDK'
+        
     end
     
     
