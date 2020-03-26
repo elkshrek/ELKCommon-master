@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = "ELKCommonMaster"
-    spec.version      = "0.0.1"
+    spec.version      = "0.0.6"
     spec.summary      = "简单易用通用三方库集成：1）微信登录、分享、支付；2）QQ登录、分享；3）新浪微博登录、分享"
 
     spec.description  = <<-DESC
