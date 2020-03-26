@@ -48,7 +48,7 @@ Pod::Spec.new do |spec|
         sinaSpec.public_header_files = 'ELKCommonMaster/ELKSina/ELKSina/**/*.h'
 
         sinaSpec.dependency 'ELKCommonMaster/ELKModule'
-        sinaSpec.dependency 'ELKSDK/ELKWeiboSDK'
+        sinaSpec.dependency 'ELKWeiboSDK'
     end
     
 #    spec.subspec 'ELKTencentOpenSDK' do |tenSDKSpec|
