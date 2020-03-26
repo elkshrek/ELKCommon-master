@@ -101,7 +101,7 @@ typedef void(^ELKControlEventBlock)(UIButton *sender);
 /**
  set button title for UIControlStateFocused
  */
-@property (nonatomic, strong, readonly) UIButton * _Nonnull(^elk_setTitleForFocused)(NSString * _Nonnull title);
+@property (nonatomic, strong, readonly) UIButton * _Nonnull(^elk_setTitleForFocused)(NSString * _Nonnull title) NS_AVAILABLE_IOS(9_0);;
 
 
 #pragma mark - set button title color
@@ -142,7 +142,7 @@ typedef void(^ELKControlEventBlock)(UIButton *sender);
 @property (nonatomic, copy, readonly) UIButton * _Nonnull (^elk_setTitleShadowColorForHighlighted)(UIColor * _Nullable shadowColor) UI_APPEARANCE_SELECTOR;
 @property (nonatomic, copy, readonly) UIButton * _Nonnull (^elk_setTitleShadowColorForDisabled)(UIColor * _Nullable shadowColor) UI_APPEARANCE_SELECTOR;
 @property (nonatomic, copy, readonly) UIButton * _Nonnull (^elk_setTitleShadowColorForSelected)(UIColor * _Nullable shadowColor) UI_APPEARANCE_SELECTOR;
-@property (nonatomic, copy, readonly) UIButton * _Nonnull (^elk_setTitleShadowColorForFocused)(UIColor * _Nullable shadowColor) UI_APPEARANCE_SELECTOR;
+@property (nonatomic, copy, readonly) UIButton * _Nonnull (^elk_setTitleShadowColorForFocused)(UIColor * _Nullable shadowColor) UI_APPEARANCE_SELECTOR NS_AVAILABLE_IOS(9_0);
 
 // default is nil. should be same size if different for different states
 @property (nonatomic, copy, readonly) UIButton * _Nonnull (^elk_setAttributedTitle)(NSAttributedString * _Nullable title, UIControlState state) NS_AVAILABLE_IOS(6_0);// default is nil. title is assumed to be single line
@@ -150,7 +150,7 @@ typedef void(^ELKControlEventBlock)(UIButton *sender);
 @property (nonatomic, copy, readonly) UIButton * _Nonnull (^elk_setAttributedTitleForHighlighted)(NSAttributedString * _Nullable title) NS_AVAILABLE_IOS(6_0);
 @property (nonatomic, copy, readonly) UIButton * _Nonnull (^elk_setAttributedTitleForDisabled)(NSAttributedString * _Nullable title) NS_AVAILABLE_IOS(6_0);
 @property (nonatomic, copy, readonly) UIButton * _Nonnull (^elk_setAttributedTitleForSelected)(NSAttributedString * _Nullable title) NS_AVAILABLE_IOS(6_0);
-@property (nonatomic, copy, readonly) UIButton * _Nonnull (^elk_setAttributedTitleForFocused)(NSAttributedString * _Nullable title) NS_AVAILABLE_IOS(6_0);
+@property (nonatomic, copy, readonly) UIButton * _Nonnull (^elk_setAttributedTitleForFocused)(NSAttributedString * _Nullable title) NS_AVAILABLE_IOS(9_0);
 
 
 #pragma mark - set button background color
@@ -189,7 +189,7 @@ typedef void(^ELKControlEventBlock)(UIButton *sender);
 /**
  set button background image for UIControlStateFocused
  */
-@property (nonatomic, strong, readonly) UIButton * _Nonnull(^elk_setBackgroundImageForFocused)(UIImage * _Nonnull image);
+@property (nonatomic, strong, readonly) UIButton * _Nonnull(^elk_setBackgroundImageForFocused)(UIImage * _Nonnull image) NS_AVAILABLE_IOS(9_0);
 
 
 #pragma mark - set button image
@@ -221,7 +221,7 @@ typedef void(^ELKControlEventBlock)(UIButton *sender);
 /**
  set button image for UIControlStateFocused
  */
-@property (nonatomic, strong, readonly) UIButton * _Nonnull(^elk_setImageForFocused)(UIImage * _Nonnull image);
+@property (nonatomic, strong, readonly) UIButton * _Nonnull(^elk_setImageForFocused)(UIImage * _Nonnull image) NS_AVAILABLE_IOS(9_0);
 
 
 /**
@@ -264,7 +264,7 @@ typedef void(^ELKControlEventBlock)(UIButton *sender);
 @property (nonatomic, copy, readonly) UIColor * _Nullable (^elk_titleShadowColorForState)(UIControlState state);
 @property (nonatomic, copy, readonly) UIImage * _Nullable (^elk_imageForState)(UIControlState state);
 @property (nonatomic, copy, readonly) UIImage * _Nullable (^elk_backgroundImageForState)(UIControlState state);
-@property (nonatomic, copy, readonly) NSAttributedString * _Nullable (^elk_attributedTitleForState)(UIControlState state);
+@property (nonatomic, copy, readonly) NSAttributedString * _Nullable (^elk_attributedTitleForState)(UIControlState state) NS_AVAILABLE_IOS(6_0);
 
 
 

@@ -104,6 +104,42 @@
     };
 }
 
+/// set Keyboard Type
+- (UITextView * _Nonnull (^)(UIKeyboardType))elk_setKeyboardType
+{
+    return ^(UIKeyboardType keyboardType) {
+        [self setKeyboardType:keyboardType];
+        return self;
+    };
+}
+
+/// set keyboard appearance
+- (UITextView * _Nonnull (^)(UIKeyboardAppearance))elk_setKeyboardAppearance
+{
+    return ^(UIKeyboardAppearance kbAppearance) {
+        self.keyboardAppearance = kbAppearance;
+        return self;
+    };
+}
+
+/// set ReturnKey type
+- (UITextView * _Nonnull (^)(UIReturnKeyType))elk_setReturnKeyType
+{
+    return ^(UIReturnKeyType returnKeyType) {
+        self.returnKeyType = returnKeyType;
+        return self;
+    };
+}
+
+/// set SecureTextEntry
+- (UITextView * _Nonnull (^)(BOOL))elk_setSecureTextEntry
+{
+    return ^(BOOL secure) {
+        self.secureTextEntry = secure;
+        return self;
+    };
+}
+
 /**
  set text alignment
  */
@@ -130,6 +166,7 @@
  set allows editing text attributes
  */
 - (UITextView * _Nonnull (^)(BOOL))elk_setAllowEditTextAttribute
+NS_AVAILABLE_IOS(6_0)
 {
     return ^(BOOL allow) {
         [self setAllowsEditingTextAttributes:allow];
@@ -218,6 +255,7 @@
  set link text attribute
  */
 - (UITextView * _Nonnull (^)(NSDictionary<NSAttributedStringKey,id> * _Nullable))elk_setLinkTextAttribute
+NS_AVAILABLE_IOS(7_0)
 {
     return ^(NSDictionary<NSAttributedStringKey,id> * _Nullable attrDict) {
         [self setLinkTextAttributes:attrDict];

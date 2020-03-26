@@ -14,7 +14,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// ELKThirdLoginManager
 @interface ELKCommonMaster : NSObject
 
 

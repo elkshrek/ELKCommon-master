@@ -104,22 +104,22 @@ UITableView * _Nonnull ELK_makeTableViewBlock(UITableViewStyle style, ELKTableVi
 /**
  set estimated row height
  */
-@property (nonatomic, strong, readonly) UITableView * _Nonnull (^elk_setEstimatedRowHeight)(CGFloat estRowHeight);
+@property (nonatomic, strong, readonly) UITableView * _Nonnull (^elk_setEstimatedRowHeight)(CGFloat estRowHeight) NS_AVAILABLE_IOS(7_0);
 
 /**
  set section index color
  */
-@property (nonatomic, strong, readonly) UITableView * _Nonnull (^elk_setSectionIndexColor)(UIColor * _Nullable color);
+@property (nonatomic, strong, readonly) UITableView * _Nonnull (^elk_setSectionIndexColor)(UIColor * _Nullable color) NS_AVAILABLE_IOS(6_0);
 
 /**
  set section index backgroud color
  */
-@property (nonatomic, strong, readonly) UITableView * _Nonnull (^elk_setSectionIndexBgColor)(UIColor * _Nullable color);
+@property (nonatomic, strong, readonly) UITableView * _Nonnull (^elk_setSectionIndexBgColor)(UIColor * _Nullable color) NS_AVAILABLE_IOS(7_0);
 
 /**
  set section index tracking background color
  */
-@property (nonatomic, strong, readonly) UITableView * _Nonnull (^elk_setSectionIndexTrackBgColor)(UIColor * _Nullable color);
+@property (nonatomic, strong, readonly) UITableView * _Nonnull (^elk_setSectionIndexTrackBgColor)(UIColor * _Nullable color) NS_AVAILABLE_IOS(6_0);
 
 /**
  set separator style
@@ -134,17 +134,17 @@ UITableView * _Nonnull ELK_makeTableViewBlock(UITableViewStyle style, ELKTableVi
 /**
  set separator inset
  */
-@property (nonatomic, strong, readonly) UITableView * _Nonnull (^elk_setSeparatInset)(UIEdgeInsets inset);
+@property (nonatomic, strong, readonly) UITableView * _Nonnull (^elk_setSeparatInset)(UIEdgeInsets inset) NS_AVAILABLE_IOS(7_0);
 
 /**
  register class for cell reuse identifier
  */
-@property (nonatomic, strong, readonly) UITableView * _Nonnull (^elk_registerClassForCell)(Class cellClass, NSString * _Nonnull identifier);
+@property (nonatomic, strong, readonly) UITableView * _Nonnull (^elk_registerClassForCell)(Class cellClass, NSString * _Nonnull identifier) NS_AVAILABLE_IOS(6_0);
 
 /**
  register nib for cell reuse identifier
  */
-@property (nonatomic, strong, readonly) UITableView * _Nonnull (^elk_registerNibForCell)(UINib * _Nonnull nib, NSString * _Nonnull identifier);
+@property (nonatomic, strong, readonly) UITableView * _Nonnull (^elk_registerNibForCell)(UINib * _Nonnull nib, NSString * _Nonnull identifier) NS_AVAILABLE_IOS(5_0);
 
 /**
  dequeue Reusable Cell With Identifier
@@ -154,17 +154,17 @@ UITableView * _Nonnull ELK_makeTableViewBlock(UITableViewStyle style, ELKTableVi
 /**
  dequeue Reusable Cell With Identifier For IndexPath
  */
-@property (nonatomic, copy, readonly) __kindof UITableViewCell * _Nonnull (^elk_dequeueReusableCellForIndexPath)(NSString * _Nonnull identifier, NSIndexPath *_Nonnull indexPath);
+@property (nonatomic, copy, readonly) __kindof UITableViewCell * _Nonnull (^elk_dequeueReusableCellForIndexPath)(NSString * _Nonnull identifier, NSIndexPath *_Nonnull indexPath) NS_AVAILABLE_IOS(6_0);
 
 /**
  register nib for header footer view reuse identifier
  */
-@property (nonatomic, strong, readonly) UITableView * _Nonnull (^elk_registerNibForHeadFootView)(UINib * _Nonnull nib, NSString * _Nonnull identifier);
+@property (nonatomic, strong, readonly) UITableView * _Nonnull (^elk_registerNibForHeadFootView)(UINib * _Nonnull nib, NSString * _Nonnull identifier) NS_AVAILABLE_IOS(6_0);
 
 /**
  register class for header footer view reuse identifier
  */
-@property (nonatomic, strong, readonly) UITableView * _Nonnull (^elk_registerClassForHeadFootView)(Class hfClass, NSString * _Nonnull identifier);
+@property (nonatomic, strong, readonly) UITableView * _Nonnull (^elk_registerClassForHeadFootView)(Class hfClass, NSString * _Nonnull identifier) NS_AVAILABLE_IOS(6_0);
 
 /**
  like dequeueReusableCellWithIdentifier:, but for headers/footers
@@ -194,7 +194,7 @@ UITableView * _Nonnull ELK_makeTableViewBlock(UITableViewStyle style, ELKTableVi
 /**
  set allows multiple selection
  */
-@property (nonatomic, strong, readonly) UITableView * _Nonnull (^elk_setAllowsMultSelect)(BOOL AllowMult);
+@property (nonatomic, strong, readonly) UITableView * _Nonnull (^elk_setAllowsMultSelect)(BOOL AllowMult) NS_AVAILABLE_IOS(5_0);
 
 /**
  set allows selection during editing
@@ -204,7 +204,7 @@ UITableView * _Nonnull ELK_makeTableViewBlock(UITableViewStyle style, ELKTableVi
 /**
  set allows multiple selection during editing
  */
-@property (nonatomic, strong, readonly) UITableView * _Nonnull (^elk_setAllowsMultSelectDuringEdit)(BOOL allowMult);
+@property (nonatomic, strong, readonly) UITableView * _Nonnull (^elk_setAllowsMultSelectDuringEdit)(BOOL allowMult) NS_AVAILABLE_IOS(5_0);
 
 
 

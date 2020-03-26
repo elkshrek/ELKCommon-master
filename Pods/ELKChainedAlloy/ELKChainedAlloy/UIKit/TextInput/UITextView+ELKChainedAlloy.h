@@ -60,6 +60,18 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong, readonly) UITextView * _Nonnull (^elk_setBoldFont)(CGFloat fontSize);
 
+/// set Keyboard Type
+@property (nonatomic, strong, readonly) UITextView * _Nonnull (^elk_setKeyboardType)(UIKeyboardType keyboardType);
+
+/// set keyboard appearance
+@property (nonatomic, strong, readonly) UITextView * _Nonnull (^elk_setKeyboardAppearance)(UIKeyboardAppearance kbAppearance);
+
+/// set ReturnKey type
+@property (nonatomic, strong, readonly) UITextView * _Nonnull (^elk_setReturnKeyType)(UIReturnKeyType returnKeyType);
+
+/// set SecureTextEntry
+@property (nonatomic, copy, readonly) UITextView * _Nonnull (^elk_setSecureTextEntry)(BOOL secure);
+
 /**
  set text alignment
  */
@@ -73,7 +85,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  set allows editing text attributes
  */
-@property (nonatomic, strong, readonly) UITextView * _Nonnull (^elk_setAllowEditTextAttribute)(BOOL allow);
+@property (nonatomic, strong, readonly) UITextView * _Nonnull (^elk_setAllowEditTextAttribute)(BOOL allow) NS_AVAILABLE_IOS(6_0);
 
 /**
  set input view
@@ -113,7 +125,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  set link text attribute
  */
-@property (nonatomic, strong, readonly) UITextView * _Nonnull (^elk_setLinkTextAttribute)(NSDictionary<NSAttributedStringKey,id> * _Nullable attrDict);
+@property (nonatomic, strong, readonly) UITextView * _Nonnull (^elk_setLinkTextAttribute)(NSDictionary<NSAttributedStringKey,id> * _Nullable attrDict) NS_AVAILABLE_IOS(7_0);
 
 /**
  scroll range to visible

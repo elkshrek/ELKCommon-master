@@ -1,100 +1,71 @@
 
 Pod::Spec.new do |spec|
 
-  spec.name         = "ELKCommonMaster"
-  spec.version      = "0.0.2"
-  spec.summary      = "通用三方库集成：1）微信登录、分享、支付；2）QQ登录、分享；3）新浪微博登录、分享"
+    spec.name         = "ELKCommonMaster"
+    spec.version      = "0.0.2"
+    spec.summary      = "简单易用通用三方库集成：1）微信登录、分享、支付；2）QQ登录、分享；3）新浪微博登录、分享"
 
-  spec.description  = <<-DESC
-                    通用三方库集成：
+    spec.description  = <<-DESC
+                    简单易用通用三方库集成：
                     1）微信登录、分享、支付功能；
                     2）QQ登录、分享功能；
                     3）新浪微博登录、分享功能。
                    DESC
 
-  spec.homepage     = "https://github.com/elkshrek/ELKCommon-master"
+    spec.homepage     = "https://github.com/elkshrek/ELKCommon-master"
 
-  spec.license      = "MIT"
+    spec.license      = "MIT"
 
-  spec.author       = { "Jonathan" => "Jonathan_dk@163.com" }
+    spec.author       = { "Jonathan" => "Jonathan_dk@163.com" }
 
-  spec.platform     = :ios
+    spec.requires_arc = true
+    spec.platform     = :ios, '9.0'
   
-  spec.source       = { :git => "https://github.com/elkshrek/ELKCommon-master.git", :tag => "#{spec.version}" }
-  
-  spec.requires_arc = true
-  
- # spec.public_header_files = 'ELKCommonMaster/ELKCommonMaster.h'
- # spec.source_files = 'ELKCommonMaster/ELKCommonMaster.{h,m}'
+    spec.source       = { :git => "https://github.com/elkshrek/ELKCommon-master.git", :tag => "#{spec.version}" }
   
   
-  spec.subspec 'ELKModule' do |modSpec|
   
-    modSpec.source_files = 'ELKCommonMaster/ELKModule/**/*.{h,m}'
-    modSpec.ios.frameworks = 'Foundation', 'UIKit'
-    
-  end
-  
-  spec.subspec 'ELKSina' do |sinaSDKSpec|
-  
-    sinaSDKSpec.source_files = 'ELKCommonSDK/ELKSina/**/*.{h,m}'
-    sinaSDKSpec.vendored_libraries  = 'ELKCommonSDK/ELKSina/libWeiboSDK.a'
-    sinaSDKSpec.resources           = 'ELKCommonSDK/ELKSina/WeiboSDK.bundle'
-    
-    sinaSDKSpec.ios.dependency 'ELKCommonMaster/ELKModule'
-    sinaSDKSpec.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
-    sinaSDKSpec.libraries           = 'sqlite3', 'z'
-    
-  end
-  
-#  spec.subspec 'ELKTencent' do |tenSDKSpec|
+    spec.public_header_files = 'ELKCommonMaster/ELKCommonMaster.h'
+    spec.source_files = 'ELKCommonMaster/ELKCommonMaster.{h,m}'
 
-#    tenSDKSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
-#    tenSDKSpec.ios.vendored_frameworks = "ELKCommonSDK/ELKTencentSDK/TencentOpenAPI.framework"
+    spec.subspec 'ELKModule' do |modSpec|
+        modSpec.source_files = 'ELKCommonMaster/ELKModule/**/*.{h,m}'
+        modSpec.public_header_files = 'ELKCommonMaster/ELKModule/**/*.h'
+        modSpec.ios.frameworks = 'Foundation', 'UIKit'
+    end
 
-#    tenSDKSpec.ios.frameworks = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
-#    tenSDKSpec.libraries           = 'sqlite3', 'z', 'c++', 'iconv'
+    spec.subspec 'ELKSina' do |sinaSpec|
+        sinaSpec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
+        sinaSpec.public_header_files = 'ELKCommonMaster/ELKSina/**/*.h'
 
-#  end
+        sinaSpec.dependency 'ELKCommonMaster/ELKModule'
+        sinaSpec.dependency 'ELKWeiboSDK'
+        
+        sinaSpec.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
+        sinaSpec.libraries           = 'sqlite3', 'z'
+    end
 
-  spec.subspec 'ELKWeChat' do |weSDKSpec|
+    spec.subspec 'ELKTencent' do |tenSpec|
+        tenSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
+        tenSpec.public_header_files = 'ELKCommonMaster/ELKTencent/**/*.h'
+        
+        tenSpec.dependency 'ELKCommonMaster/ELKModule'
+        tenSpec.dependency "ELKTencentOpenSDK"
+        
+        tenSpec.ios.frameworks = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
+        tenSpec.libraries           = 'sqlite3', 'z', 'c++', 'iconv'
+    end
 
-    weSDKSpec.source_files = 'ELKCommonSDK/ELKWeChat/**/*.{h,m}'
-    weSDKSpec.vendored_libraries  = 'ELKCommonSDK/ELKWeChat/libWeChatSDK.a'
-    
-    weSDKSpec.dependency 'ELKCommonMaster/ELKModule'
-    
-    weSDKSpec.ios.frameworks = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
-    weSDKSpec.libraries           = 'sqlite3', 'z', 'c++', 'iconv'
+    spec.subspec 'ELKWeChat' do |weSpec|
+        weSpec.source_files = 'ELKCommonMaster/ELKWeChat/**/*.{h,m}'
+        weSpec.public_header_files = 'ELKCommonMaster/ELKWeChat/**/*.h'
 
-  end
-  
-#  spec.subspec 'ELKSina' do |sinaSpec|
-  
-#    sinaSpec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
-    
-#    sinaSpec.ios.dependency 'ELKCommonMaster/ELKModule'
-#    sinaSpec.ios.dependency 'ELKCommonMaster/ELKSinaSDK'
-    
-#  end
-  
-#  spec.subspec 'ELKTencent' do |tenSpec|
-    
-#    tenSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
-    
-   # tenSpec.dependency 'ELKCommonMaster/ELKModule'
-#    tenSpec.dependency 'ELKCommonMaster/ELKTencentSDK'
+        weSpec.dependency 'ELKCommonMaster/ELKModule'
+        weSpec.dependency "WechatOpenSDK"
 
-#  end
-  
-#  spec.subspec 'ELKWeChat' do |weSpec|
-  
-#    weSpec.source_files = 'ELKCommonMaster/ELKWeChat/**/*.{h,m}'
+        weSpec.ios.frameworks = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
+        weSpec.libraries     = 'sqlite3', 'z', 'c++', 'iconv'
+    end
     
-#    weSpec.dependency 'ELKCommonMaster/ELKModule'
-#    weSpec.dependency 'ELKCommonMaster/ELKWeChatSDK'
     
-#  end
-  
-  
 end

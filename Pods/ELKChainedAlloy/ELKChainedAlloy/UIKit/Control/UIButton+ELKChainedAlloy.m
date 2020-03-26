@@ -219,6 +219,7 @@
  set button title for UIControlStateFocused
  */
 - (UIButton * _Nonnull (^)(NSString * _Nonnull))elk_setTitleForFocused
+NS_AVAILABLE_IOS(9_0)
 {
     return ^(NSString * _Nonnull title) {
         [self setTitle:title forState:UIControlStateFocused];
@@ -330,7 +331,7 @@
         return self;
     };
 }
-- (UIButton * _Nonnull (^)(UIColor * _Nullable))elk_setTitleShadowColorForFocused UI_APPEARANCE_SELECTOR
+- (UIButton * _Nonnull (^)(UIColor * _Nullable))elk_setTitleShadowColorForFocused UI_APPEARANCE_SELECTOR NS_AVAILABLE_IOS(9_0)
 {
     return ^(UIColor * _Nullable shadowColor) {
         [self setTitleShadowColor:shadowColor forState:UIControlStateFocused];
@@ -374,7 +375,7 @@
         return self;
     };
 }
-- (UIButton * _Nonnull (^)(NSAttributedString * _Nullable))elk_setAttributedTitleForFocused NS_AVAILABLE_IOS(6_0)
+- (UIButton * _Nonnull (^)(NSAttributedString * _Nullable))elk_setAttributedTitleForFocused NS_AVAILABLE_IOS(9_0)
 {
     return ^(NSAttributedString * _Nullable title) {
         [self setAttributedTitle:title forState:UIControlStateFocused];
@@ -455,6 +456,7 @@
  set button background image for UIControlStateFocused
  */
 - (UIButton * _Nonnull (^)(UIImage * _Nonnull))elk_setBackgroundImageForFocused
+NS_AVAILABLE_IOS(9_0)
 {
     return ^(UIImage * _Nonnull image) {
         [self setBackgroundImage:image forState:UIControlStateFocused];
@@ -523,6 +525,7 @@
  set button image for UIControlStateFocused
  */
 - (UIButton * _Nonnull (^)(UIImage * _Nonnull))elk_setImageForFocused
+NS_AVAILABLE_IOS(9_0)
 {
     return ^(UIImage * _Nonnull image) {
         [self setImage:image forState:UIControlStateFocused];
@@ -654,6 +657,7 @@
     };
 }
 - (NSAttributedString * _Nullable (^)(UIControlState))elk_attributedTitleForState
+NS_AVAILABLE_IOS(6_0)
 {
     return ^(UIControlState state) {
         return [self attributedTitleForState:state];

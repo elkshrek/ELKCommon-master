@@ -7,7 +7,7 @@
 //
 
 #import "ARootViewController.h"
-#import <Masonry/Masonry.h>
+//#import <Masonry/Masonry.h>
 #import "ELKCommonMaster.h"
 
 
@@ -138,9 +138,8 @@
 
 - (void)configSubview
 {
-    self.view.elk_setBackgroundColor(UIColor.whiteColor);
-    
-    self.view.elk_addSubview(self.wcAuthButton)
+    self.view.elk_setBackgroundColor(UIColor.whiteColor)
+    .elk_addSubview(self.wcAuthButton)
     .elk_addSubview(self.wcShareButton)
     .elk_addSubview(self.qqAuthButton)
     .elk_addSubview(self.qqShareButton)

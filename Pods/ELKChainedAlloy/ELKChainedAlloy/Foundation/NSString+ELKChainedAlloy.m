@@ -285,6 +285,7 @@
  upperace string with locale
  */
 - (NSString * _Nonnull (^)(NSLocale * _Nullable))elk_uppercaseStringWithLocale
+NS_AVAILABLE_IOS(6_0)
 {
     return ^(NSLocale * _Nullable locale) {
         return [self uppercaseStringWithLocale:locale];
@@ -295,6 +296,7 @@
  lowercase String With Locale
  */
 - (NSString * _Nonnull (^)(NSLocale * _Nullable))elk_lowercaseStringWithLocale
+NS_AVAILABLE_IOS(6_0)
 {
     return ^(NSLocale * _Nullable locale) {
         return [self lowercaseStringWithLocale:locale];
@@ -305,6 +307,7 @@
  capitalized String With Locale
  */
 - (NSString * _Nonnull (^)(NSLocale * _Nullable))elk_capitalizedStringWithLocale
+NS_AVAILABLE_IOS(6_0)
 {
     return ^(NSLocale * _Nullable locale) {
         return [self capitalizedStringWithLocale:locale];

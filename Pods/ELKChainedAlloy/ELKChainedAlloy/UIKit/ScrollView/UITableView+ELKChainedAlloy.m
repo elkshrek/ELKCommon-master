@@ -177,6 +177,7 @@ UITableView * _Nonnull ELK_makeTableViewBlock(UITableViewStyle style, ELKTableVi
  set estimated row height
  */
 - (UITableView * _Nonnull (^)(CGFloat))elk_setEstimatedRowHeight
+NS_AVAILABLE_IOS(7_0)
 {
     return ^(CGFloat estRowHeight) {
         [self setEstimatedRowHeight:estRowHeight];
@@ -188,6 +189,7 @@ UITableView * _Nonnull ELK_makeTableViewBlock(UITableViewStyle style, ELKTableVi
  set section index color
  */
 - (UITableView * _Nonnull (^)(UIColor * _Nullable))elk_setSectionIndexColor
+NS_AVAILABLE_IOS(6_0)
 {
     return ^(UIColor * _Nullable color) {
         [self setSectionIndexColor:color];
@@ -199,6 +201,7 @@ UITableView * _Nonnull ELK_makeTableViewBlock(UITableViewStyle style, ELKTableVi
  set section index backgroud color
  */
 - (UITableView * _Nonnull (^)(UIColor * _Nullable))elk_setSectionIndexBgColor
+NS_AVAILABLE_IOS(7_0)
 {
     return ^(UIColor * _Nullable color) {
         [self setSectionIndexBackgroundColor:color];
@@ -210,6 +213,7 @@ UITableView * _Nonnull ELK_makeTableViewBlock(UITableViewStyle style, ELKTableVi
  set section index tracking background color
  */
 - (UITableView * _Nonnull (^)(UIColor * _Nullable))elk_setSectionIndexTrackBgColor
+NS_AVAILABLE_IOS(6_0)
 {
     return ^(UIColor * _Nullable color) {
         [self setSectionIndexTrackingBackgroundColor:color];
@@ -243,6 +247,7 @@ UITableView * _Nonnull ELK_makeTableViewBlock(UITableViewStyle style, ELKTableVi
  set separator inset
  */
 - (UITableView * _Nonnull (^)(UIEdgeInsets))elk_setSeparatInset
+NS_AVAILABLE_IOS(7_0)
 {
     return ^(UIEdgeInsets inset) {
         [self setSeparatorInset:inset];
@@ -254,6 +259,7 @@ UITableView * _Nonnull ELK_makeTableViewBlock(UITableViewStyle style, ELKTableVi
  register class for cell reuse identifier
  */
 - (UITableView * _Nonnull (^)(Class  _Nonnull __unsafe_unretained, NSString * _Nonnull))elk_registerClassForCell
+NS_AVAILABLE_IOS(6_0)
 {
     return ^(Class cellClass, NSString * _Nonnull identifier) {
         [self registerClass:cellClass forCellReuseIdentifier:identifier];
@@ -265,6 +271,7 @@ UITableView * _Nonnull ELK_makeTableViewBlock(UITableViewStyle style, ELKTableVi
  register nib for cell reuse identifier
  */
 - (UITableView * _Nonnull (^)(UINib * _Nonnull, NSString * _Nonnull))elk_registerNibForCell
+NS_AVAILABLE_IOS(5_0)
 {
     return ^(UINib * _Nonnull nib, NSString * _Nonnull identifier) {
         [self registerNib:nib forCellReuseIdentifier:identifier];
@@ -287,6 +294,7 @@ UITableView * _Nonnull ELK_makeTableViewBlock(UITableViewStyle style, ELKTableVi
  dequeue Reusable Cell With Identifier For IndexPath
  */
 - (__kindof UITableViewCell * _Nonnull (^)(NSString * _Nonnull, NSIndexPath * _Nonnull))elk_dequeueReusableCellForIndexPath
+NS_AVAILABLE_IOS(6_0)
 {
     return ^(NSString * _Nonnull identifier, NSIndexPath *_Nonnull indexPath) {
         UITableViewCell *cell = [self dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
@@ -298,6 +306,7 @@ UITableView * _Nonnull ELK_makeTableViewBlock(UITableViewStyle style, ELKTableVi
  register nib for header footer view reuse identifier
  */
 - (UITableView * _Nonnull (^)(UINib * _Nonnull, NSString * _Nonnull))elk_registerNibForHeadFootView
+NS_AVAILABLE_IOS(6_0)
 {
     return ^(UINib * _Nonnull nib, NSString * _Nonnull identifier) {
         [self registerNib:nib forHeaderFooterViewReuseIdentifier:identifier];
@@ -309,6 +318,7 @@ UITableView * _Nonnull ELK_makeTableViewBlock(UITableViewStyle style, ELKTableVi
  register class for header footer view reuse identifier
  */
 - (UITableView * _Nonnull (^)(Class  _Nonnull __unsafe_unretained, NSString * _Nonnull))elk_registerClassForHeadFootView
+NS_AVAILABLE_IOS(6_0)
 {
     return ^(Class hfClass, NSString * _Nonnull identifier) {
         [self registerClass:hfClass forHeaderFooterViewReuseIdentifier:identifier];
@@ -375,6 +385,7 @@ UITableView * _Nonnull ELK_makeTableViewBlock(UITableViewStyle style, ELKTableVi
  set allows multiple selection
  */
 - (UITableView * _Nonnull (^)(BOOL))elk_setAllowsMultSelect
+NS_AVAILABLE_IOS(5_0)
 {
     return ^(BOOL AllowMult) {
         [self setAllowsMultipleSelection:AllowMult];
@@ -397,6 +408,7 @@ UITableView * _Nonnull ELK_makeTableViewBlock(UITableViewStyle style, ELKTableVi
  set allows multiple selection during editing
  */
 - (UITableView * _Nonnull (^)(BOOL))elk_setAllowsMultSelectDuringEdit
+NS_AVAILABLE_IOS(5_0)
 {
     return ^(BOOL allowMult) {
         [self setAllowsMultipleSelectionDuringEditing:allowMult];

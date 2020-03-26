@@ -285,6 +285,24 @@
     };
 }
 
+/// set border color
+- (UIView * _Nonnull (^)(UIColor * _Nonnull))elk_setBorderColor
+{
+    return ^(UIColor *borderColor) {
+        self.layer.borderColor = borderColor.CGColor;
+        return self;
+    };
+}
+
+/// set border width
+- (UIView * _Nonnull (^)(CGFloat))elk_setBorderWidth
+{
+    return ^(CGFloat borderWidth) {
+        self.layer.borderWidth = borderWidth;
+        return self;
+    };
+}
+
 /**
  set corner radius
  */

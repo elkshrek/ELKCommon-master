@@ -75,6 +75,7 @@
  @return Object Of UICollectionView
  */
 UICollectionView * _Nonnull ELK_makeCollectionView(UICollectionViewLayout *_Nonnull layout)
+NS_AVAILABLE_IOS(6_0)
 {
     UICollectionView *make = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
     return make;
@@ -88,6 +89,7 @@ UICollectionView * _Nonnull ELK_makeCollectionView(UICollectionViewLayout *_Nonn
  @return Object Of UICollectionView
  */
 UICollectionView * _Nonnull ELK_makeCollectionViewBlock(UICollectionViewLayout *_Nonnull layout, ELKCollectionViewMakeBlock _Nullable block)
+NS_AVAILABLE_IOS(6_0)
 {
     UICollectionView *make = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
     if (block) {
@@ -294,6 +296,7 @@ UICollectionView * _Nonnull ELK_makeCollectionViewBlock(UICollectionViewLayout *
 }
 
 - (UICollectionView * _Nonnull (^)(UICollectionViewLayout * _Nonnull, BOOL, ELKCollCompletionBlock _Nullable))elk_setCollectionViewLayoutCompletion
+NS_AVAILABLE_IOS(7_0)
 {
     return ^(UICollectionViewLayout *layout, BOOL animated, ELKCollCompletionBlock _Nullable completion) {
         [self setCollectionViewLayout:layout animated:animated completion:completion];
@@ -302,6 +305,7 @@ UICollectionView * _Nonnull ELK_makeCollectionViewBlock(UICollectionViewLayout *
 }
 
 - (UICollectionViewTransitionLayout * _Nonnull (^)(UICollectionViewLayout * _Nonnull, UICollectionViewLayoutInteractiveTransitionCompletion _Nullable))elk_startInteractiveTransitionToCollectionViewLayout
+NS_AVAILABLE_IOS(7_0)
 {
     return ^(UICollectionViewLayout *layout, UICollectionViewLayoutInteractiveTransitionCompletion _Nullable completion) {
         UICollectionViewTransitionLayout *transitionLayout = [self startInteractiveTransitionToCollectionViewLayout:layout completion:completion];

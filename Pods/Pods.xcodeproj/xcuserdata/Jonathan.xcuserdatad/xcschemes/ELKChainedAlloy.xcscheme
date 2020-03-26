@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "944B8C5B9BD9390C3B62A32D74DA1B8D"
-               BuildableName = "ELKChainedAlloy.framework"
+               BuildableName = "libELKChainedAlloy.a"
                BlueprintName = "ELKChainedAlloy"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

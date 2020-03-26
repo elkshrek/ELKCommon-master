@@ -76,6 +76,13 @@ NS_ASSUME_NONNULL_BEGIN
  set opaque
  */
 @property (nonatomic, strong, readonly) UIView * _Nonnull (^elk_setOpaque)(CGFloat opaque);
+
+/// set border color
+@property (nonatomic, strong, readonly) UIView * _Nonnull (^elk_setBorderColor)(UIColor *borderColor);
+
+/// set border width
+@property (nonatomic, strong, readonly) UIView * _Nonnull (^elk_setBorderWidth)(CGFloat borderWidth);
+
 /**
  set corner radius
  */

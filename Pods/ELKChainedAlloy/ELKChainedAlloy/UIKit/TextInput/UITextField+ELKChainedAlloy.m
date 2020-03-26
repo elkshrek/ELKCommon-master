@@ -75,6 +75,7 @@
  set attribute placeholder
  */
 - (UITextField * _Nonnull (^)(NSAttributedString * _Nonnull))elk_setAttrPlaceholder
+NS_AVAILABLE_IOS(6_0)
 {
     return ^(NSAttributedString * _Nonnull attrPlaceholder) {
         [self setAttributedPlaceholder:attrPlaceholder];
@@ -144,6 +145,42 @@
 {
     return ^(UITextBorderStyle bStyle) {
         [self setBorderStyle:bStyle];
+        return self;
+    };
+}
+
+/// set Keyboard Type
+- (UITextField * _Nonnull (^)(UIKeyboardType))elk_setKeyboardType
+{
+    return ^(UIKeyboardType keyboardType) {
+        [self setKeyboardType:keyboardType];
+        return self;
+    };
+}
+
+/// set keyboard appearance
+- (UITextField * _Nonnull (^)(UIKeyboardAppearance))elk_setKeyboardAppearance
+{
+    return ^(UIKeyboardAppearance kbAppearance) {
+        self.keyboardAppearance = kbAppearance;
+        return self;
+    };
+}
+
+/// set ReturnKey type
+- (UITextField * _Nonnull (^)(UIReturnKeyType))elk_setReturnKeyType
+{
+    return ^(UIReturnKeyType returnKeyType) {
+        self.returnKeyType = returnKeyType;
+        return self;
+    };
+}
+
+/// set SecureTextEntry
+- (UITextField * _Nonnull (^)(BOOL))elk_setSecureTextEntry
+{
+    return ^(BOOL secure) {
+        self.secureTextEntry = secure;
         return self;
     };
 }
@@ -218,6 +255,7 @@
  set allows editing text attributes
  */
 - (UITextField * _Nonnull (^)(BOOL))elk_setAllowEditTextAttribute
+NS_AVAILABLE_IOS(6_0)
 {
     return ^(BOOL allow) {
         [self setAllowsEditingTextAttributes:allow];
