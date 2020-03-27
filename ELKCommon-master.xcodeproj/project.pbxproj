@@ -777,7 +777,7 @@
 					"\"UIKit\"",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.stardream.chenhe.com;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elk.common;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -817,7 +817,7 @@
 					"\"UIKit\"",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.stardream.chenhe.com;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elk.common;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
