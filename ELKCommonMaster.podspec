@@ -25,19 +25,19 @@ Pod::Spec.new do |spec|
   
   
   
-#    spec.public_header_files = 'ELKCommonMaster/**/*.h'
-#    spec.source_files = 'ELKCommonMaster/**/*.{h,m}'
+    spec.public_header_files = 'ELKCommonMaster/**/*.h'
+    spec.source_files = 'ELKCommonMaster/**/*.{h,m}'
 #    spec.exclude_files = 'ELKCommonMaster/ELKModule'
 
-    spec.subspec 'ELKModule' do |modSpec|
-        modSpec.source_files = 'ELKCommonMaster/ELKModule/**/*.{h,m}'
-        modSpec.public_header_files = 'ELKCommonMaster/ELKModule/**/*.h'
-        modSpec.ios.frameworks = 'Foundation', 'UIKit'
-    end
+#    spec.subspec 'ELKModule' do |modSpec|
+#        modSpec.source_files = 'ELKCommonMaster/ELKModule/**/*.{h,m}'
+#        modSpec.public_header_files = 'ELKCommonMaster/ELKModule/**/*.h'
+#        modSpec.ios.frameworks = 'Foundation', 'UIKit'
+#    end
     
-    spec.subspec 'ELKSina' do |sinaSpec|
+#    spec.subspec 'ELKSina' do |sinaSpec|
         
-        sinaSpec.subspec 'ELKWeiboSDK' do |sinaSDKSpec|
+        spec.subspec 'ELKWeiboSDK' do |sinaSDKSpec|
             sinaSDKSpec.vendored_libraries  = 'ELKSDK/ELKWeiboSDK/libWeiboSDK.a'
             sinaSDKSpec.resources           = 'ELKSDK/ELKWeiboSDK/WeiboSDK.bundle'
             sinaSDKSpec.source_files        = 'ELKSDK/ELKWeiboSDK/**/*.{h,m}'
@@ -46,12 +46,12 @@ Pod::Spec.new do |spec|
             sinaSDKSpec.libraries           = 'sqlite3', 'z'
         end
     
-        spec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
-        spec.public_header_files = 'ELKCommonMaster/ELKSina/**/*.h'
+   #     spec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
+  #      spec.public_header_files = 'ELKCommonMaster/ELKSina/**/*.h'
 
-        sinaSpec.dependency 'ELKCommonMaster/ELKModule'
+ #       sinaSpec.dependency 'ELKCommonMaster/ELKModule'
         
-    end
+ #   end
     
     spec.subspec 'ELKTencentOpenSDK' do |tenSDKSpec|
         tenSDKSpec.ios.vendored_frameworks = 'ELKSDK/ELKTencentSDK/TencentOpenAPI.framework'
