@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = "ELKCommonMaster"
-    spec.version      = "0.0.8"
+    spec.version      = "0.0.9"
     spec.summary      = "简单易用通用三方库集成：1）微信登录、分享、支付；2）QQ登录、分享；3）新浪微博登录、分享"
 
     spec.description  = <<-DESC
@@ -51,12 +51,12 @@ Pod::Spec.new do |spec|
   #      sinaSpec.dependency 'ELKWeiboSDK'
 #    end
     
-#    spec.subspec 'ELKTencentOpenSDK' do |tenSDKSpec|
- #       tenSDKSpec.ios.vendored_frameworks = 'ELKSDK/ELKTencentSDK/TencentOpenAPI.framework'
-        
- #       tenSDKSpec.ios.frameworks      = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
- #       tenSDKSpec.libraries           = 'sqlite3', 'z', 'c++', 'iconv'
- #   end
+    spec.subspec 'ELKTencentOpenSDK' do |tenSDKSpec|
+        tenSDKSpec.ios.vendored_frameworks = 'ELKSDK/ELKTencentSDK/TencentOpenAPI.framework'
+
+        tenSDKSpec.ios.frameworks      = 'Foundation', 'UIKit', 'ImageIO', 'QuartzCore', 'CoreText', 'WebKit', 'CoreGraphics', 'CoreTelephony', 'Security', 'SystemConfiguration'
+        tenSDKSpec.libraries           = 'sqlite3', 'z', 'c++', 'iconv'
+    end
     
 #    spec.subspec 'ELKTencent' do |tenSpec|
  #       tenSpec.source_files = 'ELKCommonMaster/ELKTencent/ELKTencent/**/*.{h,m}'
