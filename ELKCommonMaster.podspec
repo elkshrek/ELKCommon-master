@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = "ELKCommonMaster"
-    spec.version      = "0.0.9"
+    spec.version      = "0.1.0"
     spec.summary      = "简单易用通用三方库集成：1）微信登录、分享、支付；2）QQ登录、分享；3）新浪微博登录、分享"
 
     spec.description  = <<-DESC
@@ -25,8 +25,9 @@ Pod::Spec.new do |spec|
   
   
   
-#    spec.public_header_files = 'ELKCommonMaster/**/*.h'
-#    spec.source_files = 'ELKCommonMaster/**/*.{h,m}'
+    spec.public_header_files = 'ELKCommonMaster/**/*.h'
+    spec.source_files = 'ELKCommonMaster/**/*.{h,m}'
+    spec.exclude_files = 'ELKCommonMaster/ELKModule'
 
     spec.subspec 'ELKModule' do |modSpec|
         modSpec.source_files = 'ELKCommonMaster/ELKModule/**/*.{h,m}'
