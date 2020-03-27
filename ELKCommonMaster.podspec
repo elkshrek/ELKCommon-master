@@ -44,8 +44,8 @@ Pod::Spec.new do |spec|
     end
     
 #    spec.subspec 'ELKSina' do |sinaSpec|
-        spec.source_files = 'ELKCommonMaster/ELKSina/ELKSina/**/*.{h,m}'
-        spec.public_header_files = 'ELKCommonMaster/ELKSina/ELKSina/**/*.h'
+#        spec.source_files = 'ELKCommonMaster/ELKSina/ELKSina/**/*.{h,m}'
+#        spec.public_header_files = 'ELKCommonMaster/ELKSina/ELKSina/**/*.h'
 
  #       sinaSpec.dependency 'ELKCommonMaster/ELKModule'
   #      sinaSpec.dependency 'ELKWeiboSDK'
@@ -73,11 +73,13 @@ Pod::Spec.new do |spec|
 #        tenSDKSpec.libraries     = 'sqlite3', 'z', 'c++', 'iconv'
 #    end
     
-#    spec.subspec 'ELKWeChat' do |weSpec|
-#       weSpec.source_files = 'ELKCommonMaster/ELKWeChat/ELKWeChat/**/*.{h,m}'
-#        weSpec.public_header_files = 'ELKCommonMaster/ELKWeChat/ELKWeChat/**/*.h'
+    spec.subspec 'ELKWeChat' do |weSpec|
+        weSpec.source_files = 'ELKCommonMaster/ELKWeChat/ELKWeChat/**/*.{h,m}'
+        weSpec.public_header_files = 'ELKCommonMaster/ELKWeChat/ELKWeChat/**/*.h'
 
-#        weSpec.dependency 'ELKCommonMaster/ELKModule'
-#    end
+        weSpec.dependency 'ELKCommonMaster/ELKModule'
+        weSpec.dependency 'WechatOpenSDK'
+        
+    end
     
 end
