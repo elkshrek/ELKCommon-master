@@ -27,13 +27,13 @@ Pod::Spec.new do |spec|
   
     spec.public_header_files = 'ELKCommonMaster/**/*.h'
     spec.source_files = 'ELKCommonMaster/**/*.{h,m}'
-    spec.exclude_files = 'ELKCommonMaster/ELKModule'
+#    spec.exclude_files = 'ELKCommonMaster/ELKModule'
 
-    spec.subspec 'ELKModule' do |modSpec|
-        modSpec.source_files = 'ELKCommonMaster/ELKModule/**/*.{h,m}'
-        modSpec.public_header_files = 'ELKCommonMaster/ELKModule/**/*.h'
-        modSpec.ios.frameworks = 'Foundation', 'UIKit'
-    end
+#    spec.subspec 'ELKModule' do |modSpec|
+#        modSpec.source_files = 'ELKCommonMaster/ELKModule/**/*.{h,m}'
+#        modSpec.public_header_files = 'ELKCommonMaster/ELKModule/**/*.h'
+#        modSpec.ios.frameworks = 'Foundation', 'UIKit'
+#    end
     
     spec.subspec 'ELKWeiboSDK' do |sinaSDKSpec|
         sinaSDKSpec.vendored_libraries  = 'ELKSDK/ELKWeiboSDK/libWeiboSDK.a'
