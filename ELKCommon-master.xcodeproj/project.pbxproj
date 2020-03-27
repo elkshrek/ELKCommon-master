@@ -254,7 +254,9 @@
 		AB8492B9242CC04C006C6B25 /* ELKTencent */ = {
 			isa = PBXGroup;
 			children = (
-				AB84931D242CEE27006C6B25 /* ELKTencent */,
+				AB8492BA242CC04C006C6B25 /* ELKTencentSDKMaster.h */,
+				AB8492BB242CC04C006C6B25 /* ELKTencentSDKMaster.m */,
+				AB8492BC242CC04C006C6B25 /* Model */,
 			);
 			path = ELKTencent;
 			sourceTree = "<group>";
@@ -273,7 +275,9 @@
 		AB8492C2242CC04C006C6B25 /* ELKWeChat */ = {
 			isa = PBXGroup;
 			children = (
-				AB84931E242CEE3F006C6B25 /* ELKWeChat */,
+				AB8492C3242CC04C006C6B25 /* ELKWeChatSDKMaster.h */,
+				AB8492CB242CC04C006C6B25 /* ELKWeChatSDKMaster.m */,
+				AB8492C4242CC04C006C6B25 /* Model */,
 			);
 			path = ELKWeChat;
 			sourceTree = "<group>";
@@ -294,7 +298,9 @@
 		AB8492CC242CC04C006C6B25 /* ELKSina */ = {
 			isa = PBXGroup;
 			children = (
-				AB84931C242CEE08006C6B25 /* ELKSina */,
+				AB8492D3242CC04C006C6B25 /* ELKSinaSDKMaster.h */,
+				AB8492CD242CC04C006C6B25 /* ELKSinaSDKMaster.m */,
+				AB8492CE242CC04C006C6B25 /* Model */,
 			);
 			path = ELKSina;
 			sourceTree = "<group>";
@@ -308,36 +314,6 @@
 				AB8492D0242CC04C006C6B25 /* ELKSinaUserInfo.m */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		AB84931C242CEE08006C6B25 /* ELKSina */ = {
-			isa = PBXGroup;
-			children = (
-				AB8492D3242CC04C006C6B25 /* ELKSinaSDKMaster.h */,
-				AB8492CD242CC04C006C6B25 /* ELKSinaSDKMaster.m */,
-				AB8492CE242CC04C006C6B25 /* Model */,
-			);
-			path = ELKSina;
-			sourceTree = "<group>";
-		};
-		AB84931D242CEE27006C6B25 /* ELKTencent */ = {
-			isa = PBXGroup;
-			children = (
-				AB8492BA242CC04C006C6B25 /* ELKTencentSDKMaster.h */,
-				AB8492BB242CC04C006C6B25 /* ELKTencentSDKMaster.m */,
-				AB8492BC242CC04C006C6B25 /* Model */,
-			);
-			path = ELKTencent;
-			sourceTree = "<group>";
-		};
-		AB84931E242CEE3F006C6B25 /* ELKWeChat */ = {
-			isa = PBXGroup;
-			children = (
-				AB8492C3242CC04C006C6B25 /* ELKWeChatSDKMaster.h */,
-				AB8492CB242CC04C006C6B25 /* ELKWeChatSDKMaster.m */,
-				AB8492C4242CC04C006C6B25 /* Model */,
-			);
-			path = ELKWeChat;
 			sourceTree = "<group>";
 		};
 		AB849333242CF338006C6B25 /* ELKSDK */ = {

@@ -25,15 +25,15 @@ Pod::Spec.new do |spec|
   
   
   
-    spec.public_header_files = 'ELKCommonMaster/**/*.h'
-    spec.source_files = 'ELKCommonMaster/**/*.{h,m}'
+#    spec.public_header_files = 'ELKCommonMaster/**/*.h'
+#    spec.source_files = 'ELKCommonMaster/**/*.{h,m}'
 #    spec.exclude_files = 'ELKCommonMaster/ELKModule'
 
-#    spec.subspec 'ELKModule' do |modSpec|
-#        modSpec.source_files = 'ELKCommonMaster/ELKModule/**/*.{h,m}'
-#        modSpec.public_header_files = 'ELKCommonMaster/ELKModule/**/*.h'
-#        modSpec.ios.frameworks = 'Foundation', 'UIKit'
-#    end
+    spec.subspec 'ELKModule' do |modSpec|
+        modSpec.source_files = 'ELKCommonMaster/ELKModule/**/*.{h,m}'
+        modSpec.public_header_files = 'ELKCommonMaster/ELKModule/**/*.h'
+        modSpec.ios.frameworks = 'Foundation', 'UIKit'
+    end
     
     spec.subspec 'ELKWeiboSDK' do |sinaSDKSpec|
         sinaSDKSpec.vendored_libraries  = 'ELKSDK/ELKWeiboSDK/libWeiboSDK.a'
@@ -45,8 +45,8 @@ Pod::Spec.new do |spec|
     end
     
 #    spec.subspec 'ELKSina' do |sinaSpec|
-#        spec.source_files = 'ELKCommonMaster/ELKSina/ELKSina/**/*.{h,m}'
-#        spec.public_header_files = 'ELKCommonMaster/ELKSina/ELKSina/**/*.h'
+#        spec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
+#        spec.public_header_files = 'ELKCommonMaster/ELKSina/**/*.h'
 
  #       sinaSpec.dependency 'ELKCommonMaster/ELKModule'
   #      sinaSpec.dependency 'ELKWeiboSDK'
@@ -60,8 +60,8 @@ Pod::Spec.new do |spec|
     end
     
 #    spec.subspec 'ELKTencent' do |tenSpec|
- #       tenSpec.source_files = 'ELKCommonMaster/ELKTencent/ELKTencent/**/*.{h,m}'
- #       tenSpec.public_header_files = 'ELKCommonMaster/ELKTencent/ELKTencent/**/*.h'
+ #       tenSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
+ #       tenSpec.public_header_files = 'ELKCommonMaster/ELKTencent/**/*.h'
         
  #       tenSpec.dependency 'ELKCommonMaster/ELKModule'
  #   end
@@ -75,8 +75,8 @@ Pod::Spec.new do |spec|
     end
     
 #    spec.subspec 'ELKWeChat' do |weSpec|
-#        weSpec.source_files = 'ELKCommonMaster/ELKWeChat/ELKWeChat/**/*.{h,m}'
-#        weSpec.public_header_files = 'ELKCommonMaster/ELKWeChat/ELKWeChat/**/*.h'
+#        weSpec.source_files = 'ELKCommonMaster/ELKWeChat/**/*.{h,m}'
+#        weSpec.public_header_files = 'ELKCommonMaster/ELKWeChat/**/*.h'
 
 #        weSpec.dependency 'ELKCommonMaster/ELKModule'
         
