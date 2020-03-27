@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = "ELKCommonMaster"
-    spec.version      = "0.1.0"
+    spec.version      = "0.1.1"
     spec.summary      = "简单易用通用三方库集成：1）微信登录、分享、支付；2）QQ登录、分享；3）新浪微博登录、分享"
 
     spec.description  = <<-DESC
@@ -35,22 +35,23 @@ Pod::Spec.new do |spec|
         modSpec.ios.frameworks = 'Foundation', 'UIKit'
     end
     
-    spec.subspec 'ELKWeiboSDK' do |sinaSDKSpec|
-        sinaSDKSpec.vendored_libraries  = 'ELKSDK/ELKWeiboSDK/libWeiboSDK.a'
-        sinaSDKSpec.resources           = 'ELKSDK/ELKWeiboSDK/WeiboSDK.bundle'
-        sinaSDKSpec.source_files        = 'ELKSDK/ELKWeiboSDK/**/*.{h,m}'
+    spec.subspec 'ELKSina' do |sinaSpec|
         
-        sinaSDKSpec.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
-        sinaSDKSpec.libraries           = 'sqlite3', 'z'
-    end
+        sinaSpec.subspec 'ELKWeiboSDK' do |sinaSDKSpec|
+            sinaSDKSpec.vendored_libraries  = 'ELKSDK/ELKWeiboSDK/libWeiboSDK.a'
+            sinaSDKSpec.resources           = 'ELKSDK/ELKWeiboSDK/WeiboSDK.bundle'
+            sinaSDKSpec.source_files        = 'ELKSDK/ELKWeiboSDK/**/*.{h,m}'
+            
+            sinaSDKSpec.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
+            sinaSDKSpec.libraries           = 'sqlite3', 'z'
+        end
     
-#    spec.subspec 'ELKSina' do |sinaSpec|
-#        spec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
-#        spec.public_header_files = 'ELKCommonMaster/ELKSina/**/*.h'
+        spec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
+        spec.public_header_files = 'ELKCommonMaster/ELKSina/**/*.h'
 
- #       sinaSpec.dependency 'ELKCommonMaster/ELKModule'
-  #      sinaSpec.dependency 'ELKWeiboSDK'
-#    end
+        sinaSpec.dependency 'ELKCommonMaster/ELKModule'
+        
+    end
     
     spec.subspec 'ELKTencentOpenSDK' do |tenSDKSpec|
         tenSDKSpec.ios.vendored_frameworks = 'ELKSDK/ELKTencentSDK/TencentOpenAPI.framework'
