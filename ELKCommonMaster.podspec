@@ -20,8 +20,8 @@ Pod::Spec.new do |spec|
     spec.source       = { :git => "https://github.com/elkshrek/ELKCommonMaster.git", :tag => "#{spec.version}" }
   
 #    spec.public_header_files = 'ELKCommonMaster/ELKSina/**/*.h'
-    spec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
-    spec.dependency 'ELKWeiboSDK', '~> 3.2.6'
+    spec.source_files = 'ELKCommonMaster/ELKWeChat/**/*.{h,m}'
+    spec.dependency 'libWeChatSDK'
 
     spec.subspec 'ELKModule' do |modSpec|
         modSpec.source_files = 'ELKCommonMaster/ELKModule/**/*.{h,m}'
