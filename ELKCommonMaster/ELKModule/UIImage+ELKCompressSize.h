@@ -1,5 +1,5 @@
 //
-//  UIImage+ELKMCommon.h
+//  UIImage+ELKCompressSize.h
 //  ELKCommon-master
 //
 //  Created by wing on 2019/10/29.

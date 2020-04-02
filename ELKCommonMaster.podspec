@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = 'ELKCommonMaster'
-    spec.version      = '0.1.4'
+    spec.version      = '0.2.0'
     spec.summary      = '简单易用通用三方库集成：1）微信登录、分享、支付；2）QQ登录、分享；3）新浪微博登录、分享'
     spec.description  = <<-DESC
                     简单易用通用三方库集成：
@@ -19,6 +19,9 @@ Pod::Spec.new do |spec|
   
     spec.source       = { :git => "https://github.com/elkshrek/ELKCommon-master.git", :tag => "#{spec.version}" }
     
+    spec.frameworks = 'Security', 'SystemConfiguration', 'CoreGraphics', 'CoreTelephony', 'WebKit', 'Foundation', 'UIKit'
+    spec.libraries   = 'iconv', 'z', 'c++', 'sqlite3'
+    
 
     spec.subspec 'ELKModule' do |modSpec|
         modSpec.source_files = 'ELKCommonMaster/ELKModule/**/*.{h,m}'
@@ -30,11 +33,7 @@ Pod::Spec.new do |spec|
     spec.subspec 'ELKTencent' do |tenSpec|
         tenSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
         
-        tenSpec.dependency 'ELKCommonMaster/ELKModule'
         tenSpec.dependency 'ELKTencentOpenSDK'
-        
-        tenSpec.frameworks = 'Security', 'SystemConfiguration', 'CoreGraphics', 'CoreTelephony', 'WebKit'
-        tenSpec.libraries   = 'iconv', 'z', 'c++', 'sqlite3'
     end
 
     
