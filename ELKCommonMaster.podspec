@@ -11,17 +11,17 @@ Pod::Spec.new do |spec|
                     3）新浪微博登录、分享功能。
                    DESC
 
-    spec.homepage     = 'https://github.com/elkshrek/ELKCommonMaster'
+    spec.homepage     = 'https://github.com/elkshrek/ELKCommon-master'
     spec.license      = 'MIT'
     spec.author       = { "Jonathan" => "Jonathan_dk@163.com" }
     spec.requires_arc = true
     spec.platform     = :ios, '9.0'
   
-    spec.source       = { :git => "https://github.com/elkshrek/ELKCommonMaster.git", :tag => "#{spec.version}" }
+    spec.source       = { :git => "https://github.com/elkshrek/ELKCommon-master.git", :tag => "#{spec.version}" }
   
 #    spec.public_header_files = 'ELKCommonMaster/ELKSina/**/*.h'
     spec.source_files = 'ELKCommonMaster/ELKWeChat/**/*.{h,m}'
-    spec.dependency 'libWeChatSDK'
+    spec.dependency 'WechatOpenSDK', '~> 1.8.7'
 
     spec.subspec 'ELKModule' do |modSpec|
         modSpec.source_files = 'ELKCommonMaster/ELKModule/**/*.{h,m}'
