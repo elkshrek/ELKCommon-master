@@ -7,8 +7,6 @@
 //
 
 #import "ARootViewController.h"
-//#import <Masonry/Masonry.h>
-#import "ELKCommonMaster.h"
 
 
 @interface ARootViewController ()
@@ -36,41 +34,41 @@
 
 - (void)wcAuthAction:(UIButton *)sender
 {
-    [ELKWeChatSDKMaster elk_weChatAuthLoginBlock:^(ELKWeChatUserInfo * _Nullable userInfo, SendAuthResp * _Nonnull authResp, ELKWeChatAuthRespStatus authStatus) {
-        if (authStatus == ELKWeAuthRespSucData) {
-            NSLog(@"WeChat logged in successfully and obtained user information : %@", userInfo);
-        } else if (authStatus == ELKWeAuthRespSuccess) {
-            NSLog(@"WeChat logged in successfully, but failed to get user information");
-        } else if (authStatus == ELKWeAuthRespCancel) {
-            NSLog(@"User canceled WeChat login");
-        } else if (authStatus == ELKWeAuthRespDeny) {
-            NSLog(@"WeChat authorized login denied");
-        } else {
-            NSLog(@"WeChat login failed");
-        }
-    }];
+//    [ELKWeChatSDKMaster elk_weChatAuthLoginBlock:^(ELKWeChatUserInfo * _Nullable userInfo, SendAuthResp * _Nonnull authResp, ELKWeChatAuthRespStatus authStatus) {
+//        if (authStatus == ELKWeAuthRespSucData) {
+//            NSLog(@"WeChat logged in successfully and obtained user information : %@", userInfo);
+//        } else if (authStatus == ELKWeAuthRespSuccess) {
+//            NSLog(@"WeChat logged in successfully, but failed to get user information");
+//        } else if (authStatus == ELKWeAuthRespCancel) {
+//            NSLog(@"User canceled WeChat login");
+//        } else if (authStatus == ELKWeAuthRespDeny) {
+//            NSLog(@"WeChat authorized login denied");
+//        } else {
+//            NSLog(@"WeChat login failed");
+//        }
+//    }];
 }
 - (void)wcShareAction:(UIButton *)sender
 {
-    ELKWeChatShareModel *shareModel = [[ELKWeChatShareModel alloc] init];
-    shareModel.title = @"ELKCommonMaster";
-    shareModel.desString = @"Share To WeChat";
-    shareModel.shareLink = @"https://github.com/elkshrek/ELKCommon-master";
-    shareModel.thumbImage = [UIImage imageNamed:@"wing"];
-    
-    [ELKWeChatSDKMaster elk_weChatShareWebPage:shareModel sence:ELKWeSceneSession block:^(ELKWeChatShareRespStatus shareStatus) {
-        if (shareStatus == ELKWeShareRespSuccess) {
-            NSLog(@"WeChat Share Success");
-        } else if (shareStatus == ELKWeShareRespCancel) {
-            NSLog(@"User Canceled WeChat Share");
-        } else {
-            NSLog(@"WeChat Share failed");
-        }
-    }];
+//    ELKWeChatShareModel *shareModel = [[ELKWeChatShareModel alloc] init];
+//    shareModel.title = @"ELKCommonMaster";
+//    shareModel.desString = @"Share To WeChat";
+//    shareModel.shareLink = @"https://github.com/elkshrek/ELKCommon-master";
+//    shareModel.thumbImage = [UIImage imageNamed:@"wing"];
+//    
+//    [ELKWeChatSDKMaster elk_weChatShareWebPage:shareModel sence:ELKWeSceneSession block:^(ELKWeChatShareRespStatus shareStatus) {
+//        if (shareStatus == ELKWeShareRespSuccess) {
+//            NSLog(@"WeChat Share Success");
+//        } else if (shareStatus == ELKWeShareRespCancel) {
+//            NSLog(@"User Canceled WeChat Share");
+//        } else {
+//            NSLog(@"WeChat Share failed");
+//        }
+//    }];
 }
 - (void)qqAuthAction:(UIButton *)sender
 {
-    [ELKTencentSDKMaster elk_tencentAuthLoginBlock:^(ELKTencentUserInfo * _Nullable userInfo, TencentOAuth * _Nonnull tenAuth, ELKTenAuthRespStatus authStatus) {
+    [ELKTencentSDKMaster elk_tencentAuthLoginBlock:^(ELKTencentUserInfo * _Nullable userInfo, ELKTenAuthRespStatus authStatus) {
         if (authStatus == ELKTenAuthSucData) {
             NSLog(@"QQ logged in successfully and obtained user information : %@", userInfo);
         } else if (authStatus == ELKTenAuthSuccess) {
@@ -102,36 +100,36 @@
 }
 - (void)sinaAuthAction:(UIButton *)sender
 {
-    [ELKSinaSDKMaster elk_sinaAuthLoginBlock:^(ELKSinaUserInfo * _Nullable userInfo, WBAuthorizeResponse * _Nonnull authResp, ELKSinaAuthRespStatus authStatus) {
-        if (authStatus == ELKSinaAuthSucData) {
-            NSLog(@"Sina logged in successfully and obtained user information : %@", userInfo);
-        } else if (authStatus == ELKSinaAuthSuccess) {
-            NSLog(@"Sina logged in successfully, but failed to get user information");
-        } else if (authStatus == ELKSinaAuthCancel) {
-            NSLog(@"User canceled Sina login");
-        } else {
-            NSLog(@"Sina login failed");
-        }
-    }];
+//    [ELKSinaSDKMaster elk_sinaAuthLoginBlock:^(ELKSinaUserInfo * _Nullable userInfo, WBAuthorizeResponse * _Nonnull authResp, ELKSinaAuthRespStatus authStatus) {
+//        if (authStatus == ELKSinaAuthSucData) {
+//            NSLog(@"Sina logged in successfully and obtained user information : %@", userInfo);
+//        } else if (authStatus == ELKSinaAuthSuccess) {
+//            NSLog(@"Sina logged in successfully, but failed to get user information");
+//        } else if (authStatus == ELKSinaAuthCancel) {
+//            NSLog(@"User canceled Sina login");
+//        } else {
+//            NSLog(@"Sina login failed");
+//        }
+//    }];
 }
 - (void)sinaShareAction:(UIButton *)sender
 {
-    ELKSinaShareModel *shareModel = [[ELKSinaShareModel alloc] init];
-    shareModel.title = @"ELKCommonMaster";
-    shareModel.desString = @"Share To Sina";
-    shareModel.shareLink = @"https://github.com/elkshrek/ELKCommon-master";
-    shareModel.thumbImage = [UIImage imageNamed:@"wing"];
-    shareModel.text = @"";
-    
-    [ELKSinaSDKMaster elk_sinaShareInfo:shareModel shareBlock:^(ELKSinaShareRespStatus shareStatus) {
-        if (shareStatus == ELKSinaShareRespSuccess) {
-            NSLog(@"Sina Share Success");
-        } else if (shareStatus == ELKSinaShareRespCancel) {
-            NSLog(@"User Canceled Sina Share");
-        } else {
-            NSLog(@"Sina Share failed");
-        }
-    }];
+//    ELKSinaShareModel *shareModel = [[ELKSinaShareModel alloc] init];
+//    shareModel.title = @"ELKCommonMaster";
+//    shareModel.desString = @"Share To Sina";
+//    shareModel.shareLink = @"https://github.com/elkshrek/ELKCommon-master";
+//    shareModel.thumbImage = [UIImage imageNamed:@"wing"];
+//    shareModel.text = @"";
+//    
+//    [ELKSinaSDKMaster elk_sinaShareInfo:shareModel shareBlock:^(ELKSinaShareRespStatus shareStatus) {
+//        if (shareStatus == ELKSinaShareRespSuccess) {
+//            NSLog(@"Sina Share Success");
+//        } else if (shareStatus == ELKSinaShareRespCancel) {
+//            NSLog(@"User Canceled Sina Share");
+//        } else {
+//            NSLog(@"Sina Share failed");
+//        }
+//    }];
     
 }
 

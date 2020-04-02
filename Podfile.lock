@@ -4,21 +4,25 @@ PODS:
     - ELKChainedAlloy/UIKit (= 1.1.4)
   - ELKChainedAlloy/Foundation (1.1.4)
   - ELKChainedAlloy/UIKit (1.1.4)
+  - ELKTencentOpenSDK (3.3.7.1)
   - Masonry (1.1.0)
 
 DEPENDENCIES:
   - ELKChainedAlloy
+  - ELKTencentOpenSDK
   - Masonry
 
 SPEC REPOS:
   trunk:
     - ELKChainedAlloy
+    - ELKTencentOpenSDK
     - Masonry
 
 SPEC CHECKSUMS:
   ELKChainedAlloy: f4524fc982d7f95d3646a6f2ac5d9e6e476a413d
+  ELKTencentOpenSDK: 9f8daec306286c57e49a3aacbc39e016adb7cc95
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: 9133f01c1a69428b4c51b3e251d1316d7b906619
+PODFILE CHECKSUM: 939b15efe49ce98d848977e70a0cb6ac2bc02530
 
 COCOAPODS: 1.9.0.beta.2

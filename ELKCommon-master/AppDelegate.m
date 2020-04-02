@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "ARootViewController.h"
-#import "ELKCommonMaster.h"
 
 
 @interface AppDelegate ()
@@ -28,9 +27,9 @@
     
     
     // WeChat
-    [ELKWeChatSDKMaster elk_weChatRegister:ELKWeChatAppId withSecret:ELKWeChatSecret universalLink:ELKWeChatUniLink];
+//    [ELKWeChatSDKMaster elk_weChatRegister:ELKWeChatAppId withSecret:ELKWeChatSecret universalLink:ELKWeChatUniLink];
     // Sina
-    [ELKSinaSDKMaster elk_sinaRegister:ELKSinaAppId debug:YES];
+//    [ELKSinaSDKMaster elk_sinaRegister:ELKSinaAppId debug:YES];
     // Tencent
     [ELKTencentSDKMaster elk_tencentRegister:ELKTencentAppId];
     
@@ -41,15 +40,36 @@
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
 {
-    return [ELKCommonMaster elk_commonApplication:app openUrl:url];
+    if ([ELKTencentSDKMaster elk_tenAuthCheckUrl:url]) {
+        // Tencent Auth
+        return [ELKTencentSDKMaster elk_tenAuthHandleOpenUrl:url];
+    } else if ([ELKTencentSDKMaster elk_tenInterCheckUrl:url]) {
+        // Tencent Share
+        return [ELKTencentSDKMaster elk_tenInterHandleOpenUrl:url];
+    }
+    return NO;
 }
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
-    return [ELKCommonMaster elk_commonApplication:application openUrl:url];
+    if ([ELKTencentSDKMaster elk_tenAuthCheckUrl:url]) {
+        // Tencent Auth
+        return [ELKTencentSDKMaster elk_tenAuthHandleOpenUrl:url];
+    } else if ([ELKTencentSDKMaster elk_tenInterCheckUrl:url]) {
+        // Tencent Share
+        return [ELKTencentSDKMaster elk_tenInterHandleOpenUrl:url];
+    }
+    return NO;
 }
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
-    return [ELKCommonMaster elk_commonApplication:application openUrl:url];
+    if ([ELKTencentSDKMaster elk_tenAuthCheckUrl:url]) {
+        // Tencent Auth
+        return [ELKTencentSDKMaster elk_tenAuthHandleOpenUrl:url];
+    } else if ([ELKTencentSDKMaster elk_tenInterCheckUrl:url]) {
+        // Tencent Share
+        return [ELKTencentSDKMaster elk_tenInterHandleOpenUrl:url];
+    }
+    return NO;
 }
 
 

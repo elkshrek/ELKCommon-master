@@ -7,16 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <TencentOpenAPI/TencentOAuth.h>
-#import <TencentOpenAPI/sdkdef.h>
-#import <TencentOpenAPI/QQApiInterface.h>
 #import "ELKTencentShareModel.h"
 #import "ELKTencentUserInfo.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 // Tencent登录授权响应
-typedef void(^ELKTencentAuthBlock)(ELKTencentUserInfo *_Nullable userInfo, TencentOAuth *_Nonnull tenAuth, ELKTenAuthRespStatus authStatus);
+typedef void(^ELKTencentAuthBlock)(ELKTencentUserInfo *_Nullable userInfo, ELKTenAuthRespStatus authStatus);
 // Tencent登出响应
 typedef void(^ELKTencentLogoutBlock)(void);
 // Tencent分享响应

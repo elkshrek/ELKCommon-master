@@ -7,7 +7,9 @@
 //
 
 #import "ELKTencentSDKMaster.h"
-
+#import <TencentOpenAPI/TencentOAuth.h>
+#import <TencentOpenAPI/sdkdef.h>
+#import <TencentOpenAPI/QQApiInterface.h>
 
 @interface ELKTencentSDKMaster ()<TencentSessionDelegate,TencentLoginDelegate,QQApiInterfaceDelegate>
 
@@ -154,14 +156,14 @@
         if (cancelled) {
             resStatus = ELKTenAuthCancel;
         }
-        self.authBlock(nil, self.tencentOauth, resStatus);
+        self.authBlock(nil, resStatus);
     }
 }
 // 登录网络异常
 - (void)tencentDidNotNetWork
 {
     if (self.authBlock) {
-        self.authBlock(nil, self.tencentOauth, ELKTenAuthFailure);
+        self.authBlock(nil, ELKTenAuthFailure);
     }
 }
 
@@ -187,11 +189,11 @@
             userInfo.city = response.jsonResponse[@"city"] ?: @"";
             userInfo.year = response.jsonResponse[@"year"] ?: @"";
             userInfo.province = response.jsonResponse[@"province"] ?: @"";
-            self.authBlock(userInfo, self.tencentOauth, ELKTenAuthSucData);
+            self.authBlock(userInfo, ELKTenAuthSucData);
         }
     } else {
         if (self.authBlock) {
-            self.authBlock(nil, self.tencentOauth, ELKTenAuthSuccess);
+            self.authBlock(nil, ELKTenAuthSuccess);
         }
     }
 }
