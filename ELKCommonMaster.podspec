@@ -18,6 +18,7 @@ Pod::Spec.new do |spec|
     spec.platform     = :ios, '9.0'
   
     spec.source       = { :git => "https://github.com/elkshrek/ELKCommon-master.git", :tag => "#{spec.version}" }
+    
 
     spec.subspec 'ELKModule' do |modSpec|
         modSpec.source_files = 'ELKCommonMaster/ELKModule/**/*.{h,m}'
@@ -31,6 +32,9 @@ Pod::Spec.new do |spec|
         
         tenSpec.dependency 'ELKCommonMaster/ELKModule'
         tenSpec.dependency 'ELKTencentOpenSDK'
+        
+        tenSpec.frameworks = 'Security', 'SystemConfiguration', 'CoreGraphics', 'CoreTelephony', 'WebKit'
+        tenSpec.libraries   = 'iconv', 'z', 'c++', 'sqlite3'
     end
 
     
