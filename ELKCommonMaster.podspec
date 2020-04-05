@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = 'ELKCommonMaster'
-    spec.version      = '0.2.0'
+    spec.version      = '0.2.1'
     spec.summary      = '简单易用通用三方库集成：1）微信登录、分享、支付；2）QQ登录、分享；3）新浪微博登录、分享'
     spec.description  = <<-DESC
                     简单易用通用三方库集成：
@@ -32,6 +32,7 @@ Pod::Spec.new do |spec|
     
     spec.subspec 'ELKTencent' do |tenSpec|
         tenSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
+        tenSpec.public_header_files = 'ELKCommonMaster/ELKTencent/**/*.h'
         
         tenSpec.dependency 'ELKTencentOpenSDK'
     end

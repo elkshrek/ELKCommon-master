@@ -146,7 +146,7 @@
 		AB2DC835236C472F0037D043 = {
 			isa = PBXGroup;
 			children = (
-				AB2DC840236C47300037D043 /* ELKCommon-master */,
+				AB2DC840236C47300037D043 /* ELKCommonExample */,
 				AB2DC85C236C47310037D043 /* ELKCommon-masterTests */,
 				AB2DC867236C47310037D043 /* ELKCommon-masterUITests */,
 				AB2DC83F236C47300037D043 /* Products */,
@@ -165,7 +165,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AB2DC840236C47300037D043 /* ELKCommon-master */ = {
+		AB2DC840236C47300037D043 /* ELKCommonExample */ = {
 			isa = PBXGroup;
 			children = (
 				AB2DC841236C47300037D043 /* AppDelegate.h */,
@@ -176,7 +176,7 @@
 				ABF0C0B3236D7EAA00DCEC8D /* Others */,
 				ABF0C0B4236D7EC300DCEC8D /* Resources */,
 			);
-			path = "ELKCommon-master";
+			path = ELKCommonExample;
 			sourceTree = "<group>";
 		};
 		AB2DC85C236C47310037D043 /* ELKCommon-masterTests */ = {
@@ -618,8 +618,8 @@
 					"$(PROJECT_DIR)/ELKSDK/ELKTencentSDK",
 					"$(PROJECT_DIR)/ELKSDK/TencentOpenSDK",
 				);
-				GCC_PREFIX_HEADER = "ELKCommon-master/Others/ELKPrefixHeader.pch";
-				INFOPLIST_FILE = "ELKCommon-master/Others/Info.plist";
+				GCC_PREFIX_HEADER = ELKCommonExample/Others/ELKPrefixHeader.pch;
+				INFOPLIST_FILE = ELKCommonExample/Others/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -660,8 +660,8 @@
 					"$(PROJECT_DIR)/ELKSDK/ELKTencentSDK",
 					"$(PROJECT_DIR)/ELKSDK/TencentOpenSDK",
 				);
-				GCC_PREFIX_HEADER = "ELKCommon-master/Others/ELKPrefixHeader.pch";
-				INFOPLIST_FILE = "ELKCommon-master/Others/Info.plist";
+				GCC_PREFIX_HEADER = ELKCommonExample/Others/ELKPrefixHeader.pch;
+				INFOPLIST_FILE = ELKCommonExample/Others/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
