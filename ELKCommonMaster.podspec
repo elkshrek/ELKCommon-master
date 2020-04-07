@@ -47,8 +47,10 @@ Pod::Spec.new do |spec|
 
     
     spec.subspec 'ELKSinaSDK' do |ews|
-        ews.ios.vendored_frameworks = "ELKCommonSDK/ELKSinaSDK/*.framework"
-        ews.resources           = "ELKCommonSDK/ELKSinaSDK/WeiboSDK.bundle"
+        ews.vendored_libraries  = "ELKCommonSDK/ELKSinaSDK/*.a"
+        ews.resources           = "ELKCommonSDK/ELKSinaSDK/*.bundle"
+        ews.source_files        = "ELKCommonSDK/ELKSinaSDK/**/*.{h,m}"
+        ews.public_header_files = "ELKCommonSDK/ELKSinaSDK/**/*.h"
         
         ews.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
         ews.libraries           = 'sqlite3', 'z'

@@ -11,8 +11,8 @@
 		AB07BB3B243C2FA70082CF88 /* ELKSinaSDKMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07BB34243C2FA70082CF88 /* ELKSinaSDKMaster.m */; };
 		AB07BB3C243C2FA70082CF88 /* ELKSinaUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07BB37243C2FA70082CF88 /* ELKSinaUserInfo.m */; };
 		AB07BB3D243C2FA70082CF88 /* ELKSinaShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07BB38243C2FA70082CF88 /* ELKSinaShareModel.m */; };
-		AB07BB43243C30BE0082CF88 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB07BB3F243C30BE0082CF88 /* WeiboSDK.bundle */; };
-		AB07BBB3243C4E780082CF88 /* ELKWeiboSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB07BBB2243C4E780082CF88 /* ELKWeiboSDK.framework */; };
+		AB07BBBE243C6FFB0082CF88 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB07BBBA243C6FFB0082CF88 /* WeiboSDK.bundle */; };
+		AB07BBBF243C6FFB0082CF88 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB07BBBB243C6FFB0082CF88 /* libWeiboSDK.a */; };
 		AB2DC843236C47300037D043 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2DC842236C47300037D043 /* AppDelegate.m */; };
 		AB2DC849236C47300037D043 /* ARootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2DC848236C47300037D043 /* ARootViewController.m */; };
 		AB2DC84C236C47300037D043 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2DC84A236C47300037D043 /* Main.storyboard */; };
@@ -68,8 +68,10 @@
 		AB07BB38243C2FA70082CF88 /* ELKSinaShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKSinaShareModel.m; sourceTree = "<group>"; };
 		AB07BB39243C2FA70082CF88 /* ELKSinaUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKSinaUserInfo.h; sourceTree = "<group>"; };
 		AB07BB3A243C2FA70082CF88 /* ELKSinaSDKMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKSinaSDKMaster.h; sourceTree = "<group>"; };
-		AB07BB3F243C30BE0082CF88 /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
-		AB07BBB2243C4E780082CF88 /* ELKWeiboSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ELKWeiboSDK.framework; sourceTree = "<group>"; };
+		AB07BBBA243C6FFB0082CF88 /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
+		AB07BBBB243C6FFB0082CF88 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
+		AB07BBBC243C6FFB0082CF88 /* WBHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHttpRequest.h; sourceTree = "<group>"; };
+		AB07BBBD243C6FFB0082CF88 /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
 		AB2DC83E236C47300037D043 /* ELKCommon-master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ELKCommon-master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2DC841236C47300037D043 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AB2DC842236C47300037D043 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -125,8 +127,8 @@
 				ABE0C7EA236DEF9800D42841 /* Foundation.framework in Frameworks */,
 				ABE0C7E8236DEF0D00D42841 /* WebKit.framework in Frameworks */,
 				ABE0C7E6236DEDCD00D42841 /* CoreGraphics.framework in Frameworks */,
-				AB07BBB3243C4E780082CF88 /* ELKWeiboSDK.framework in Frameworks */,
 				ABE0C7E4236DEDC200D42841 /* CoreTelephony.framework in Frameworks */,
+				AB07BBBF243C6FFB0082CF88 /* libWeiboSDK.a in Frameworks */,
 				ABE0C7E2236DEDB600D42841 /* Security.framework in Frameworks */,
 				ABE0C7E0236DEDAE00D42841 /* SystemConfiguration.framework in Frameworks */,
 				ABE0C7DE236DEDA300D42841 /* libiconv.tbd in Frameworks */,
@@ -163,7 +165,7 @@
 		AB07BB28243C2C290082CF88 /* ELKCommonSDK */ = {
 			isa = PBXGroup;
 			children = (
-				AB07BB3E243C30BE0082CF88 /* ELKSinaSDK */,
+				AB07BBB9243C6FFB0082CF88 /* ELKSinaSDK */,
 				AB07BB29243C2C290082CF88 /* ELKTencentSDK */,
 			);
 			path = ELKCommonSDK;
@@ -198,11 +200,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		AB07BB3E243C30BE0082CF88 /* ELKSinaSDK */ = {
+		AB07BBB9243C6FFB0082CF88 /* ELKSinaSDK */ = {
 			isa = PBXGroup;
 			children = (
-				AB07BBB2243C4E780082CF88 /* ELKWeiboSDK.framework */,
-				AB07BB3F243C30BE0082CF88 /* WeiboSDK.bundle */,
+				AB07BBBA243C6FFB0082CF88 /* WeiboSDK.bundle */,
+				AB07BBBB243C6FFB0082CF88 /* libWeiboSDK.a */,
+				AB07BBBC243C6FFB0082CF88 /* WBHttpRequest.h */,
+				AB07BBBD243C6FFB0082CF88 /* WeiboSDK.h */,
 			);
 			path = ELKSinaSDK;
 			sourceTree = "<group>";
@@ -451,7 +455,7 @@
 				AB2DC851236C47310037D043 /* LaunchScreen.storyboard in Resources */,
 				AB2DC84E236C47310037D043 /* Assets.xcassets in Resources */,
 				AB2DC84C236C47300037D043 /* Main.storyboard in Resources */,
-				AB07BB43243C30BE0082CF88 /* WeiboSDK.bundle in Resources */,
+				AB07BBBE243C6FFB0082CF88 /* WeiboSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
