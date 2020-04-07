@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = 'ELKCommonMaster'
-    spec.version      = '0.2.4'
+    spec.version      = '0.2.5'
     spec.summary      = '简单易用通用三方库集成：1）微信登录、分享、支付；2）QQ登录、分享；3）新浪微博登录、分享'
     spec.description  = <<-DESC
                     简单易用通用三方库集成：
@@ -54,13 +54,13 @@ Pod::Spec.new do |spec|
         ews.libraries           = 'sqlite3', 'z'
     end
     
-#    spec.subspec 'ELKSina' do |sinaSpec|
-#        sinaSpec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
-#        sinaSpec.public_header_files = 'ELKCommonMaster/ELKSina/**/*.h'
+    spec.subspec 'ELKSina' do |sinaSpec|
+        sinaSpec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
+        sinaSpec.public_header_files = 'ELKCommonMaster/ELKSina/**/*.h'
         
-#        sinaSpec.dependency 'ELKCommonMaster/ELKSinaSDK'
-#        sinaSpec.dependency 'ELKCommonMaster/ELKModule'
-#    end
+        sinaSpec.dependency 'ELKCommonMaster/ELKSinaSDK'
+        sinaSpec.dependency 'ELKCommonMaster/ELKModule'
+    end
     
     
     
