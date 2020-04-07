@@ -30,11 +30,19 @@ Pod::Spec.new do |spec|
         modSpec.ios.frameworks = 'Foundation', 'UIKit'
     end
     
+    spec.subspec 'ELKTencentSDK' do |ets|
+        ets.ios.vendored_frameworks = "ELKCommonSDK/ELKTencentSDK/*.framework"
+        
+        ets.frameworks = "Security", "SystemConfiguration", "CoreGraphics", "CoreTelephony", "WebKit"
+        ets.libraries  = "iconv", "z", "c++", "sqlite3"
+    end
+    
     spec.subspec 'ELKTencent' do |tenSpec|
         tenSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
         tenSpec.public_header_files = 'ELKCommonMaster/ELKTencent/**/*.h'
         
-        tenSpec.dependency 'ELKTencentOpenSDK'
+        tenSpec.dependency 'ELKCommonMaster/ELKTencentSDK'
+        tenSpec.dependency 'ELKCommonMaster/ELKModule'
     end
 
     

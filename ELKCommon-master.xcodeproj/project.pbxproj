@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB07BB2B243C2C290082CF88 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB07BB2A243C2C290082CF88 /* TencentOpenAPI.framework */; };
 		AB2DC843236C47300037D043 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2DC842236C47300037D043 /* AppDelegate.m */; };
 		AB2DC849236C47300037D043 /* ARootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2DC848236C47300037D043 /* ARootViewController.m */; };
 		AB2DC84C236C47300037D043 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2DC84A236C47300037D043 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 		12A0B4C2F4A34AEA23D532C2 /* Pods-ELKCommon-master.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELKCommon-master.release.xcconfig"; path = "Target Support Files/Pods-ELKCommon-master/Pods-ELKCommon-master.release.xcconfig"; sourceTree = "<group>"; };
 		2FF1F535D7C7B4B5605393C3 /* Pods-ELKCommon-master.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELKCommon-master.debug.xcconfig"; path = "Target Support Files/Pods-ELKCommon-master/Pods-ELKCommon-master.debug.xcconfig"; sourceTree = "<group>"; };
 		640E11E39ADD91C7D58457D7 /* libPods-ELKCommon-master.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ELKCommon-master.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB07BB2A243C2C290082CF88 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		AB2DC83E236C47300037D043 /* ELKCommon-master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ELKCommon-master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2DC841236C47300037D043 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AB2DC842236C47300037D043 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				ABE0C7F0236DF0E300D42841 /* QuartzCore.framework in Frameworks */,
 				ABE0C7EE236DF0D600D42841 /* CoreText.framework in Frameworks */,
 				ABE0C7EC236DEF9F00D42841 /* UIKit.framework in Frameworks */,
+				AB07BB2B243C2C290082CF88 /* TencentOpenAPI.framework in Frameworks */,
 				ABE0C7EA236DEF9800D42841 /* Foundation.framework in Frameworks */,
 				ABE0C7E8236DEF0D00D42841 /* WebKit.framework in Frameworks */,
 				ABE0C7E6236DEDCD00D42841 /* CoreGraphics.framework in Frameworks */,
@@ -143,6 +146,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AB07BB28243C2C290082CF88 /* ELKCommonSDK */ = {
+			isa = PBXGroup;
+			children = (
+				AB07BB29243C2C290082CF88 /* ELKTencentSDK */,
+			);
+			path = ELKCommonSDK;
+			sourceTree = SOURCE_ROOT;
+		};
+		AB07BB29243C2C290082CF88 /* ELKTencentSDK */ = {
+			isa = PBXGroup;
+			children = (
+				AB07BB2A243C2C290082CF88 /* TencentOpenAPI.framework */,
+			);
+			path = ELKTencentSDK;
+			sourceTree = "<group>";
+		};
 		AB2DC835236C472F0037D043 = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +192,7 @@
 				AB2DC847236C47300037D043 /* ARootViewController.h */,
 				AB2DC848236C47300037D043 /* ARootViewController.m */,
 				AB8492B5242CC04C006C6B25 /* ELKCommonMaster */,
+				AB07BB28243C2C290082CF88 /* ELKCommonSDK */,
 				ABF0C0B3236D7EAA00DCEC8D /* Others */,
 				ABF0C0B4236D7EC300DCEC8D /* Resources */,
 			);
@@ -617,6 +637,8 @@
 					"$(PROJECT_DIR)/ELKCommonMaster/ELKTencent/ELKTencentSDK",
 					"$(PROJECT_DIR)/ELKSDK/ELKTencentSDK",
 					"$(PROJECT_DIR)/ELKSDK/TencentOpenSDK",
+					"$(PROJECT_DIR)/ELKCommonSDK",
+					"$(PROJECT_DIR)/ELKCommonSDK/ELKTencentSDK",
 				);
 				GCC_PREFIX_HEADER = ELKCommonExample/Others/ELKPrefixHeader.pch;
 				INFOPLIST_FILE = ELKCommonExample/Others/Info.plist;
@@ -659,6 +681,8 @@
 					"$(PROJECT_DIR)/ELKCommonMaster/ELKTencent/ELKTencentSDK",
 					"$(PROJECT_DIR)/ELKSDK/ELKTencentSDK",
 					"$(PROJECT_DIR)/ELKSDK/TencentOpenSDK",
+					"$(PROJECT_DIR)/ELKCommonSDK",
+					"$(PROJECT_DIR)/ELKCommonSDK/ELKTencentSDK",
 				);
 				GCC_PREFIX_HEADER = ELKCommonExample/Others/ELKPrefixHeader.pch;
 				INFOPLIST_FILE = ELKCommonExample/Others/Info.plist;
