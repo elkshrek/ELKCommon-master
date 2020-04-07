@@ -44,12 +44,12 @@ typedef void(^ELKTencentShareBlock)(ELKTenShareRespStatus shareStatus);
 
 /// 通过URL判断是不是QQ分享回调
 /// @param url url
-+ (BOOL)elk_tenInterCheckUrl:(NSURL *)url;
++ (BOOL)elk_tenInterfaceCheckUrl:(NSURL *)url;
 
 
 /// Api Interface Handle Open Url
 /// @param url url
-+ (BOOL)elk_tenInterHandleOpenUrl:(NSURL *)url;
++ (BOOL)elk_tenInterfaceHandleOpenUrl:(NSURL *)url;
 
 
 /// 腾讯QQ登录

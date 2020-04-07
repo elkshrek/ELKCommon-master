@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = 'ELKCommonMaster'
-    spec.version      = '0.2.7'
+    spec.version      = '1.0.0'
     spec.summary      = '简单易用通用三方库集成：1）微信登录、分享、支付；2）QQ登录、分享；3）新浪微博登录、分享'
     spec.description  = <<-DESC
                     简单易用通用三方库集成：
@@ -22,7 +22,9 @@ Pod::Spec.new do |spec|
     spec.frameworks = 'Security', 'SystemConfiguration', 'CoreGraphics', 'CoreTelephony', 'WebKit', 'Foundation', 'UIKit'
     spec.libraries   = 'iconv', 'z', 'c++', 'sqlite3'
     
-
+    spec.source_files = 'ELKCommonMaster/ELKCommonMaster.{h,m}'
+    spec.public_header_files = 'ELKCommonMaster/ELKCommonMaster.h'
+    
     spec.subspec 'ELKModule' do |modSpec|
         modSpec.source_files = 'ELKCommonMaster/ELKModule/**/*.{h,m}'
         modSpec.public_header_files = 'ELKCommonMaster/ELKModule/**/*.h'
@@ -80,8 +82,6 @@ Pod::Spec.new do |spec|
         sinaSpec.dependency 'ELKCommonMaster/ELKSinaSDK'
         sinaSpec.dependency 'ELKCommonMaster/ELKModule'
     end
-    
-    
     
     
     

@@ -75,7 +75,7 @@
 
 /// 通过URL判断是不是QQ分享回调
 /// @param url url
-+ (BOOL)elk_tenInterCheckUrl:(NSURL *)url
++ (BOOL)elk_tenInterfaceCheckUrl:(NSURL *)url
 {
     BOOL check = [url.host isEqualToString:@"response_from_qq"];
     return check;
@@ -84,7 +84,7 @@
 
 /// Api Interface Handle Open Url
 /// @param url url
-+ (BOOL)elk_tenInterHandleOpenUrl:(NSURL *)url
++ (BOOL)elk_tenInterfaceHandleOpenUrl:(NSURL *)url
 {
     BOOL handle = [QQApiInterface handleOpenURL:url delegate:(id<QQApiInterfaceDelegate>)[ELKTencentSDKMaster sharedInstance]];
     return handle;

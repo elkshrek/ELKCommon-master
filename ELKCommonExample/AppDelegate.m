@@ -8,8 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ARootViewController.h"
-#import "ELKSinaSDKMaster.h"
-#import "ELKWeChatSDKMaster.h"
+#import "ELKCommonMaster.h"
 
 @interface AppDelegate ()
 
@@ -41,55 +40,15 @@
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
 {
-    if ([ELKTencentSDKMaster elk_tenAuthCheckUrl:url]) {
-        // Tencent Auth
-        return [ELKTencentSDKMaster elk_tenAuthHandleOpenUrl:url];
-    } else if ([ELKTencentSDKMaster elk_tenInterCheckUrl:url]) {
-        // Tencent Share
-        return [ELKTencentSDKMaster elk_tenInterHandleOpenUrl:url];
-    } else if ([ELKWeChatSDKMaster elk_weChatCheckUrl:url]) {
-        // WeChat
-        return [ELKWeChatSDKMaster elk_weChatHandleOpenUrl:url];
-    } else if ([ELKSinaSDKMaster elk_sinaCheckUrl:url]){
-        // Sina
-        return [ELKSinaSDKMaster elk_sinaHandleOpenUrl:url];
-    }
-    return NO;
+    return [ELKCommonMaster elk_commonApplication:app openUrl:url];
 }
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
-    if ([ELKTencentSDKMaster elk_tenAuthCheckUrl:url]) {
-        // Tencent Auth
-        return [ELKTencentSDKMaster elk_tenAuthHandleOpenUrl:url];
-    } else if ([ELKTencentSDKMaster elk_tenInterCheckUrl:url]) {
-        // Tencent Share
-        return [ELKTencentSDKMaster elk_tenInterHandleOpenUrl:url];
-    } else if ([ELKWeChatSDKMaster elk_weChatCheckUrl:url]) {
-        // WeChat
-        return [ELKWeChatSDKMaster elk_weChatHandleOpenUrl:url];
-    } else if ([ELKSinaSDKMaster elk_sinaCheckUrl:url]){
-        // Sina
-        return [ELKSinaSDKMaster elk_sinaHandleOpenUrl:url];
-    }
-    
-    return NO;
+    return [ELKCommonMaster elk_commonApplication:application openUrl:url];
 }
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
-    if ([ELKTencentSDKMaster elk_tenAuthCheckUrl:url]) {
-        // Tencent Auth
-        return [ELKTencentSDKMaster elk_tenAuthHandleOpenUrl:url];
-    } else if ([ELKTencentSDKMaster elk_tenInterCheckUrl:url]) {
-        // Tencent Share
-        return [ELKTencentSDKMaster elk_tenInterHandleOpenUrl:url];
-    } else if ([ELKWeChatSDKMaster elk_weChatCheckUrl:url]) {
-        // WeChat
-        return [ELKWeChatSDKMaster elk_weChatHandleOpenUrl:url];
-    } else if ([ELKSinaSDKMaster elk_sinaCheckUrl:url]){
-        // Sina
-        return [ELKSinaSDKMaster elk_sinaHandleOpenUrl:url];
-    }
-    return NO;
+    return [ELKCommonMaster elk_commonApplication:application openUrl:url];
 }
 
 

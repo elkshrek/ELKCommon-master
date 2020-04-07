@@ -26,6 +26,7 @@
 		AB2DC854236C47310037D043 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2DC853236C47310037D043 /* main.m */; };
 		AB2DC85E236C47310037D043 /* ELKCommon_masterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2DC85D236C47310037D043 /* ELKCommon_masterTests.m */; };
 		AB2DC869236C47310037D043 /* ELKCommon_masterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2DC868236C47310037D043 /* ELKCommon_masterUITests.m */; };
+		AB714E43243CAB3400E2F89B /* ELKCommonMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = AB714E42243CAB3400E2F89B /* ELKCommonMaster.m */; };
 		AB8492D5242CC04C006C6B25 /* UIImage+ELKCompressSize.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8492B7242CC04C006C6B25 /* UIImage+ELKCompressSize.m */; };
 		AB8492D6242CC04C006C6B25 /* ELKTencentSDKMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8492BB242CC04C006C6B25 /* ELKTencentSDKMaster.m */; };
 		AB8492D7242CC04C006C6B25 /* ELKTencentShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8492BE242CC04C006C6B25 /* ELKTencentShareModel.m */; };
@@ -105,6 +106,8 @@
 		AB2DC864236C47310037D043 /* ELKCommon-masterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ELKCommon-masterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2DC868236C47310037D043 /* ELKCommon_masterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELKCommon_masterUITests.m; sourceTree = "<group>"; };
 		AB2DC86A236C47310037D043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB714E41243CAB3400E2F89B /* ELKCommonMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKCommonMaster.h; sourceTree = "<group>"; };
+		AB714E42243CAB3400E2F89B /* ELKCommonMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKCommonMaster.m; sourceTree = "<group>"; };
 		AB8492B7242CC04C006C6B25 /* UIImage+ELKCompressSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ELKCompressSize.m"; sourceTree = "<group>"; };
 		AB8492B8242CC04C006C6B25 /* UIImage+ELKCompressSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ELKCompressSize.h"; sourceTree = "<group>"; };
 		AB8492BA242CC04C006C6B25 /* ELKTencentSDKMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKTencentSDKMaster.h; sourceTree = "<group>"; };
@@ -222,9 +225,9 @@
 		AB07BBB9243C6FFB0082CF88 /* ELKSinaSDK */ = {
 			isa = PBXGroup;
 			children = (
-				AB07BBBA243C6FFB0082CF88 /* WeiboSDK.bundle */,
 				AB07BBBB243C6FFB0082CF88 /* libWeiboSDK.a */,
 				AB07BBBC243C6FFB0082CF88 /* WBHttpRequest.h */,
+				AB07BBBA243C6FFB0082CF88 /* WeiboSDK.bundle */,
 				AB07BBBD243C6FFB0082CF88 /* WeiboSDK.h */,
 			);
 			path = ELKSinaSDK;
@@ -233,10 +236,10 @@
 		AB07BBC4243C8D150082CF88 /* ELKWechatSDK */ = {
 			isa = PBXGroup;
 			children = (
+				AB07BBC8243C8D150082CF88 /* libWeChatSDK.a */,
+				AB07BBC7243C8D150082CF88 /* WechatAuthSDK.h */,
 				AB07BBC5243C8D150082CF88 /* WXApi.h */,
 				AB07BBC6243C8D150082CF88 /* WXApiObject.h */,
-				AB07BBC7243C8D150082CF88 /* WechatAuthSDK.h */,
-				AB07BBC8243C8D150082CF88 /* libWeChatSDK.a */,
 			);
 			path = ELKWechatSDK;
 			sourceTree = "<group>";
@@ -322,6 +325,8 @@
 		AB8492B5242CC04C006C6B25 /* ELKCommonMaster */ = {
 			isa = PBXGroup;
 			children = (
+				AB714E41243CAB3400E2F89B /* ELKCommonMaster.h */,
+				AB714E42243CAB3400E2F89B /* ELKCommonMaster.m */,
 				AB8492B6242CC04C006C6B25 /* ELKModule */,
 				AB07BB33243C2FA70082CF88 /* ELKSina */,
 				AB8492B9242CC04C006C6B25 /* ELKTencent */,
@@ -566,6 +571,7 @@
 				AB07BB3B243C2FA70082CF88 /* ELKSinaSDKMaster.m in Sources */,
 				AB2DC843236C47300037D043 /* AppDelegate.m in Sources */,
 				AB07BBD5243C8D270082CF88 /* ELKWeChatUserInfo.m in Sources */,
+				AB714E43243CAB3400E2F89B /* ELKCommonMaster.m in Sources */,
 				AB2DC854236C47310037D043 /* main.m in Sources */,
 				AB8492D8242CC04C006C6B25 /* ELKTencentUserInfo.m in Sources */,
 				AB07BB3C243C2FA70082CF88 /* ELKSinaUserInfo.m in Sources */,
