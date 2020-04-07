@@ -54,13 +54,13 @@ Pod::Spec.new do |spec|
         ews.libraries           = 'sqlite3', 'z'
     end
     
-    spec.subspec 'ELKSina' do |sinaSpec|
-        sinaSpec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
-        sinaSpec.public_header_files = 'ELKCommonMaster/ELKSina/**/*.h'
+#    spec.subspec 'ELKSina' do |sinaSpec|
+#        sinaSpec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
+#        sinaSpec.public_header_files = 'ELKCommonMaster/ELKSina/**/*.h'
         
-        sinaSpec.dependency 'ELKCommonMaster/ELKSinaSDK'
-        sinaSpec.dependency 'ELKCommonMaster/ELKModule'
-    end
+#        sinaSpec.dependency 'ELKCommonMaster/ELKSinaSDK'
+#        sinaSpec.dependency 'ELKCommonMaster/ELKModule'
+#    end
     
     
     

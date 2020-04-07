@@ -684,9 +684,6 @@
 				DEVELOPMENT_TEAM = J8BTB638K2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/ELKCommonMaster/ELKTencent/ELKTencentSDK",
-					"$(PROJECT_DIR)/ELKSDK/ELKTencentSDK",
-					"$(PROJECT_DIR)/ELKSDK/TencentOpenSDK",
 					"$(PROJECT_DIR)/ELKCommonSDK",
 					"$(PROJECT_DIR)/ELKCommonSDK/ELKTencentSDK",
 					"$(PROJECT_DIR)/ELKCommonSDK/ELKSinaSDK",
@@ -700,11 +697,6 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/ELKCommonMaster/ELKSina/ELKWeiboSDK",
-					"$(PROJECT_DIR)/ELKCommonMaster/ELKWeChat/ELKWechatSDK",
-					"$(PROJECT_DIR)/ELKSDK/ELKWeiboSDK",
-					"$(PROJECT_DIR)/ELKSDK/ELKWechatSDK",
-					"$(PROJECT_DIR)/ELKSDK/WechatOpenSDK",
 					"$(PROJECT_DIR)/ELKCommonSDK/ELKWeiboSDK",
 					"$(PROJECT_DIR)/ELKCommonSDK/ELKSinaSDK",
 				);
@@ -731,9 +723,6 @@
 				DEVELOPMENT_TEAM = J8BTB638K2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/ELKCommonMaster/ELKTencent/ELKTencentSDK",
-					"$(PROJECT_DIR)/ELKSDK/ELKTencentSDK",
-					"$(PROJECT_DIR)/ELKSDK/TencentOpenSDK",
 					"$(PROJECT_DIR)/ELKCommonSDK",
 					"$(PROJECT_DIR)/ELKCommonSDK/ELKTencentSDK",
 					"$(PROJECT_DIR)/ELKCommonSDK/ELKSinaSDK",
@@ -747,11 +736,6 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/ELKCommonMaster/ELKSina/ELKWeiboSDK",
-					"$(PROJECT_DIR)/ELKCommonMaster/ELKWeChat/ELKWechatSDK",
-					"$(PROJECT_DIR)/ELKSDK/ELKWeiboSDK",
-					"$(PROJECT_DIR)/ELKSDK/ELKWechatSDK",
-					"$(PROJECT_DIR)/ELKSDK/WechatOpenSDK",
 					"$(PROJECT_DIR)/ELKCommonSDK/ELKWeiboSDK",
 					"$(PROJECT_DIR)/ELKCommonSDK/ELKSinaSDK",
 				);
