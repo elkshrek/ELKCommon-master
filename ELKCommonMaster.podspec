@@ -50,6 +50,7 @@ Pod::Spec.new do |spec|
         ews.vendored_libraries  = "ELKCommonSDK/ELKSinaSDK/libWeiboSDK.a"
         ews.resources           = "ELKCommonSDK/ELKSinaSDK/WeiboSDK.bundle"
         ews.source_files        = "ELKCommonSDK/ELKSinaSDK/**/*.{h,m}"
+        ews.public_header_files = "ELKCommonSDK/ELKSinaSDK/**/*.h"
         
         ews.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
         ews.libraries           = 'sqlite3', 'z'

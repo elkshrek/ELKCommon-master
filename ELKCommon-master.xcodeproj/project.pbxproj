@@ -203,9 +203,9 @@
 		AB07BB3E243C30BE0082CF88 /* ELKSinaSDK */ = {
 			isa = PBXGroup;
 			children = (
-				AB07BB3F243C30BE0082CF88 /* WeiboSDK.bundle */,
 				AB07BB40243C30BE0082CF88 /* libWeiboSDK.a */,
 				AB07BB41243C30BE0082CF88 /* WBHttpRequest.h */,
+				AB07BB3F243C30BE0082CF88 /* WeiboSDK.bundle */,
 				AB07BB42243C30BE0082CF88 /* WeiboSDK.h */,
 			);
 			path = ELKSinaSDK;
