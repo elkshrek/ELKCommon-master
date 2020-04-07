@@ -44,25 +44,43 @@ Pod::Spec.new do |spec|
         tenSpec.dependency 'ELKCommonMaster/ELKTencentSDK'
         tenSpec.dependency 'ELKCommonMaster/ELKModule'
     end
-
     
-    spec.subspec 'ELKSinaSDK' do |ews|
-        ews.vendored_libraries  = "ELKCommonSDK/ELKSinaSDK/*.a"
-        ews.resources           = "ELKCommonSDK/ELKSinaSDK/*.bundle"
-        ews.source_files        = "ELKCommonSDK/ELKSinaSDK/**/*.{h,m}"
-        ews.public_header_files = "ELKCommonSDK/ELKSinaSDK/**/*.h"
+    spec.subspec 'ELKWeChatSDK' do |wcs|
+        wcs.vendored_libraries  = "ELKCommonSDK/ELKWechatSDK/*.a"
+        wcs.source_files        = "ELKCommonSDK/ELKWechatSDK/**/*.{h,m}"
+        wcs.public_header_files = "ELKCommonSDK/ELKWechatSDK/**/*.h"
         
-        ews.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
-        ews.libraries           = 'sqlite3', 'z'
+        wcs.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
+        wcs.libraries           = 'sqlite3', 'z'
     end
     
-    spec.subspec 'ELKSina' do |sinaSpec|
-        sinaSpec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
-        sinaSpec.public_header_files = 'ELKCommonMaster/ELKSina/**/*.h'
+    spec.subspec 'ELKWeChat' do |weSpec|
+        weSpec.source_files = 'ELKCommonMaster/ELKWeChat/**/*.{h,m}'
+        weSpec.public_header_files = 'ELKCommonMaster/ELKWeChat/**/*.h'
         
-        sinaSpec.dependency 'ELKCommonMaster/ELKSinaSDK'
-        sinaSpec.dependency 'ELKCommonMaster/ELKModule'
+        weSpec.dependency 'ELKCommonMaster/ELKWeChatSDK'
+        weSpec.dependency 'ELKCommonMaster/ELKModule'
     end
+    
+    
+    
+#    spec.subspec 'ELKSinaSDK' do |ews|
+#        ews.vendored_libraries  = "ELKCommonSDK/ELKSinaSDK/*.a"
+#        ews.resources           = "ELKCommonSDK/ELKSinaSDK/*.bundle"
+#        ews.source_files        = "ELKCommonSDK/ELKSinaSDK/**/*.{h,m}"
+#        ews.public_header_files = "ELKCommonSDK/ELKSinaSDK/**/*.h"
+        
+#        ews.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
+#        ews.libraries           = 'sqlite3', 'z'
+#    end
+    
+#    spec.subspec 'ELKSina' do |sinaSpec|
+#        sinaSpec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
+#        sinaSpec.public_header_files = 'ELKCommonMaster/ELKSina/**/*.h'
+        
+#        sinaSpec.dependency 'ELKCommonMaster/ELKSinaSDK'
+#        sinaSpec.dependency 'ELKCommonMaster/ELKModule'
+#    end
     
     
     

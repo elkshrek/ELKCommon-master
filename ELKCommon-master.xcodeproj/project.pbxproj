@@ -13,6 +13,11 @@
 		AB07BB3D243C2FA70082CF88 /* ELKSinaShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07BB38243C2FA70082CF88 /* ELKSinaShareModel.m */; };
 		AB07BBBE243C6FFB0082CF88 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AB07BBBA243C6FFB0082CF88 /* WeiboSDK.bundle */; };
 		AB07BBBF243C6FFB0082CF88 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB07BBBB243C6FFB0082CF88 /* libWeiboSDK.a */; };
+		AB07BBC9243C8D150082CF88 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB07BBC8243C8D150082CF88 /* libWeChatSDK.a */; };
+		AB07BBD4243C8D270082CF88 /* ELKWeChatPayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07BBCD243C8D270082CF88 /* ELKWeChatPayModel.m */; };
+		AB07BBD5243C8D270082CF88 /* ELKWeChatUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07BBCE243C8D270082CF88 /* ELKWeChatUserInfo.m */; };
+		AB07BBD6243C8D270082CF88 /* ELKWeChatShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07BBCF243C8D270082CF88 /* ELKWeChatShareModel.m */; };
+		AB07BBD7243C8D270082CF88 /* ELKWeChatSDKMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = AB07BBD3243C8D270082CF88 /* ELKWeChatSDKMaster.m */; };
 		AB2DC843236C47300037D043 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2DC842236C47300037D043 /* AppDelegate.m */; };
 		AB2DC849236C47300037D043 /* ARootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2DC848236C47300037D043 /* ARootViewController.m */; };
 		AB2DC84C236C47300037D043 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB2DC84A236C47300037D043 /* Main.storyboard */; };
@@ -72,6 +77,18 @@
 		AB07BBBB243C6FFB0082CF88 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
 		AB07BBBC243C6FFB0082CF88 /* WBHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHttpRequest.h; sourceTree = "<group>"; };
 		AB07BBBD243C6FFB0082CF88 /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
+		AB07BBC5243C8D150082CF88 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		AB07BBC6243C8D150082CF88 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		AB07BBC7243C8D150082CF88 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		AB07BBC8243C8D150082CF88 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		AB07BBCB243C8D270082CF88 /* ELKWeChatSDKMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKWeChatSDKMaster.h; sourceTree = "<group>"; };
+		AB07BBCD243C8D270082CF88 /* ELKWeChatPayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKWeChatPayModel.m; sourceTree = "<group>"; };
+		AB07BBCE243C8D270082CF88 /* ELKWeChatUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKWeChatUserInfo.m; sourceTree = "<group>"; };
+		AB07BBCF243C8D270082CF88 /* ELKWeChatShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKWeChatShareModel.m; sourceTree = "<group>"; };
+		AB07BBD0243C8D270082CF88 /* ELKWeChatPayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKWeChatPayModel.h; sourceTree = "<group>"; };
+		AB07BBD1243C8D270082CF88 /* ELKWeChatUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKWeChatUserInfo.h; sourceTree = "<group>"; };
+		AB07BBD2243C8D270082CF88 /* ELKWeChatShareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELKWeChatShareModel.h; sourceTree = "<group>"; };
+		AB07BBD3243C8D270082CF88 /* ELKWeChatSDKMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELKWeChatSDKMaster.m; sourceTree = "<group>"; };
 		AB2DC83E236C47300037D043 /* ELKCommon-master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ELKCommon-master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB2DC841236C47300037D043 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AB2DC842236C47300037D043 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -120,6 +137,7 @@
 			files = (
 				ABE0C80B236DF96900D42841 /* libc++.tbd in Frameworks */,
 				ABE0C7F2236DF0F200D42841 /* ImageIO.framework in Frameworks */,
+				AB07BBC9243C8D150082CF88 /* libWeChatSDK.a in Frameworks */,
 				ABE0C7F0236DF0E300D42841 /* QuartzCore.framework in Frameworks */,
 				ABE0C7EE236DF0D600D42841 /* CoreText.framework in Frameworks */,
 				ABE0C7EC236DEF9F00D42841 /* UIKit.framework in Frameworks */,
@@ -165,6 +183,7 @@
 		AB07BB28243C2C290082CF88 /* ELKCommonSDK */ = {
 			isa = PBXGroup;
 			children = (
+				AB07BBC4243C8D150082CF88 /* ELKWechatSDK */,
 				AB07BBB9243C6FFB0082CF88 /* ELKSinaSDK */,
 				AB07BB29243C2C290082CF88 /* ELKTencentSDK */,
 			);
@@ -209,6 +228,40 @@
 				AB07BBBD243C6FFB0082CF88 /* WeiboSDK.h */,
 			);
 			path = ELKSinaSDK;
+			sourceTree = "<group>";
+		};
+		AB07BBC4243C8D150082CF88 /* ELKWechatSDK */ = {
+			isa = PBXGroup;
+			children = (
+				AB07BBC5243C8D150082CF88 /* WXApi.h */,
+				AB07BBC6243C8D150082CF88 /* WXApiObject.h */,
+				AB07BBC7243C8D150082CF88 /* WechatAuthSDK.h */,
+				AB07BBC8243C8D150082CF88 /* libWeChatSDK.a */,
+			);
+			path = ELKWechatSDK;
+			sourceTree = "<group>";
+		};
+		AB07BBCA243C8D270082CF88 /* ELKWeChat */ = {
+			isa = PBXGroup;
+			children = (
+				AB07BBCB243C8D270082CF88 /* ELKWeChatSDKMaster.h */,
+				AB07BBD3243C8D270082CF88 /* ELKWeChatSDKMaster.m */,
+				AB07BBCC243C8D270082CF88 /* Model */,
+			);
+			path = ELKWeChat;
+			sourceTree = "<group>";
+		};
+		AB07BBCC243C8D270082CF88 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB07BBD0243C8D270082CF88 /* ELKWeChatPayModel.h */,
+				AB07BBCD243C8D270082CF88 /* ELKWeChatPayModel.m */,
+				AB07BBD2243C8D270082CF88 /* ELKWeChatShareModel.h */,
+				AB07BBCF243C8D270082CF88 /* ELKWeChatShareModel.m */,
+				AB07BBD1243C8D270082CF88 /* ELKWeChatUserInfo.h */,
+				AB07BBCE243C8D270082CF88 /* ELKWeChatUserInfo.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		AB2DC835236C472F0037D043 = {
@@ -272,6 +325,7 @@
 				AB8492B6242CC04C006C6B25 /* ELKModule */,
 				AB07BB33243C2FA70082CF88 /* ELKSina */,
 				AB8492B9242CC04C006C6B25 /* ELKTencent */,
+				AB07BBCA243C8D270082CF88 /* ELKWeChat */,
 			);
 			path = ELKCommonMaster;
 			sourceTree = SOURCE_ROOT;
@@ -508,12 +562,16 @@
 				AB2DC849236C47300037D043 /* ARootViewController.m in Sources */,
 				AB07BB3D243C2FA70082CF88 /* ELKSinaShareModel.m in Sources */,
 				AB8492D5242CC04C006C6B25 /* UIImage+ELKCompressSize.m in Sources */,
+				AB07BBD7243C8D270082CF88 /* ELKWeChatSDKMaster.m in Sources */,
 				AB07BB3B243C2FA70082CF88 /* ELKSinaSDKMaster.m in Sources */,
 				AB2DC843236C47300037D043 /* AppDelegate.m in Sources */,
+				AB07BBD5243C8D270082CF88 /* ELKWeChatUserInfo.m in Sources */,
 				AB2DC854236C47310037D043 /* main.m in Sources */,
 				AB8492D8242CC04C006C6B25 /* ELKTencentUserInfo.m in Sources */,
 				AB07BB3C243C2FA70082CF88 /* ELKSinaUserInfo.m in Sources */,
 				AB8492D7242CC04C006C6B25 /* ELKTencentShareModel.m in Sources */,
+				AB07BBD6243C8D270082CF88 /* ELKWeChatShareModel.m in Sources */,
+				AB07BBD4243C8D270082CF88 /* ELKWeChatPayModel.m in Sources */,
 				AB8492D6242CC04C006C6B25 /* ELKTencentSDKMaster.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -703,6 +761,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ELKCommonSDK/ELKWeiboSDK",
 					"$(PROJECT_DIR)/ELKCommonSDK/ELKSinaSDK",
+					"$(PROJECT_DIR)/ELKCommonSDK/ELKWechatSDK",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -742,6 +801,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ELKCommonSDK/ELKWeiboSDK",
 					"$(PROJECT_DIR)/ELKCommonSDK/ELKSinaSDK",
+					"$(PROJECT_DIR)/ELKCommonSDK/ELKWechatSDK",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",

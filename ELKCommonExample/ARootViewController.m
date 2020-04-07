@@ -8,6 +8,7 @@
 
 #import "ARootViewController.h"
 #import "ELKSinaSDKMaster.h"
+#import "ELKWeChatSDKMaster.h"
 
 
 @interface ARootViewController ()
@@ -35,37 +36,37 @@
 
 - (void)wcAuthAction:(UIButton *)sender
 {
-//    [ELKWeChatSDKMaster elk_weChatAuthLoginBlock:^(ELKWeChatUserInfo * _Nullable userInfo, SendAuthResp * _Nonnull authResp, ELKWeChatAuthRespStatus authStatus) {
-//        if (authStatus == ELKWeAuthRespSucData) {
-//            NSLog(@"WeChat logged in successfully and obtained user information : %@", userInfo);
-//        } else if (authStatus == ELKWeAuthRespSuccess) {
-//            NSLog(@"WeChat logged in successfully, but failed to get user information");
-//        } else if (authStatus == ELKWeAuthRespCancel) {
-//            NSLog(@"User canceled WeChat login");
-//        } else if (authStatus == ELKWeAuthRespDeny) {
-//            NSLog(@"WeChat authorized login denied");
-//        } else {
-//            NSLog(@"WeChat login failed");
-//        }
-//    }];
+    [ELKWeChatSDKMaster elk_weChatAuthLoginBlock:^(ELKWeChatUserInfo * _Nullable userInfo, SendAuthResp * _Nonnull authResp, ELKWeChatAuthRespStatus authStatus) {
+        if (authStatus == ELKWeAuthRespSucData) {
+            NSLog(@"WeChat logged in successfully and obtained user information : %@", userInfo);
+        } else if (authStatus == ELKWeAuthRespSuccess) {
+            NSLog(@"WeChat logged in successfully, but failed to get user information");
+        } else if (authStatus == ELKWeAuthRespCancel) {
+            NSLog(@"User canceled WeChat login");
+        } else if (authStatus == ELKWeAuthRespDeny) {
+            NSLog(@"WeChat authorized login denied");
+        } else {
+            NSLog(@"WeChat login failed");
+        }
+    }];
 }
 - (void)wcShareAction:(UIButton *)sender
 {
-//    ELKWeChatShareModel *shareModel = [[ELKWeChatShareModel alloc] init];
-//    shareModel.title = @"ELKCommonMaster";
-//    shareModel.desString = @"Share To WeChat";
-//    shareModel.shareLink = @"https://github.com/elkshrek/ELKCommon-master";
-//    shareModel.thumbImage = [UIImage imageNamed:@"wing"];
-//    
-//    [ELKWeChatSDKMaster elk_weChatShareWebPage:shareModel sence:ELKWeSceneSession block:^(ELKWeChatShareRespStatus shareStatus) {
-//        if (shareStatus == ELKWeShareRespSuccess) {
-//            NSLog(@"WeChat Share Success");
-//        } else if (shareStatus == ELKWeShareRespCancel) {
-//            NSLog(@"User Canceled WeChat Share");
-//        } else {
-//            NSLog(@"WeChat Share failed");
-//        }
-//    }];
+    ELKWeChatShareModel *shareModel = [[ELKWeChatShareModel alloc] init];
+    shareModel.title = @"ELKCommonMaster";
+    shareModel.desString = @"Share To WeChat";
+    shareModel.shareLink = @"https://github.com/elkshrek/ELKCommon-master";
+    shareModel.thumbImage = [UIImage imageNamed:@"wing"];
+    
+    [ELKWeChatSDKMaster elk_weChatShareWebPage:shareModel sence:ELKWeSceneSession block:^(ELKWeChatShareRespStatus shareStatus) {
+        if (shareStatus == ELKWeShareRespSuccess) {
+            NSLog(@"WeChat Share Success");
+        } else if (shareStatus == ELKWeShareRespCancel) {
+            NSLog(@"User Canceled WeChat Share");
+        } else {
+            NSLog(@"WeChat Share failed");
+        }
+    }];
 }
 - (void)qqAuthAction:(UIButton *)sender
 {

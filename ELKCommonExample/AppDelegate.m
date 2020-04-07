@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ARootViewController.h"
 #import "ELKSinaSDKMaster.h"
+#import "ELKWeChatSDKMaster.h"
 
 @interface AppDelegate ()
 
@@ -27,7 +28,7 @@
     
     
     // WeChat
-//    [ELKWeChatSDKMaster elk_weChatRegister:ELKWeChatAppId withSecret:ELKWeChatSecret universalLink:ELKWeChatUniLink];
+    [ELKWeChatSDKMaster elk_weChatRegister:ELKWeChatAppId withSecret:ELKWeChatSecret universalLink:ELKWeChatUniLink];
     // Sina
     [ELKSinaSDKMaster elk_sinaRegister:ELKSinaAppId debug:YES];
     // Tencent
@@ -46,6 +47,12 @@
     } else if ([ELKTencentSDKMaster elk_tenInterCheckUrl:url]) {
         // Tencent Share
         return [ELKTencentSDKMaster elk_tenInterHandleOpenUrl:url];
+    } else if ([ELKWeChatSDKMaster elk_weChatCheckUrl:url]) {
+        // WeChat
+        return [ELKWeChatSDKMaster elk_weChatHandleOpenUrl:url];
+    } else if ([ELKSinaSDKMaster elk_sinaCheckUrl:url]){
+        // Sina
+        return [ELKSinaSDKMaster elk_sinaHandleOpenUrl:url];
     }
     return NO;
 }
@@ -57,7 +64,11 @@
     } else if ([ELKTencentSDKMaster elk_tenInterCheckUrl:url]) {
         // Tencent Share
         return [ELKTencentSDKMaster elk_tenInterHandleOpenUrl:url];
-    } else if ([ELKSinaSDKMaster elk_sinaCheckUrl:url]) {
+    } else if ([ELKWeChatSDKMaster elk_weChatCheckUrl:url]) {
+        // WeChat
+        return [ELKWeChatSDKMaster elk_weChatHandleOpenUrl:url];
+    } else if ([ELKSinaSDKMaster elk_sinaCheckUrl:url]){
+        // Sina
         return [ELKSinaSDKMaster elk_sinaHandleOpenUrl:url];
     }
     
@@ -71,6 +82,12 @@
     } else if ([ELKTencentSDKMaster elk_tenInterCheckUrl:url]) {
         // Tencent Share
         return [ELKTencentSDKMaster elk_tenInterHandleOpenUrl:url];
+    } else if ([ELKWeChatSDKMaster elk_weChatCheckUrl:url]) {
+        // WeChat
+        return [ELKWeChatSDKMaster elk_weChatHandleOpenUrl:url];
+    } else if ([ELKSinaSDKMaster elk_sinaCheckUrl:url]){
+        // Sina
+        return [ELKSinaSDKMaster elk_sinaHandleOpenUrl:url];
     }
     return NO;
 }
