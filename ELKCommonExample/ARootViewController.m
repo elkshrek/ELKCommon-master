@@ -7,6 +7,7 @@
 //
 
 #import "ARootViewController.h"
+#import "ELKSinaSDKMaster.h"
 
 
 @interface ARootViewController ()
@@ -100,36 +101,36 @@
 }
 - (void)sinaAuthAction:(UIButton *)sender
 {
-//    [ELKSinaSDKMaster elk_sinaAuthLoginBlock:^(ELKSinaUserInfo * _Nullable userInfo, WBAuthorizeResponse * _Nonnull authResp, ELKSinaAuthRespStatus authStatus) {
-//        if (authStatus == ELKSinaAuthSucData) {
-//            NSLog(@"Sina logged in successfully and obtained user information : %@", userInfo);
-//        } else if (authStatus == ELKSinaAuthSuccess) {
-//            NSLog(@"Sina logged in successfully, but failed to get user information");
-//        } else if (authStatus == ELKSinaAuthCancel) {
-//            NSLog(@"User canceled Sina login");
-//        } else {
-//            NSLog(@"Sina login failed");
-//        }
-//    }];
+    [ELKSinaSDKMaster elk_sinaAuthLoginBlock:^(ELKSinaUserInfo * _Nullable userInfo, WBAuthorizeResponse * _Nonnull authResp, ELKSinaAuthRespStatus authStatus) {
+        if (authStatus == ELKSinaAuthSucData) {
+            NSLog(@"Sina logged in successfully and obtained user information : %@", userInfo);
+        } else if (authStatus == ELKSinaAuthSuccess) {
+            NSLog(@"Sina logged in successfully, but failed to get user information");
+        } else if (authStatus == ELKSinaAuthCancel) {
+            NSLog(@"User canceled Sina login");
+        } else {
+            NSLog(@"Sina login failed");
+        }
+    }];
 }
 - (void)sinaShareAction:(UIButton *)sender
 {
-//    ELKSinaShareModel *shareModel = [[ELKSinaShareModel alloc] init];
-//    shareModel.title = @"ELKCommonMaster";
-//    shareModel.desString = @"Share To Sina";
-//    shareModel.shareLink = @"https://github.com/elkshrek/ELKCommon-master";
-//    shareModel.thumbImage = [UIImage imageNamed:@"wing"];
-//    shareModel.text = @"";
-//    
-//    [ELKSinaSDKMaster elk_sinaShareInfo:shareModel shareBlock:^(ELKSinaShareRespStatus shareStatus) {
-//        if (shareStatus == ELKSinaShareRespSuccess) {
-//            NSLog(@"Sina Share Success");
-//        } else if (shareStatus == ELKSinaShareRespCancel) {
-//            NSLog(@"User Canceled Sina Share");
-//        } else {
-//            NSLog(@"Sina Share failed");
-//        }
-//    }];
+    ELKSinaShareModel *shareModel = [[ELKSinaShareModel alloc] init];
+    shareModel.title = @"ELKCommonMaster";
+    shareModel.desString = @"Share To Sina";
+    shareModel.shareLink = @"https://github.com/elkshrek/ELKCommon-master";
+    shareModel.thumbImage = [UIImage imageNamed:@"wing"];
+    shareModel.text = @"";
+    
+    [ELKSinaSDKMaster elk_sinaShareInfo:shareModel shareBlock:^(ELKSinaShareRespStatus shareStatus) {
+        if (shareStatus == ELKSinaShareRespSuccess) {
+            NSLog(@"Sina Share Success");
+        } else if (shareStatus == ELKSinaShareRespCancel) {
+            NSLog(@"User Canceled Sina Share");
+        } else {
+            NSLog(@"Sina Share failed");
+        }
+    }];
     
 }
 

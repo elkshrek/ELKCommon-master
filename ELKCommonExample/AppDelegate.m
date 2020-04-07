@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ARootViewController.h"
-
+#import "ELKSinaSDKMaster.h"
 
 @interface AppDelegate ()
 
@@ -29,7 +29,7 @@
     // WeChat
 //    [ELKWeChatSDKMaster elk_weChatRegister:ELKWeChatAppId withSecret:ELKWeChatSecret universalLink:ELKWeChatUniLink];
     // Sina
-//    [ELKSinaSDKMaster elk_sinaRegister:ELKSinaAppId debug:YES];
+    [ELKSinaSDKMaster elk_sinaRegister:ELKSinaAppId debug:YES];
     // Tencent
     [ELKTencentSDKMaster elk_tencentRegister:ELKTencentAppId];
     
@@ -57,7 +57,10 @@
     } else if ([ELKTencentSDKMaster elk_tenInterCheckUrl:url]) {
         // Tencent Share
         return [ELKTencentSDKMaster elk_tenInterHandleOpenUrl:url];
+    } else if ([ELKSinaSDKMaster elk_sinaCheckUrl:url]) {
+        return [ELKSinaSDKMaster elk_sinaHandleOpenUrl:url];
     }
+    
     return NO;
 }
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation

@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = 'ELKCommonMaster'
-    spec.version      = '0.2.3'
+    spec.version      = '0.2.4'
     spec.summary      = '简单易用通用三方库集成：1）微信登录、分享、支付；2）QQ登录、分享；3）新浪微博登录、分享'
     spec.description  = <<-DESC
                     简单易用通用三方库集成：
@@ -47,10 +47,8 @@ Pod::Spec.new do |spec|
 
     
     spec.subspec 'ELKSinaSDK' do |ews|
-        ews.vendored_libraries  = "ELKCommonSDK/ELKSinaSDK/libWeiboSDK.a"
+        ews.ios.vendored_frameworks = "ELKCommonSDK/ELKSinaSDK/*.framework"
         ews.resources           = "ELKCommonSDK/ELKSinaSDK/WeiboSDK.bundle"
-        ews.source_files        = "ELKCommonSDK/ELKSinaSDK/**/*.{h,m}"
-        ews.public_header_files = "ELKCommonSDK/ELKSinaSDK/**/*.h"
         
         ews.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
         ews.libraries           = 'sqlite3', 'z'
