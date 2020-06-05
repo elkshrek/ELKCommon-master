@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <ELKWeiboSDK/WeiboSDK.h>
+//#import <ELKWeiboSDK/WeiboSDK.h>
+#import "WeiboSDK.h"
 #import "ELKSinaShareModel.h"
 #import "ELKSinaUserInfo.h"
 
