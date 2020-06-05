@@ -8,8 +8,8 @@ target 'ELKCommon-master' do
     pod 'ELKChainedAlloy'
 
     pod 'ELKTencentOpenSDK'
-#    pod 'ELKWeiboSDK'
-#    pod 'WechatOpenSDK'
+    pod 'ELKWeiboSDK'
+    pod 'WechatOpenSDK'
     
      
 

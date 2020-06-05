@@ -39,9 +39,6 @@
 		ABE0C7F0236DF0E300D42841 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE0C7EF236DF0E300D42841 /* QuartzCore.framework */; };
 		ABE0C7F2236DF0F200D42841 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE0C7F1236DF0F200D42841 /* ImageIO.framework */; };
 		ABE0C80B236DF96900D42841 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE0C80A236DF96900D42841 /* libc++.tbd */; };
-		ABE67E5B248A2D9F005B46F3 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ABE67E50248A2D9E005B46F3 /* WeiboSDK.bundle */; };
-		ABE67E5C248A2D9F005B46F3 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE67E51248A2D9E005B46F3 /* libWeiboSDK.a */; };
-		ABE67E5E248A2D9F005B46F3 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE67E5A248A2D9F005B46F3 /* libWeChatSDK.a */; };
 		E46C6659529B4843C24DA063 /* libPods-ELKCommon-master.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 640E11E39ADD91C7D58457D7 /* libPods-ELKCommon-master.a */; };
 /* End PBXBuildFile section */
 
@@ -120,14 +117,6 @@
 		ABE0C7EF236DF0E300D42841 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		ABE0C7F1236DF0F200D42841 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		ABE0C80A236DF96900D42841 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		ABE67E50248A2D9E005B46F3 /* WeiboSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WeiboSDK.bundle; sourceTree = "<group>"; };
-		ABE67E51248A2D9E005B46F3 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
-		ABE67E52248A2D9E005B46F3 /* WBHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHttpRequest.h; sourceTree = "<group>"; };
-		ABE67E53248A2D9E005B46F3 /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
-		ABE67E57248A2D9E005B46F3 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		ABE67E58248A2D9E005B46F3 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
-		ABE67E59248A2D9E005B46F3 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
-		ABE67E5A248A2D9F005B46F3 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		ABF0C0B5236D97AC00DCEC8D /* ELKPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELKPrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,9 +127,7 @@
 			files = (
 				ABE0C80B236DF96900D42841 /* libc++.tbd in Frameworks */,
 				ABE0C7F2236DF0F200D42841 /* ImageIO.framework in Frameworks */,
-				ABE67E5E248A2D9F005B46F3 /* libWeChatSDK.a in Frameworks */,
 				ABE0C7F0236DF0E300D42841 /* QuartzCore.framework in Frameworks */,
-				ABE67E5C248A2D9F005B46F3 /* libWeiboSDK.a in Frameworks */,
 				ABE0C7EE236DF0D600D42841 /* CoreText.framework in Frameworks */,
 				ABE0C7EC236DEF9F00D42841 /* UIKit.framework in Frameworks */,
 				ABE0C7EA236DEF9800D42841 /* Foundation.framework in Frameworks */,
@@ -253,7 +240,6 @@
 				AB2DC842236C47300037D043 /* AppDelegate.m */,
 				AB2DC847236C47300037D043 /* ARootViewController.h */,
 				AB2DC848236C47300037D043 /* ARootViewController.m */,
-				ABE67E4E248A2D9E005B46F3 /* ELKCommonSDK */,
 				AB8492B5242CC04C006C6B25 /* ELKCommonMaster */,
 				ABF0C0B3236D7EAA00DCEC8D /* Others */,
 				ABF0C0B4236D7EC300DCEC8D /* Resources */,
@@ -322,37 +308,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		ABE67E4E248A2D9E005B46F3 /* ELKCommonSDK */ = {
-			isa = PBXGroup;
-			children = (
-				ABE67E4F248A2D9E005B46F3 /* ELKSinaSDK */,
-				ABE67E56248A2D9E005B46F3 /* ELKWechatSDK */,
-			);
-			path = ELKCommonSDK;
-			sourceTree = SOURCE_ROOT;
-		};
-		ABE67E4F248A2D9E005B46F3 /* ELKSinaSDK */ = {
-			isa = PBXGroup;
-			children = (
-				ABE67E50248A2D9E005B46F3 /* WeiboSDK.bundle */,
-				ABE67E51248A2D9E005B46F3 /* libWeiboSDK.a */,
-				ABE67E52248A2D9E005B46F3 /* WBHttpRequest.h */,
-				ABE67E53248A2D9E005B46F3 /* WeiboSDK.h */,
-			);
-			path = ELKSinaSDK;
-			sourceTree = "<group>";
-		};
-		ABE67E56248A2D9E005B46F3 /* ELKWechatSDK */ = {
-			isa = PBXGroup;
-			children = (
-				ABE67E57248A2D9E005B46F3 /* WXApi.h */,
-				ABE67E58248A2D9E005B46F3 /* WXApiObject.h */,
-				ABE67E59248A2D9E005B46F3 /* WechatAuthSDK.h */,
-				ABE67E5A248A2D9F005B46F3 /* libWeChatSDK.a */,
-			);
-			path = ELKWechatSDK;
-			sourceTree = "<group>";
-		};
 		ABF0C0B3236D7EAA00DCEC8D /* Others */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +361,7 @@
 				AB2DC83A236C472F0037D043 /* Sources */,
 				AB2DC83B236C472F0037D043 /* Frameworks */,
 				AB2DC83C236C472F0037D043 /* Resources */,
+				13D6B208911DFD27293E64F6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -502,7 +458,6 @@
 				AB2DC851236C47310037D043 /* LaunchScreen.storyboard in Resources */,
 				AB2DC84E236C47310037D043 /* Assets.xcassets in Resources */,
 				AB2DC84C236C47300037D043 /* Main.storyboard in Resources */,
-				ABE67E5B248A2D9F005B46F3 /* WeiboSDK.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,6 +478,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		13D6B208911DFD27293E64F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ELKCommon-master/Pods-ELKCommon-master-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ELKCommon-master/Pods-ELKCommon-master-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ELKCommon-master/Pods-ELKCommon-master-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FDD15302E53A5CF359A906F2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

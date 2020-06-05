@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
+		1E7123E79CD8784BAC800268B6732A3B /* ELKWeiboSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 831D41CD4283B603A25F9EA5997A8644 /* Build configuration list for PBXAggregateTarget "ELKWeiboSDK" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = ELKWeiboSDK;
+		};
+		8554F6236D2AA202CF58503D2DF29730 /* WechatOpenSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4AF0DF2249DC5CF1F6B67BE5469CE54C /* Build configuration list for PBXAggregateTarget "WechatOpenSDK" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = WechatOpenSDK;
+		};
 		F093FCD52B3CCA063E56E5C31CD8B0F2 /* ELKTencentOpenSDK */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 9DE1039124AC8D55027624235C6CBD9C /* Build configuration list for PBXAggregateTarget "ELKTencentOpenSDK" */;
@@ -19,172 +37,199 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0096B5A8BA8E4F2BFD8839D0FE7CD696 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 779EE4CB61CBDE17BB3F62B876FC3A19 /* MASLayoutConstraint.m */; };
-		04099B7069066BEAE1056152E166E74C /* NSString+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = 418FEF563C1DF5AF80469913279798D4 /* NSString+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		073FD79E8784426E518DABE41894F5E9 /* UITextField+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = C232706630130787280E561426304888 /* UITextField+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		115ACCE253A886181B55773DDC70D6ED /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = DEE0B5406845585FA79048E6494C31F8 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		16EEA8BD887559352FF75F3615BAFBD0 /* UITextField+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = A97B54DE1E05DEA80E91A5B7583DC191 /* UITextField+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		1E5D56FF58658F9F45723CA2940489EE /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F8DD69CF112BBFB0F5E2370A0D700B /* MASConstraintMaker.m */; };
-		2DD6DD5E34CC23DC11EB779689C0BCCE /* UILabel+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = E16B9374CA02773A337301ABB860CD29 /* UILabel+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		351279A32267AD1EE6C5C9BEA166887F /* UIView+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = 5199D613B90AA40A9432726E1C4D2653 /* UIView+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3FC82B95EDCD475B103B5CDC6983634A /* Pods-ELKCommon-master-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D91DD00A86BAFC1C70DCCC32C3F968 /* Pods-ELKCommon-master-dummy.m */; };
-		42947699890A199B08A896144A878D80 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = EA879DC38EB7E5F822E8B778A27AFC26 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		46692A2E77157B00827182C8DC686F72 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 355F6B49F745596F9ADD55AFE5BCE4C1 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		48201317756CD7C7AC911A3F312FB85A /* UIFont+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C8B52860995E70C462015D5F4276617 /* UIFont+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		48F9A4894CB102F6ED5FD419EF66C535 /* UICollectionView+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8635949BD017BC947E9A0DA0A8A7D003 /* UICollectionView+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4A28DE9CADB4840CA335FED78B6E6772 /* UILabel+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = B27E957DB6E0570601917C7F65B5A51C /* UILabel+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4CE091F886EC6324673EFE0AEBBEA0FE /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 48008F5E2B8F15F1ADFFDFBB96BC94E7 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4EB83867C5F0848DF85CDF96C12A60C0 /* UICollectionView+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = C63029C3AD2059E227BD532167AF111D /* UICollectionView+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		5543D1591DF69C1FE474EBC9D35605D8 /* UITableViewCell+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1BDE8A05696AF26E3FB89C59ECC05D /* UITableViewCell+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		56100133EC59A01EB1BEB6361BB96A19 /* ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = DAAA5197CB4BC8482D11EC7DC7ED657E /* ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		572D05B146EAA3EF5530A0D0E34904A0 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A53A04BD5F2A0BF0C34DB364CCC8499D /* MASViewConstraint.m */; };
-		59EA578EED8BAC126FDC60C32AE11521 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A6AC2F85DBAD711648B421ACF6087532 /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		60A8D25DCF0BDB0C9A31CC8A46201A15 /* UITableView+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = 9144B864A017F398C11677172AAD24AF /* UITableView+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		638335A03D5ADCCB16E70D75401EFEA2 /* UIScrollView+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2D1522C65B52506260C23C8B69F969 /* UIScrollView+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		63F87C318437740E8202E4D3DD0826FA /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3124A20189B182F317F1E6F50F896DC1 /* MASCompositeConstraint.m */; };
-		65E88072A2BDC576BFC85E67EF9FBBC6 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = A18C438632B963A96BC1AD96F4E79EDD /* MASUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		65F8FA4ED9193B8AAB99D1913DB0B372 /* UITextView+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2B88E64FAFBC3311830A6244537918 /* UITextView+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		667BF94BEC3B164E58FD09DAC78164DE /* UIColor+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FF80A09315F16FDDFEA3CC6CE06E28 /* UIColor+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6A2C9D1F66320E0C855F8BE66FC71E3C /* UIControl+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE11EF089B06992C4FFBF84723FF6D6 /* UIControl+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		74E1430B44926E46C0BFCAD26025D4BB /* UITableViewCell+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = A38188644F8101B4D138470B26F9940A /* UITableViewCell+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		79A654E995C41B64F4CB60A4C42C5D78 /* UICollectionViewFlowLayout+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = 719D142E69C570AA626264698AB859E2 /* UICollectionViewFlowLayout+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		7CF2AC7A3B3ED03B30C1E4ED662B0551 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = F0C5078B8C76D02AB8B06D80D07874F9 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		81F811A56B6724F7E8E2D25364E595E3 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CA9E96D3E685ED93801DA83FF5340DB7 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9194B58ACE900ED6BAE6AD92E24A2CFF /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 198C7FEE0BF9B0371C801790099251BC /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		921D67FCDB3369DA2CD5A4DF3604867B /* UIView+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = A25A5DD2E9201F10D0F944DD3B19E942 /* UIView+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		92BF70E9D3285561EB404A7C4A4A6DEE /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = F0E6BB0087ED2972665E9814AB5CE18D /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		9690F45C82046D23442829D6C4A1DAEA /* UIColor+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B99EC97F14375C49E80DE4E24DF242D /* UIColor+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A3307B8FB6EE0A049DBAE3AA4D2C6DA0 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DFA2FB3F6D96FFC61C33FFC157DF9A7 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A4FDE3A2CFC785EE846950364BBC8091 /* NSString+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = B1BA644881C28BF27357E2FC13DC1F34 /* NSString+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A7663D26DBE8A7B7B7007DFF68CB22F1 /* UITableView+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = F08F661D7F706C34CE267C0B14FDE89B /* UITableView+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		A893FFB0F9137E298D6752729850D1D6 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A293C5F2BB49C34D7A2F192BEC470EE /* MASViewAttribute.m */; };
-		B14AC02157B828D41B4FD4E5B8AF1AFD /* UIFont+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = 599C1CEEDB09DB6DAB32863B1C724669 /* UIFont+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B20A0E5D8F9BCED1A82793C4BE9E7258 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = BEF95915089FA64BDC5EEA5A8802DA70 /* Masonry.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B946AFB1A725D85E07F645A7EF086383 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 386FD6EA7887B8CFDBBB594FCE0C7CF6 /* NSArray+MASAdditions.m */; };
-		BC3B508E40F98D29A58CFD3548859AC1 /* NSObject+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = 1268F27B7210569942B5093A6BC75E6E /* NSObject+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C05FC6699632FE712174ED875A605410 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 245DC95F0777FC9C4266CFDD690F3DBE /* ViewController+MASAdditions.m */; };
-		C2F5FDF0ACC6A9AB75BD7741763248ED /* NSObject+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3E87EA44D0BCEF3D8FDD45A4026E96 /* NSObject+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		C3B89E7BE6D2F0CEACC808B176BC3DC8 /* UICollectionViewFlowLayout+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D1C49335B1E12FDBDF60D8C0D8B9F78 /* UICollectionViewFlowLayout+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C74D2E856ADC8139CD00DBD184061B23 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = BE8BFB4D0CA43B4E9BDB664F18D30691 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C7920681F0164686C56327ED3C6AAC58 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = C4C5CC59A4394EEB8B8321A7157B9C70 /* View+MASAdditions.m */; };
-		D09EF42507EABCC7954CC3292B6C9234 /* ELKChainedAlloy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1041C8FD958F24FC7C7BA5231FD93F /* ELKChainedAlloy-dummy.m */; };
-		D37B3A5732E4BF6EB92D740DD2C299A7 /* UIControl+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F88C05702FCAE6D23D06BA833679E2 /* UIControl+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D649ABF3BA528A9B523D29AF5CE82905 /* UIImageView+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6AD543410C123AF59F04D5D8FC1C41 /* UIImageView+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		D72EE0E749232B2C899702FC1C9402BB /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE600F90B93E498B2231E58C6258575 /* Masonry-dummy.m */; };
-		D90016CEEE983D36ACDCADFE7DD1DC90 /* UIScrollView+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = BB9918435E678E35CAAE34FF28EAD67C /* UIScrollView+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E47D1F0D61C785C612E8E69DE30E8852 /* UITextView+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = 7782C5AC63DF2CC0EA52037E2BFF34C6 /* UITextView+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E76935CFF4AF327F8D9A7C1935F7D900 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = BD993DD8E4B35BD7FE6CBD04F261F4D1 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EB663E3E1EB4BB670DC29B77DB330135 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = BD644760015D5266E9F5EDBF477C3FEF /* MASConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EE936A6838005A5ED1BC5F74BE37B7BD /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EB754ECC16AEFCDCC5FB70D6E536A8 /* MASConstraint.m */; };
-		F1B75048874B8773E5568E6D3ACA12E4 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5081AD90602E13D985629E036434EAAF /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F27EF5832C8FC9911673C0A20492A533 /* UIButton+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E0E5E7EB27894CD3818220AD7DA1DE1 /* UIButton+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F7E64EB401A31912D768AD5E20957AEE /* UIImageView+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = 718BA5C41BABE2E41911D68B52F7A75B /* UIImageView+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FD9C64E9572C69E8A2F4A1FA52D85286 /* UIButton+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = B419E87FEB98EF721D346402ADDF2FA6 /* UIButton+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0096B5A8BA8E4F2BFD8839D0FE7CD696 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D016C6253DF8CDCA60CE0ECDDC114A6 /* MASLayoutConstraint.m */; };
+		04099B7069066BEAE1056152E166E74C /* NSString+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B60CDB5C42ED38444B97BB4995981B /* NSString+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		073FD79E8784426E518DABE41894F5E9 /* UITextField+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4976DAB4AE1D2B5723FF51A75C5677 /* UITextField+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		115ACCE253A886181B55773DDC70D6ED /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 421229E335C2B9338BE8AC13FC59DBB9 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		16EEA8BD887559352FF75F3615BAFBD0 /* UITextField+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = E0C2A520E80BDF17DAAD89E49CA26484 /* UITextField+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1E5D56FF58658F9F45723CA2940489EE /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 731086FFB053DDB0FAE7E90E3F422753 /* MASConstraintMaker.m */; };
+		2DD6DD5E34CC23DC11EB779689C0BCCE /* UILabel+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = 120C43D01170951193D7368AC05D5AEE /* UILabel+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		351279A32267AD1EE6C5C9BEA166887F /* UIView+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A02C1C05A4D8AAD1BAEA1A4BE54EEC0 /* UIView+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		42947699890A199B08A896144A878D80 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = BE44154C3AE8EAC3DFB2E05ECB92663F /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46692A2E77157B00827182C8DC686F72 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 82DBB57F61B15216AFC4BF40AEF484F8 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		48201317756CD7C7AC911A3F312FB85A /* UIFont+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = 84B12A8042152DEFEE9533B4E9DE3D33 /* UIFont+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		48F9A4894CB102F6ED5FD419EF66C535 /* UICollectionView+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B87582522C3757D3973A806DB5964E /* UICollectionView+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4A28DE9CADB4840CA335FED78B6E6772 /* UILabel+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = C777407658AF787F325766E187F549D1 /* UILabel+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4CE091F886EC6324673EFE0AEBBEA0FE /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 816AB259B9721B8BE4D3B89208EDD001 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4EB83867C5F0848DF85CDF96C12A60C0 /* UICollectionView+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = 96160D69DFA4980C26547B79A21A87CD /* UICollectionView+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5543D1591DF69C1FE474EBC9D35605D8 /* UITableViewCell+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = 533D2FFD8D58895A191E6D6BC798A221 /* UITableViewCell+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		56100133EC59A01EB1BEB6361BB96A19 /* ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = D835315C929B75C1302FBC3F945040A7 /* ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		572D05B146EAA3EF5530A0D0E34904A0 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 176A94E5178E86F46A90391CE070B88B /* MASViewConstraint.m */; };
+		59EA578EED8BAC126FDC60C32AE11521 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B29CC0CA2A06CE07CC3156B08438B1 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		60A8D25DCF0BDB0C9A31CC8A46201A15 /* UITableView+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C65810CB648AE53C0103D00DEC2EEE /* UITableView+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		638335A03D5ADCCB16E70D75401EFEA2 /* UIScrollView+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C74C452375215D352E170BAD38F110 /* UIScrollView+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		63F87C318437740E8202E4D3DD0826FA /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E20CF9228F3766F05A3A46FDEC30A8B /* MASCompositeConstraint.m */; };
+		65E88072A2BDC576BFC85E67EF9FBBC6 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = F4B4172EE5A7F2007C0D8B5C9454D323 /* MASUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		65F8FA4ED9193B8AAB99D1913DB0B372 /* UITextView+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27175B4BAE4C8AD238D5DD17ED754599 /* UITextView+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		667BF94BEC3B164E58FD09DAC78164DE /* UIColor+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1664B1A55B62969E04E4785F06F164F /* UIColor+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		6A2C9D1F66320E0C855F8BE66FC71E3C /* UIControl+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = 33CC6C3F68A81D3CBFA80E02EB4E243C /* UIControl+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		74E1430B44926E46C0BFCAD26025D4BB /* UITableViewCell+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9248BF915D9A4ABC83B286CB52399C /* UITableViewCell+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		79A654E995C41B64F4CB60A4C42C5D78 /* UICollectionViewFlowLayout+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8762AEA86913CD166D872034EEBD7E3 /* UICollectionViewFlowLayout+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7CF2AC7A3B3ED03B30C1E4ED662B0551 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E540DDA85822634F7C22105FAF894F2 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		81F811A56B6724F7E8E2D25364E595E3 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A3453C3B8038F287817F0457675C94C5 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9194B58ACE900ED6BAE6AD92E24A2CFF /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D9394E53709E1E43CBAB05C843C28ED /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		921D67FCDB3369DA2CD5A4DF3604867B /* UIView+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A4AE51CDFEEB617B430C7F2597BEC7 /* UIView+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		92BF70E9D3285561EB404A7C4A4A6DEE /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 75A73C0603680432481D664C4B56546E /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9690F45C82046D23442829D6C4A1DAEA /* UIColor+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = D383BE8E3AEE74CD1D8BD0D7351028CA /* UIColor+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A3307B8FB6EE0A049DBAE3AA4D2C6DA0 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2408275F236078AB2953946A43F72256 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A4FDE3A2CFC785EE846950364BBC8091 /* NSString+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BD694EA4BB2F19B7C261A6D705A449A /* NSString+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A7663D26DBE8A7B7B7007DFF68CB22F1 /* UITableView+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6835D8BB4B4306C43C7FB40C2678E402 /* UITableView+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A893FFB0F9137E298D6752729850D1D6 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A9590E5B1C511A4200F070BA9ADF6A /* MASViewAttribute.m */; };
+		B14AC02157B828D41B4FD4E5B8AF1AFD /* UIFont+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = 600E7B8DC0B06D6A9854A581CEDFAA99 /* UIFont+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B20A0E5D8F9BCED1A82793C4BE9E7258 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 18E3D3AEF873B48981AEE274A32EC628 /* Masonry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B8F86D275D5F44EFFD998F7AA6CF9B95 /* Pods-ELKCommon-master-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2062A61B6577B85E0C76A50116C895E6 /* Pods-ELKCommon-master-dummy.m */; };
+		B946AFB1A725D85E07F645A7EF086383 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FECC06B53CDE18B9A7449754A08140DE /* NSArray+MASAdditions.m */; };
+		BC3B508E40F98D29A58CFD3548859AC1 /* NSObject+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = BC292E229125CE90AC1FBF85E6CE2AC8 /* NSObject+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C05FC6699632FE712174ED875A605410 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC86F5258FFD1873AECED822A360DFD /* ViewController+MASAdditions.m */; };
+		C2F5FDF0ACC6A9AB75BD7741763248ED /* NSObject+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E7EDAF111DC7FB64E21CE230FBC292C /* NSObject+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C3B89E7BE6D2F0CEACC808B176BC3DC8 /* UICollectionViewFlowLayout+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = EEFE3428623AC58EA0161FB11D987992 /* UICollectionViewFlowLayout+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C74D2E856ADC8139CD00DBD184061B23 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A790428624B7E08099BA4CE6A9BD0849 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C7920681F0164686C56327ED3C6AAC58 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 615CF6961F7B5925973225EF972C58BD /* View+MASAdditions.m */; };
+		D09EF42507EABCC7954CC3292B6C9234 /* ELKChainedAlloy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA3963D000EFC2B957758D17DDEE23F /* ELKChainedAlloy-dummy.m */; };
+		D37B3A5732E4BF6EB92D740DD2C299A7 /* UIControl+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = A74D815517DE5E59B45C952DD273A895 /* UIControl+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D649ABF3BA528A9B523D29AF5CE82905 /* UIImageView+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1586435DAD0ADFC71D9856B478958A /* UIImageView+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D72EE0E749232B2C899702FC1C9402BB /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 195EEB4FE692FCDE8142FFE42B56BF20 /* Masonry-dummy.m */; };
+		D90016CEEE983D36ACDCADFE7DD1DC90 /* UIScrollView+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F6AE7D6CA74E92F0A14B741D409DD35 /* UIScrollView+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E47D1F0D61C785C612E8E69DE30E8852 /* UITextView+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = 682EBF5FC33062D23B6B8760EB3EAE62 /* UITextView+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E76935CFF4AF327F8D9A7C1935F7D900 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2937FD7AAC1A7D504EE9EE5E70B33EBE /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EB663E3E1EB4BB670DC29B77DB330135 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 73BC78B801D5FC44D3E8910418279B38 /* MASConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EE936A6838005A5ED1BC5F74BE37B7BD /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 08FFC111BEE1759021C80EAC0052AAC2 /* MASConstraint.m */; };
+		F1B75048874B8773E5568E6D3ACA12E4 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BC38BFDBE95F0454411203F0FDE77A9 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F27EF5832C8FC9911673C0A20492A533 /* UIButton+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = F40767F7C26D7995760ACE24417F250E /* UIButton+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F7E64EB401A31912D768AD5E20957AEE /* UIImageView+ELKChainedAlloy.h in Headers */ = {isa = PBXBuildFile; fileRef = 46DE9E27EC7EE32E7E464E65708F0ED2 /* UIImageView+ELKChainedAlloy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FD9C64E9572C69E8A2F4A1FA52D85286 /* UIButton+ELKChainedAlloy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9C8FF7BFF883054068D4F5A01BB117 /* UIButton+ELKChainedAlloy.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8F15D5BB13E4A061E9623437B3B73263 /* PBXContainerItemProxy */ = {
+		11CD5E344B8069251635F36B0B8C8D81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8554F6236D2AA202CF58503D2DF29730;
+			remoteInfo = WechatOpenSDK;
+		};
+		3407791D95B85EED1D65D4FC767C8A57 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F093FCD52B3CCA063E56E5C31CD8B0F2;
 			remoteInfo = ELKTencentOpenSDK;
 		};
-		974BF4F0AE2BF908814434B6000507BF /* PBXContainerItemProxy */ = {
+		49A2F3B5E402A244E9D613CA31AD1839 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 944B8C5B9BD9390C3B62A32D74DA1B8D;
-			remoteInfo = ELKChainedAlloy;
+			remoteGlobalIDString = 1E7123E79CD8784BAC800268B6732A3B;
+			remoteInfo = ELKWeiboSDK;
 		};
-		F61D6CF1F2866C7EC7043E34589D0073 /* PBXContainerItemProxy */ = {
+		579B8BF7ADE5C368773EDB65A19251E6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
 			remoteInfo = Masonry;
 		};
+		9F6003314197898853F711C7F701F7EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 944B8C5B9BD9390C3B62A32D74DA1B8D;
+			remoteInfo = ELKChainedAlloy;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C2D1522C65B52506260C23C8B69F969 /* UIScrollView+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/ScrollView/UIScrollView+ELKChainedAlloy.m"; sourceTree = "<group>"; };
+		08FFC111BEE1759021C80EAC0052AAC2 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		0BC38BFDBE95F0454411203F0FDE77A9 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		0E7EDAF111DC7FB64E21CE230FBC292C /* NSObject+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+ELKChainedAlloy.m"; path = "ELKChainedAlloy/Foundation/NSObject+ELKChainedAlloy.m"; sourceTree = "<group>"; };
 		0FBB369FC73852089D830D7176D6C667 /* libELKChainedAlloy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libELKChainedAlloy.a; path = libELKChainedAlloy.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		1268F27B7210569942B5093A6BC75E6E /* NSObject+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+ELKChainedAlloy.h"; path = "ELKChainedAlloy/Foundation/NSObject+ELKChainedAlloy.h"; sourceTree = "<group>"; };
-		198C7FEE0BF9B0371C801790099251BC /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
-		1EEE6F0FFB346B2282236F6A7E337360 /* Pods-ELKCommon-master-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ELKCommon-master-acknowledgements.plist"; sourceTree = "<group>"; };
+		0FD2F1C9EA11385905EE988F32FA670E /* Masonry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.release.xcconfig; sourceTree = "<group>"; };
+		120C43D01170951193D7368AC05D5AEE /* UILabel+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/UILabel+ELKChainedAlloy.h"; sourceTree = "<group>"; };
+		125A66B4901B2D4412D6795EA88D38FB /* ELKChainedAlloy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ELKChainedAlloy-prefix.pch"; sourceTree = "<group>"; };
+		176A94E5178E86F46A90391CE070B88B /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		18E3D3AEF873B48981AEE274A32EC628 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		195EEB4FE692FCDE8142FFE42B56BF20 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		1CE805EFB2E5FC43EEF26E708184E6B8 /* Pods-ELKCommon-master.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ELKCommon-master.debug.xcconfig"; sourceTree = "<group>"; };
+		1D016C6253DF8CDCA60CE0ECDDC114A6 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
 		1FFED36A657123030ABB700256D73F15 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		245DC95F0777FC9C4266CFDD690F3DBE /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		2C8B52860995E70C462015D5F4276617 /* UIFont+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/Trait/UIFont+ELKChainedAlloy.h"; sourceTree = "<group>"; };
-		3124A20189B182F317F1E6F50F896DC1 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
-		355F6B49F745596F9ADD55AFE5BCE4C1 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
-		386FD6EA7887B8CFDBBB594FCE0C7CF6 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		3E0E5E7EB27894CD3818220AD7DA1DE1 /* UIButton+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/Control/UIButton+ELKChainedAlloy.h"; sourceTree = "<group>"; };
-		418FEF563C1DF5AF80469913279798D4 /* NSString+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+ELKChainedAlloy.m"; path = "ELKChainedAlloy/Foundation/NSString+ELKChainedAlloy.m"; sourceTree = "<group>"; };
-		48008F5E2B8F15F1ADFFDFBB96BC94E7 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
-		4F9FA6B13C464B10399888AF9840E785 /* ELKChainedAlloy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ELKChainedAlloy.debug.xcconfig; sourceTree = "<group>"; };
-		5081AD90602E13D985629E036434EAAF /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		5199D613B90AA40A9432726E1C4D2653 /* UIView+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/UIView+ELKChainedAlloy.h"; sourceTree = "<group>"; };
-		599C1CEEDB09DB6DAB32863B1C724669 /* UIFont+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/Trait/UIFont+ELKChainedAlloy.m"; sourceTree = "<group>"; };
-		6F65AE7EAADC6FA576C5B2E731BA3D5B /* ELKChainedAlloy-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ELKChainedAlloy-prefix.pch"; sourceTree = "<group>"; };
-		718BA5C41BABE2E41911D68B52F7A75B /* UIImageView+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/UIImageView+ELKChainedAlloy.h"; sourceTree = "<group>"; };
-		719D142E69C570AA626264698AB859E2 /* UICollectionViewFlowLayout+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionViewFlowLayout+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/ScrollView/UICollectionViewFlowLayout+ELKChainedAlloy.m"; sourceTree = "<group>"; };
-		7782C5AC63DF2CC0EA52037E2BFF34C6 /* UITextView+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/TextInput/UITextView+ELKChainedAlloy.h"; sourceTree = "<group>"; };
-		779EE4CB61CBDE17BB3F62B876FC3A19 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
-		7967CE0B23946DD022CE12DF5DACE540 /* Pods-ELKCommon-master.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ELKCommon-master.debug.xcconfig"; sourceTree = "<group>"; };
-		7A293C5F2BB49C34D7A2F192BEC470EE /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
-		7D3E87EA44D0BCEF3D8FDD45A4026E96 /* NSObject+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+ELKChainedAlloy.m"; path = "ELKChainedAlloy/Foundation/NSObject+ELKChainedAlloy.m"; sourceTree = "<group>"; };
-		7F26B8E21D589C70B2A951C9DF699779 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TencentOpenAPI.framework; path = TencentOpenSDK/TencentOpenAPI.framework; sourceTree = "<group>"; };
-		7F2B88E64FAFBC3311830A6244537918 /* UITextView+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/TextInput/UITextView+ELKChainedAlloy.m"; sourceTree = "<group>"; };
-		8635949BD017BC947E9A0DA0A8A7D003 /* UICollectionView+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionView+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/ScrollView/UICollectionView+ELKChainedAlloy.m"; sourceTree = "<group>"; };
-		8D1C49335B1E12FDBDF60D8C0D8B9F78 /* UICollectionViewFlowLayout+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionViewFlowLayout+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/ScrollView/UICollectionViewFlowLayout+ELKChainedAlloy.h"; sourceTree = "<group>"; };
-		8DFA2FB3F6D96FFC61C33FFC157DF9A7 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		9144B864A017F398C11677172AAD24AF /* UITableView+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/ScrollView/UITableView+ELKChainedAlloy.h"; sourceTree = "<group>"; };
-		95AF3B4BBA13DA430058AB1C9C713D3A /* Pods-ELKCommon-master-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ELKCommon-master-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2062A61B6577B85E0C76A50116C895E6 /* Pods-ELKCommon-master-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ELKCommon-master-dummy.m"; sourceTree = "<group>"; };
+		2408275F236078AB2953946A43F72256 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		27175B4BAE4C8AD238D5DD17ED754599 /* UITextView+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/TextInput/UITextView+ELKChainedAlloy.m"; sourceTree = "<group>"; };
+		2937FD7AAC1A7D504EE9EE5E70B33EBE /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		29A4AE51CDFEEB617B430C7F2597BEC7 /* UIView+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/UIView+ELKChainedAlloy.m"; sourceTree = "<group>"; };
+		2C291724BCA6C695486F6909557C81AF /* ELKChainedAlloy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ELKChainedAlloy.release.xcconfig; sourceTree = "<group>"; };
+		2E20CF9228F3766F05A3A46FDEC30A8B /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
+		2E540DDA85822634F7C22105FAF894F2 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
+		33CC6C3F68A81D3CBFA80E02EB4E243C /* UIControl+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/Control/UIControl+ELKChainedAlloy.h"; sourceTree = "<group>"; };
+		34FAEA81F973783453B302D8FCA73ADA /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = OpenSDK1.8.7.1/WechatAuthSDK.h; sourceTree = "<group>"; };
+		3A02C1C05A4D8AAD1BAEA1A4BE54EEC0 /* UIView+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/UIView+ELKChainedAlloy.h"; sourceTree = "<group>"; };
+		3AAA1FAC2D43D4495FE22B53EB82314C /* ELKTencentOpenSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ELKTencentOpenSDK.release.xcconfig; sourceTree = "<group>"; };
+		3AD0F3EBF13E0E95BF07CDDED186D19E /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TencentOpenAPI.framework; path = TencentOpenSDK/TencentOpenAPI.framework; sourceTree = "<group>"; };
+		421229E335C2B9338BE8AC13FC59DBB9 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
+		46DE9E27EC7EE32E7E464E65708F0ED2 /* UIImageView+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/UIImageView+ELKChainedAlloy.h"; sourceTree = "<group>"; };
+		4A9248BF915D9A4ABC83B286CB52399C /* UITableViewCell+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/ScrollView/UITableViewCell+ELKChainedAlloy.h"; sourceTree = "<group>"; };
+		4BD694EA4BB2F19B7C261A6D705A449A /* NSString+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+ELKChainedAlloy.h"; path = "ELKChainedAlloy/Foundation/NSString+ELKChainedAlloy.h"; sourceTree = "<group>"; };
+		4F6AE7D6CA74E92F0A14B741D409DD35 /* UIScrollView+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/ScrollView/UIScrollView+ELKChainedAlloy.h"; sourceTree = "<group>"; };
+		5115A8D2F77CDC7671CCD55E10283C2C /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
+		52C74C452375215D352E170BAD38F110 /* UIScrollView+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/ScrollView/UIScrollView+ELKChainedAlloy.m"; sourceTree = "<group>"; };
+		533D2FFD8D58895A191E6D6BC798A221 /* UITableViewCell+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/ScrollView/UITableViewCell+ELKChainedAlloy.m"; sourceTree = "<group>"; };
+		57256697EF23FAFCA5F628C845A6D583 /* WBHttpRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBHttpRequest.h; path = ELKWeiboSDK/WBHttpRequest.h; sourceTree = "<group>"; };
+		595478911C2D3E31641BDD8D49535C96 /* WeiboSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WeiboSDK.h; path = ELKWeiboSDK/WeiboSDK.h; sourceTree = "<group>"; };
+		600E7B8DC0B06D6A9854A581CEDFAA99 /* UIFont+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/Trait/UIFont+ELKChainedAlloy.m"; sourceTree = "<group>"; };
+		615CF6961F7B5925973225EF972C58BD /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		63B60CDB5C42ED38444B97BB4995981B /* NSString+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+ELKChainedAlloy.m"; path = "ELKChainedAlloy/Foundation/NSString+ELKChainedAlloy.m"; sourceTree = "<group>"; };
+		65B87582522C3757D3973A806DB5964E /* UICollectionView+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionView+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/ScrollView/UICollectionView+ELKChainedAlloy.m"; sourceTree = "<group>"; };
+		682EBF5FC33062D23B6B8760EB3EAE62 /* UITextView+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/TextInput/UITextView+ELKChainedAlloy.h"; sourceTree = "<group>"; };
+		6835D8BB4B4306C43C7FB40C2678E402 /* UITableView+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/ScrollView/UITableView+ELKChainedAlloy.m"; sourceTree = "<group>"; };
+		731086FFB053DDB0FAE7E90E3F422753 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
+		73BC78B801D5FC44D3E8910418279B38 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
+		75A73C0603680432481D664C4B56546E /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		797882F5F624BC05B4F33B22E7B35103 /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = OpenSDK1.8.7.1/WXApi.h; sourceTree = "<group>"; };
+		7978EC8AAAE3925A91AD27A65F0BCF62 /* libWeiboSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeiboSDK.a; path = ELKWeiboSDK/libWeiboSDK.a; sourceTree = "<group>"; };
+		7A295260E871F66657C8EE3A163FED92 /* ELKChainedAlloy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ELKChainedAlloy.debug.xcconfig; sourceTree = "<group>"; };
+		7B0D54BA986E76569DABC0473CE7DEC4 /* WechatOpenSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WechatOpenSDK.release.xcconfig; sourceTree = "<group>"; };
+		816AB259B9721B8BE4D3B89208EDD001 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
+		82DBB57F61B15216AFC4BF40AEF484F8 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
+		84B12A8042152DEFEE9533B4E9DE3D33 /* UIFont+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/Trait/UIFont+ELKChainedAlloy.h"; sourceTree = "<group>"; };
+		84C65810CB648AE53C0103D00DEC2EEE /* UITableView+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/ScrollView/UITableView+ELKChainedAlloy.h"; sourceTree = "<group>"; };
+		8CC86F5258FFD1873AECED822A360DFD /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		92A9590E5B1C511A4200F070BA9ADF6A /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
+		96160D69DFA4980C26547B79A21A87CD /* UICollectionView+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionView+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/ScrollView/UICollectionView+ELKChainedAlloy.h"; sourceTree = "<group>"; };
+		97B29CC0CA2A06CE07CC3156B08438B1 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		97D99A0540B4F3A2D0F05472038EBAE0 /* Pods-ELKCommon-master.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ELKCommon-master.release.xcconfig"; sourceTree = "<group>"; };
 		97EEA95B3BA07FAD025ED92CA678F962 /* libPods-ELKCommon-master.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ELKCommon-master.a"; path = "libPods-ELKCommon-master.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B6AD543410C123AF59F04D5D8FC1C41 /* UIImageView+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/UIImageView+ELKChainedAlloy.m"; sourceTree = "<group>"; };
-		9B99EC97F14375C49E80DE4E24DF242D /* UIColor+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/Trait/UIColor+ELKChainedAlloy.h"; sourceTree = "<group>"; };
+		9D9394E53709E1E43CBAB05C843C28ED /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E1041C8FD958F24FC7C7BA5231FD93F /* ELKChainedAlloy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ELKChainedAlloy-dummy.m"; sourceTree = "<group>"; };
-		A0EB754ECC16AEFCDCC5FB70D6E536A8 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
-		A18C438632B963A96BC1AD96F4E79EDD /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
-		A1FF80A09315F16FDDFEA3CC6CE06E28 /* UIColor+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/Trait/UIColor+ELKChainedAlloy.m"; sourceTree = "<group>"; };
-		A25A5DD2E9201F10D0F944DD3B19E942 /* UIView+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/UIView+ELKChainedAlloy.m"; sourceTree = "<group>"; };
-		A38188644F8101B4D138470B26F9940A /* UITableViewCell+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/ScrollView/UITableViewCell+ELKChainedAlloy.h"; sourceTree = "<group>"; };
-		A53A04BD5F2A0BF0C34DB364CCC8499D /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
-		A6AC2F85DBAD711648B421ACF6087532 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		A6D7A6EDDA81859EC7925F767A667476 /* ELKChainedAlloy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ELKChainedAlloy.release.xcconfig; sourceTree = "<group>"; };
-		A97B54DE1E05DEA80E91A5B7583DC191 /* UITextField+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/TextInput/UITextField+ELKChainedAlloy.h"; sourceTree = "<group>"; };
-		A9D91DD00A86BAFC1C70DCCC32C3F968 /* Pods-ELKCommon-master-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ELKCommon-master-dummy.m"; sourceTree = "<group>"; };
-		B1BA644881C28BF27357E2FC13DC1F34 /* NSString+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+ELKChainedAlloy.h"; path = "ELKChainedAlloy/Foundation/NSString+ELKChainedAlloy.h"; sourceTree = "<group>"; };
-		B27E957DB6E0570601917C7F65B5A51C /* UILabel+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/UILabel+ELKChainedAlloy.m"; sourceTree = "<group>"; };
-		B419E87FEB98EF721D346402ADDF2FA6 /* UIButton+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/Control/UIButton+ELKChainedAlloy.m"; sourceTree = "<group>"; };
-		B4784DEBDA30DE87451ACBD01E5ACF1B /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
-		B82AA46668BE02FB55DDFC1E8AE28205 /* ELKTencentOpenSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ELKTencentOpenSDK.release.xcconfig; sourceTree = "<group>"; };
-		B90A83989C417E0F95CED847C0DE09EC /* Masonry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.release.xcconfig; sourceTree = "<group>"; };
-		BB9918435E678E35CAAE34FF28EAD67C /* UIScrollView+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/ScrollView/UIScrollView+ELKChainedAlloy.h"; sourceTree = "<group>"; };
-		BD1BDE8A05696AF26E3FB89C59ECC05D /* UITableViewCell+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/ScrollView/UITableViewCell+ELKChainedAlloy.m"; sourceTree = "<group>"; };
-		BD644760015D5266E9F5EDBF477C3FEF /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
-		BD993DD8E4B35BD7FE6CBD04F261F4D1 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
-		BE8BFB4D0CA43B4E9BDB664F18D30691 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		BEF95915089FA64BDC5EEA5A8802DA70 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
-		C232706630130787280E561426304888 /* UITextField+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/TextInput/UITextField+ELKChainedAlloy.m"; sourceTree = "<group>"; };
-		C4C5CC59A4394EEB8B8321A7157B9C70 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
-		C63029C3AD2059E227BD532167AF111D /* UICollectionView+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionView+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/ScrollView/UICollectionView+ELKChainedAlloy.h"; sourceTree = "<group>"; };
-		CA9E96D3E685ED93801DA83FF5340DB7 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		D6F8DD69CF112BBFB0F5E2370A0D700B /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
-		DAAA5197CB4BC8482D11EC7DC7ED657E /* ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ELKChainedAlloy.h; path = ELKChainedAlloy/ELKChainedAlloy.h; sourceTree = "<group>"; };
-		DBE600F90B93E498B2231E58C6258575 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
-		DEE0B5406845585FA79048E6494C31F8 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
-		E16B9374CA02773A337301ABB860CD29 /* UILabel+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/UILabel+ELKChainedAlloy.h"; sourceTree = "<group>"; };
-		E3C18A1976D0A52D31B758962302970C /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
-		E9F88C05702FCAE6D23D06BA833679E2 /* UIControl+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/Control/UIControl+ELKChainedAlloy.m"; sourceTree = "<group>"; };
-		EA879DC38EB7E5F822E8B778A27AFC26 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
-		F08F661D7F706C34CE267C0B14FDE89B /* UITableView+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/ScrollView/UITableView+ELKChainedAlloy.m"; sourceTree = "<group>"; };
-		F0C5078B8C76D02AB8B06D80D07874F9 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
-		F0E6BB0087ED2972665E9814AB5CE18D /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
-		F1C7D8BAF744B9CEB707737F0E4CE6D8 /* Pods-ELKCommon-master.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ELKCommon-master.release.xcconfig"; sourceTree = "<group>"; };
-		F988A1B2B7C976FCCE8DE7EBD05CAE97 /* ELKTencentOpenSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ELKTencentOpenSDK.debug.xcconfig; sourceTree = "<group>"; };
-		FEE11EF089B06992C4FFBF84723FF6D6 /* UIControl+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIControl+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/Control/UIControl+ELKChainedAlloy.h"; sourceTree = "<group>"; };
+		A3453C3B8038F287817F0457675C94C5 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		A74D815517DE5E59B45C952DD273A895 /* UIControl+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/Control/UIControl+ELKChainedAlloy.m"; sourceTree = "<group>"; };
+		A790428624B7E08099BA4CE6A9BD0849 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		A85FCFD62E5FCA2490833C2C2AA59811 /* WeiboSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = WeiboSDK.bundle; path = ELKWeiboSDK/WeiboSDK.bundle; sourceTree = "<group>"; };
+		A86ACF60433BFF4675DD80EF1CD6C052 /* Pods-ELKCommon-master-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ELKCommon-master-acknowledgements.plist"; sourceTree = "<group>"; };
+		AE1586435DAD0ADFC71D9856B478958A /* UIImageView+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/UIImageView+ELKChainedAlloy.m"; sourceTree = "<group>"; };
+		B8762AEA86913CD166D872034EEBD7E3 /* UICollectionViewFlowLayout+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionViewFlowLayout+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/ScrollView/UICollectionViewFlowLayout+ELKChainedAlloy.m"; sourceTree = "<group>"; };
+		BC292E229125CE90AC1FBF85E6CE2AC8 /* NSObject+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+ELKChainedAlloy.h"; path = "ELKChainedAlloy/Foundation/NSObject+ELKChainedAlloy.h"; sourceTree = "<group>"; };
+		BE44154C3AE8EAC3DFB2E05ECB92663F /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
+		C058851A2CF40B2E00CC885E8316A07E /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = OpenSDK1.8.7.1/libWeChatSDK.a; sourceTree = "<group>"; };
+		C2C2D2087BF63A06F91BECB16F637B36 /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = OpenSDK1.8.7.1/WXApiObject.h; sourceTree = "<group>"; };
+		C777407658AF787F325766E187F549D1 /* UILabel+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/UILabel+ELKChainedAlloy.m"; sourceTree = "<group>"; };
+		CB9C8FF7BFF883054068D4F5A01BB117 /* UIButton+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/Control/UIButton+ELKChainedAlloy.m"; sourceTree = "<group>"; };
+		CEE6BE77CCCA5DBEFDC05C4EE1EDE30D /* ELKWeiboSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ELKWeiboSDK.release.xcconfig; sourceTree = "<group>"; };
+		D383BE8E3AEE74CD1D8BD0D7351028CA /* UIColor+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/Trait/UIColor+ELKChainedAlloy.h"; sourceTree = "<group>"; };
+		D835315C929B75C1302FBC3F945040A7 /* ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ELKChainedAlloy.h; path = ELKChainedAlloy/ELKChainedAlloy.h; sourceTree = "<group>"; };
+		DA0FEA9EF43CB3A9543BE056F5156596 /* ELKTencentOpenSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ELKTencentOpenSDK.debug.xcconfig; sourceTree = "<group>"; };
+		DC4976DAB4AE1D2B5723FF51A75C5677 /* UITextField+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/TextInput/UITextField+ELKChainedAlloy.m"; sourceTree = "<group>"; };
+		DCA65E99D2869FCC1CA356B64569F316 /* WechatOpenSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WechatOpenSDK.debug.xcconfig; sourceTree = "<group>"; };
+		E051E9E138EC3313532A89F455F74499 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
+		E0C2A520E80BDF17DAAD89E49CA26484 /* UITextField+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/TextInput/UITextField+ELKChainedAlloy.h"; sourceTree = "<group>"; };
+		E34578A102C9D084E5E37CBF64C06A85 /* ELKWeiboSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ELKWeiboSDK.debug.xcconfig; sourceTree = "<group>"; };
+		EDA3963D000EFC2B957758D17DDEE23F /* ELKChainedAlloy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ELKChainedAlloy-dummy.m"; sourceTree = "<group>"; };
+		EEFE3428623AC58EA0161FB11D987992 /* UICollectionViewFlowLayout+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionViewFlowLayout+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/ScrollView/UICollectionViewFlowLayout+ELKChainedAlloy.h"; sourceTree = "<group>"; };
+		EF52A4335C2CD1229F587CB8394CE8BA /* Pods-ELKCommon-master-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ELKCommon-master-resources.sh"; sourceTree = "<group>"; };
+		F1664B1A55B62969E04E4785F06F164F /* UIColor+ELKChainedAlloy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ELKChainedAlloy.m"; path = "ELKChainedAlloy/UIKit/Trait/UIColor+ELKChainedAlloy.m"; sourceTree = "<group>"; };
+		F40767F7C26D7995760ACE24417F250E /* UIButton+ELKChainedAlloy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+ELKChainedAlloy.h"; path = "ELKChainedAlloy/UIKit/Control/UIButton+ELKChainedAlloy.h"; sourceTree = "<group>"; };
+		F4B4172EE5A7F2007C0D8B5C9454D323 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
+		FB0D800E0F3044A871B1D3A7F173D606 /* Pods-ELKCommon-master-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ELKCommon-master-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FECC06B53CDE18B9A7449754A08140DE /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,7 +240,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		53489DAF0581B53E1292AC1DEAD62D54 /* Frameworks */ = {
+		7DEC16DEF094AEA643E7D8324BF4EA91 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -212,137 +257,156 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07375EDC34F78D78E6C6127D5A717DCA /* UIKit */ = {
+		001577CA404D266E6C742AA80DF9125D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3E0E5E7EB27894CD3818220AD7DA1DE1 /* UIButton+ELKChainedAlloy.h */,
-				B419E87FEB98EF721D346402ADDF2FA6 /* UIButton+ELKChainedAlloy.m */,
-				C63029C3AD2059E227BD532167AF111D /* UICollectionView+ELKChainedAlloy.h */,
-				8635949BD017BC947E9A0DA0A8A7D003 /* UICollectionView+ELKChainedAlloy.m */,
-				8D1C49335B1E12FDBDF60D8C0D8B9F78 /* UICollectionViewFlowLayout+ELKChainedAlloy.h */,
-				719D142E69C570AA626264698AB859E2 /* UICollectionViewFlowLayout+ELKChainedAlloy.m */,
-				9B99EC97F14375C49E80DE4E24DF242D /* UIColor+ELKChainedAlloy.h */,
-				A1FF80A09315F16FDDFEA3CC6CE06E28 /* UIColor+ELKChainedAlloy.m */,
-				FEE11EF089B06992C4FFBF84723FF6D6 /* UIControl+ELKChainedAlloy.h */,
-				E9F88C05702FCAE6D23D06BA833679E2 /* UIControl+ELKChainedAlloy.m */,
-				2C8B52860995E70C462015D5F4276617 /* UIFont+ELKChainedAlloy.h */,
-				599C1CEEDB09DB6DAB32863B1C724669 /* UIFont+ELKChainedAlloy.m */,
-				718BA5C41BABE2E41911D68B52F7A75B /* UIImageView+ELKChainedAlloy.h */,
-				9B6AD543410C123AF59F04D5D8FC1C41 /* UIImageView+ELKChainedAlloy.m */,
-				E16B9374CA02773A337301ABB860CD29 /* UILabel+ELKChainedAlloy.h */,
-				B27E957DB6E0570601917C7F65B5A51C /* UILabel+ELKChainedAlloy.m */,
-				BB9918435E678E35CAAE34FF28EAD67C /* UIScrollView+ELKChainedAlloy.h */,
-				0C2D1522C65B52506260C23C8B69F969 /* UIScrollView+ELKChainedAlloy.m */,
-				9144B864A017F398C11677172AAD24AF /* UITableView+ELKChainedAlloy.h */,
-				F08F661D7F706C34CE267C0B14FDE89B /* UITableView+ELKChainedAlloy.m */,
-				A38188644F8101B4D138470B26F9940A /* UITableViewCell+ELKChainedAlloy.h */,
-				BD1BDE8A05696AF26E3FB89C59ECC05D /* UITableViewCell+ELKChainedAlloy.m */,
-				A97B54DE1E05DEA80E91A5B7583DC191 /* UITextField+ELKChainedAlloy.h */,
-				C232706630130787280E561426304888 /* UITextField+ELKChainedAlloy.m */,
-				7782C5AC63DF2CC0EA52037E2BFF34C6 /* UITextView+ELKChainedAlloy.h */,
-				7F2B88E64FAFBC3311830A6244537918 /* UITextView+ELKChainedAlloy.m */,
-				5199D613B90AA40A9432726E1C4D2653 /* UIView+ELKChainedAlloy.h */,
-				A25A5DD2E9201F10D0F944DD3B19E942 /* UIView+ELKChainedAlloy.m */,
+				3AD0F3EBF13E0E95BF07CDDED186D19E /* TencentOpenAPI.framework */,
 			);
-			name = UIKit;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0F1AE3B0A35ABECF340041CE4B6C4553 /* Support Files */ = {
+		0393C58138EB11A28A201B553015E0D9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DBE600F90B93E498B2231E58C6258575 /* Masonry-dummy.m */,
-				E3C18A1976D0A52D31B758962302970C /* Masonry-prefix.pch */,
-				B4784DEBDA30DE87451ACBD01E5ACF1B /* Masonry.debug.xcconfig */,
-				B90A83989C417E0F95CED847C0DE09EC /* Masonry.release.xcconfig */,
+				E34578A102C9D084E5E37CBF64C06A85 /* ELKWeiboSDK.debug.xcconfig */,
+				CEE6BE77CCCA5DBEFDC05C4EE1EDE30D /* ELKWeiboSDK.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/Masonry";
+			path = "../Target Support Files/ELKWeiboSDK";
 			sourceTree = "<group>";
 		};
-		1CA4A86ECDEA67666DCE96705409EF1B /* Targets Support Files */ = {
+		089ED73F343807596340A8DA68EA2125 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6DCD443081B0F12BAD5B62CEB4D296BF /* Pods-ELKCommon-master */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		466728788A1532DC76E128217D182A9F /* ELKTencentOpenSDK */ = {
-			isa = PBXGroup;
-			children = (
-				99863E2624092E131FF77FBC534115F3 /* Frameworks */,
-				5F897252DE5299B886BA763B33836658 /* Support Files */,
-			);
-			name = ELKTencentOpenSDK;
-			path = ELKTencentOpenSDK;
-			sourceTree = "<group>";
-		};
-		59C9DD42AA9C263144AD2D1DFC5EFC20 /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				1268F27B7210569942B5093A6BC75E6E /* NSObject+ELKChainedAlloy.h */,
-				7D3E87EA44D0BCEF3D8FDD45A4026E96 /* NSObject+ELKChainedAlloy.m */,
-				B1BA644881C28BF27357E2FC13DC1F34 /* NSString+ELKChainedAlloy.h */,
-				418FEF563C1DF5AF80469913279798D4 /* NSString+ELKChainedAlloy.m */,
-			);
-			name = Foundation;
-			sourceTree = "<group>";
-		};
-		5E9560F0D1094C62A3FA615958D7ADD0 /* Masonry */ = {
-			isa = PBXGroup;
-			children = (
-				F0E6BB0087ED2972665E9814AB5CE18D /* MASCompositeConstraint.h */,
-				3124A20189B182F317F1E6F50F896DC1 /* MASCompositeConstraint.m */,
-				BD644760015D5266E9F5EDBF477C3FEF /* MASConstraint.h */,
-				A0EB754ECC16AEFCDCC5FB70D6E536A8 /* MASConstraint.m */,
-				48008F5E2B8F15F1ADFFDFBB96BC94E7 /* MASConstraint+Private.h */,
-				198C7FEE0BF9B0371C801790099251BC /* MASConstraintMaker.h */,
-				D6F8DD69CF112BBFB0F5E2370A0D700B /* MASConstraintMaker.m */,
-				F0C5078B8C76D02AB8B06D80D07874F9 /* MASLayoutConstraint.h */,
-				779EE4CB61CBDE17BB3F62B876FC3A19 /* MASLayoutConstraint.m */,
-				BEF95915089FA64BDC5EEA5A8802DA70 /* Masonry.h */,
-				A18C438632B963A96BC1AD96F4E79EDD /* MASUtilities.h */,
-				EA879DC38EB7E5F822E8B778A27AFC26 /* MASViewAttribute.h */,
-				7A293C5F2BB49C34D7A2F192BEC470EE /* MASViewAttribute.m */,
-				DEE0B5406845585FA79048E6494C31F8 /* MASViewConstraint.h */,
-				A53A04BD5F2A0BF0C34DB364CCC8499D /* MASViewConstraint.m */,
-				5081AD90602E13D985629E036434EAAF /* NSArray+MASAdditions.h */,
-				386FD6EA7887B8CFDBBB594FCE0C7CF6 /* NSArray+MASAdditions.m */,
-				CA9E96D3E685ED93801DA83FF5340DB7 /* NSArray+MASShorthandAdditions.h */,
-				BE8BFB4D0CA43B4E9BDB664F18D30691 /* NSLayoutConstraint+MASDebugAdditions.h */,
-				A6AC2F85DBAD711648B421ACF6087532 /* NSLayoutConstraint+MASDebugAdditions.m */,
-				355F6B49F745596F9ADD55AFE5BCE4C1 /* View+MASAdditions.h */,
-				C4C5CC59A4394EEB8B8321A7157B9C70 /* View+MASAdditions.m */,
-				8DFA2FB3F6D96FFC61C33FFC157DF9A7 /* View+MASShorthandAdditions.h */,
-				BD993DD8E4B35BD7FE6CBD04F261F4D1 /* ViewController+MASAdditions.h */,
-				245DC95F0777FC9C4266CFDD690F3DBE /* ViewController+MASAdditions.m */,
-				0F1AE3B0A35ABECF340041CE4B6C4553 /* Support Files */,
-			);
-			name = Masonry;
-			path = Masonry;
-			sourceTree = "<group>";
-		};
-		5F897252DE5299B886BA763B33836658 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F988A1B2B7C976FCCE8DE7EBD05CAE97 /* ELKTencentOpenSDK.debug.xcconfig */,
-				B82AA46668BE02FB55DDFC1E8AE28205 /* ELKTencentOpenSDK.release.xcconfig */,
+				DA0FEA9EF43CB3A9543BE056F5156596 /* ELKTencentOpenSDK.debug.xcconfig */,
+				3AAA1FAC2D43D4495FE22B53EB82314C /* ELKTencentOpenSDK.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/ELKTencentOpenSDK";
 			sourceTree = "<group>";
 		};
-		6DCD443081B0F12BAD5B62CEB4D296BF /* Pods-ELKCommon-master */ = {
+		13D6F10E9E6C77FF6C117189B52191BB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				95AF3B4BBA13DA430058AB1C9C713D3A /* Pods-ELKCommon-master-acknowledgements.markdown */,
-				1EEE6F0FFB346B2282236F6A7E337360 /* Pods-ELKCommon-master-acknowledgements.plist */,
-				A9D91DD00A86BAFC1C70DCCC32C3F968 /* Pods-ELKCommon-master-dummy.m */,
-				7967CE0B23946DD022CE12DF5DACE540 /* Pods-ELKCommon-master.debug.xcconfig */,
-				F1C7D8BAF744B9CEB707737F0E4CE6D8 /* Pods-ELKCommon-master.release.xcconfig */,
+				7978EC8AAAE3925A91AD27A65F0BCF62 /* libWeiboSDK.a */,
 			);
-			name = "Pods-ELKCommon-master";
-			path = "Target Support Files/Pods-ELKCommon-master";
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2320A1FD9DABC9F4C2ECD97FE7478D9F /* ELKChainedAlloy */ = {
+			isa = PBXGroup;
+			children = (
+				D835315C929B75C1302FBC3F945040A7 /* ELKChainedAlloy.h */,
+				6088D5BF04003CCCF8A91F0470B21498 /* Foundation */,
+				26C6F453C11FE6600C9CB559D9F79723 /* Support Files */,
+				4A99F1CA6364B981B3FD42013B8BFE46 /* UIKit */,
+			);
+			name = ELKChainedAlloy;
+			path = ELKChainedAlloy;
+			sourceTree = "<group>";
+		};
+		26C6F453C11FE6600C9CB559D9F79723 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EDA3963D000EFC2B957758D17DDEE23F /* ELKChainedAlloy-dummy.m */,
+				125A66B4901B2D4412D6795EA88D38FB /* ELKChainedAlloy-prefix.pch */,
+				7A295260E871F66657C8EE3A163FED92 /* ELKChainedAlloy.debug.xcconfig */,
+				2C291724BCA6C695486F6909557C81AF /* ELKChainedAlloy.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ELKChainedAlloy";
+			sourceTree = "<group>";
+		};
+		353FD09FEDC280691063EA6614FA7C35 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				195EEB4FE692FCDE8142FFE42B56BF20 /* Masonry-dummy.m */,
+				E051E9E138EC3313532A89F455F74499 /* Masonry-prefix.pch */,
+				5115A8D2F77CDC7671CCD55E10283C2C /* Masonry.debug.xcconfig */,
+				0FD2F1C9EA11385905EE988F32FA670E /* Masonry.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Masonry";
+			sourceTree = "<group>";
+		};
+		4A99F1CA6364B981B3FD42013B8BFE46 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				F40767F7C26D7995760ACE24417F250E /* UIButton+ELKChainedAlloy.h */,
+				CB9C8FF7BFF883054068D4F5A01BB117 /* UIButton+ELKChainedAlloy.m */,
+				96160D69DFA4980C26547B79A21A87CD /* UICollectionView+ELKChainedAlloy.h */,
+				65B87582522C3757D3973A806DB5964E /* UICollectionView+ELKChainedAlloy.m */,
+				EEFE3428623AC58EA0161FB11D987992 /* UICollectionViewFlowLayout+ELKChainedAlloy.h */,
+				B8762AEA86913CD166D872034EEBD7E3 /* UICollectionViewFlowLayout+ELKChainedAlloy.m */,
+				D383BE8E3AEE74CD1D8BD0D7351028CA /* UIColor+ELKChainedAlloy.h */,
+				F1664B1A55B62969E04E4785F06F164F /* UIColor+ELKChainedAlloy.m */,
+				33CC6C3F68A81D3CBFA80E02EB4E243C /* UIControl+ELKChainedAlloy.h */,
+				A74D815517DE5E59B45C952DD273A895 /* UIControl+ELKChainedAlloy.m */,
+				84B12A8042152DEFEE9533B4E9DE3D33 /* UIFont+ELKChainedAlloy.h */,
+				600E7B8DC0B06D6A9854A581CEDFAA99 /* UIFont+ELKChainedAlloy.m */,
+				46DE9E27EC7EE32E7E464E65708F0ED2 /* UIImageView+ELKChainedAlloy.h */,
+				AE1586435DAD0ADFC71D9856B478958A /* UIImageView+ELKChainedAlloy.m */,
+				120C43D01170951193D7368AC05D5AEE /* UILabel+ELKChainedAlloy.h */,
+				C777407658AF787F325766E187F549D1 /* UILabel+ELKChainedAlloy.m */,
+				4F6AE7D6CA74E92F0A14B741D409DD35 /* UIScrollView+ELKChainedAlloy.h */,
+				52C74C452375215D352E170BAD38F110 /* UIScrollView+ELKChainedAlloy.m */,
+				84C65810CB648AE53C0103D00DEC2EEE /* UITableView+ELKChainedAlloy.h */,
+				6835D8BB4B4306C43C7FB40C2678E402 /* UITableView+ELKChainedAlloy.m */,
+				4A9248BF915D9A4ABC83B286CB52399C /* UITableViewCell+ELKChainedAlloy.h */,
+				533D2FFD8D58895A191E6D6BC798A221 /* UITableViewCell+ELKChainedAlloy.m */,
+				E0C2A520E80BDF17DAAD89E49CA26484 /* UITextField+ELKChainedAlloy.h */,
+				DC4976DAB4AE1D2B5723FF51A75C5677 /* UITextField+ELKChainedAlloy.m */,
+				682EBF5FC33062D23B6B8760EB3EAE62 /* UITextView+ELKChainedAlloy.h */,
+				27175B4BAE4C8AD238D5DD17ED754599 /* UITextView+ELKChainedAlloy.m */,
+				3A02C1C05A4D8AAD1BAEA1A4BE54EEC0 /* UIView+ELKChainedAlloy.h */,
+				29A4AE51CDFEEB617B430C7F2597BEC7 /* UIView+ELKChainedAlloy.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		6088D5BF04003CCCF8A91F0470B21498 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				BC292E229125CE90AC1FBF85E6CE2AC8 /* NSObject+ELKChainedAlloy.h */,
+				0E7EDAF111DC7FB64E21CE230FBC292C /* NSObject+ELKChainedAlloy.m */,
+				4BD694EA4BB2F19B7C261A6D705A449A /* NSString+ELKChainedAlloy.h */,
+				63B60CDB5C42ED38444B97BB4995981B /* NSString+ELKChainedAlloy.m */,
+			);
+			name = Foundation;
+			sourceTree = "<group>";
+		};
+		676631E52D3025DDA658ABB219A20C35 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				75A73C0603680432481D664C4B56546E /* MASCompositeConstraint.h */,
+				2E20CF9228F3766F05A3A46FDEC30A8B /* MASCompositeConstraint.m */,
+				73BC78B801D5FC44D3E8910418279B38 /* MASConstraint.h */,
+				08FFC111BEE1759021C80EAC0052AAC2 /* MASConstraint.m */,
+				816AB259B9721B8BE4D3B89208EDD001 /* MASConstraint+Private.h */,
+				9D9394E53709E1E43CBAB05C843C28ED /* MASConstraintMaker.h */,
+				731086FFB053DDB0FAE7E90E3F422753 /* MASConstraintMaker.m */,
+				2E540DDA85822634F7C22105FAF894F2 /* MASLayoutConstraint.h */,
+				1D016C6253DF8CDCA60CE0ECDDC114A6 /* MASLayoutConstraint.m */,
+				18E3D3AEF873B48981AEE274A32EC628 /* Masonry.h */,
+				F4B4172EE5A7F2007C0D8B5C9454D323 /* MASUtilities.h */,
+				BE44154C3AE8EAC3DFB2E05ECB92663F /* MASViewAttribute.h */,
+				92A9590E5B1C511A4200F070BA9ADF6A /* MASViewAttribute.m */,
+				421229E335C2B9338BE8AC13FC59DBB9 /* MASViewConstraint.h */,
+				176A94E5178E86F46A90391CE070B88B /* MASViewConstraint.m */,
+				0BC38BFDBE95F0454411203F0FDE77A9 /* NSArray+MASAdditions.h */,
+				FECC06B53CDE18B9A7449754A08140DE /* NSArray+MASAdditions.m */,
+				A3453C3B8038F287817F0457675C94C5 /* NSArray+MASShorthandAdditions.h */,
+				A790428624B7E08099BA4CE6A9BD0849 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				97B29CC0CA2A06CE07CC3156B08438B1 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				82DBB57F61B15216AFC4BF40AEF484F8 /* View+MASAdditions.h */,
+				615CF6961F7B5925973225EF972C58BD /* View+MASAdditions.m */,
+				2408275F236078AB2953946A43F72256 /* View+MASShorthandAdditions.h */,
+				2937FD7AAC1A7D504EE9EE5E70B33EBE /* ViewController+MASAdditions.h */,
+				8CC86F5258FFD1873AECED822A360DFD /* ViewController+MASAdditions.m */,
+				353FD09FEDC280691063EA6614FA7C35 /* Support Files */,
+			);
+			name = Masonry;
+			path = Masonry;
 			sourceTree = "<group>";
 		};
 		7B688F4A1D0FC7D61830F365A1070445 /* Products */ = {
@@ -355,36 +419,70 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		99863E2624092E131FF77FBC534115F3 /* Frameworks */ = {
+		7F6AC361D8847AD8991A4D207C15E0FD /* ELKWeiboSDK */ = {
 			isa = PBXGroup;
 			children = (
-				7F26B8E21D589C70B2A951C9DF699779 /* TencentOpenAPI.framework */,
+				57256697EF23FAFCA5F628C845A6D583 /* WBHttpRequest.h */,
+				595478911C2D3E31641BDD8D49535C96 /* WeiboSDK.h */,
+				13D6F10E9E6C77FF6C117189B52191BB /* Frameworks */,
+				C0CAFDDB2D45FEB7BADE96E8AC03D390 /* Resources */,
+				0393C58138EB11A28A201B553015E0D9 /* Support Files */,
 			);
-			name = Frameworks;
+			name = ELKWeiboSDK;
+			path = ELKWeiboSDK;
 			sourceTree = "<group>";
 		};
-		B06313F98C6A657E7765889FC99DE9B7 /* ELKChainedAlloy */ = {
+		8D25D3FD5706D7870C4254B4759D2D14 /* WechatOpenSDK */ = {
 			isa = PBXGroup;
 			children = (
-				DAAA5197CB4BC8482D11EC7DC7ED657E /* ELKChainedAlloy.h */,
-				59C9DD42AA9C263144AD2D1DFC5EFC20 /* Foundation */,
-				C938C3F88F578BCBEF7DEA58D0EFFBED /* Support Files */,
-				07375EDC34F78D78E6C6127D5A717DCA /* UIKit */,
+				34FAEA81F973783453B302D8FCA73ADA /* WechatAuthSDK.h */,
+				797882F5F624BC05B4F33B22E7B35103 /* WXApi.h */,
+				C2C2D2087BF63A06F91BECB16F637B36 /* WXApiObject.h */,
+				FE924E60CBF56E68279A5C2BD57CFAE9 /* Frameworks */,
+				FC7F13CE5957FECF408D396EB9ADAB49 /* Support Files */,
 			);
-			name = ELKChainedAlloy;
-			path = ELKChainedAlloy;
+			name = WechatOpenSDK;
+			path = WechatOpenSDK;
 			sourceTree = "<group>";
 		};
-		C938C3F88F578BCBEF7DEA58D0EFFBED /* Support Files */ = {
+		93087C8CCED63B979E86451561DC004A /* Pods-ELKCommon-master */ = {
 			isa = PBXGroup;
 			children = (
-				9E1041C8FD958F24FC7C7BA5231FD93F /* ELKChainedAlloy-dummy.m */,
-				6F65AE7EAADC6FA576C5B2E731BA3D5B /* ELKChainedAlloy-prefix.pch */,
-				4F9FA6B13C464B10399888AF9840E785 /* ELKChainedAlloy.debug.xcconfig */,
-				A6D7A6EDDA81859EC7925F767A667476 /* ELKChainedAlloy.release.xcconfig */,
+				FB0D800E0F3044A871B1D3A7F173D606 /* Pods-ELKCommon-master-acknowledgements.markdown */,
+				A86ACF60433BFF4675DD80EF1CD6C052 /* Pods-ELKCommon-master-acknowledgements.plist */,
+				2062A61B6577B85E0C76A50116C895E6 /* Pods-ELKCommon-master-dummy.m */,
+				EF52A4335C2CD1229F587CB8394CE8BA /* Pods-ELKCommon-master-resources.sh */,
+				1CE805EFB2E5FC43EEF26E708184E6B8 /* Pods-ELKCommon-master.debug.xcconfig */,
+				97D99A0540B4F3A2D0F05472038EBAE0 /* Pods-ELKCommon-master.release.xcconfig */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/ELKChainedAlloy";
+			name = "Pods-ELKCommon-master";
+			path = "Target Support Files/Pods-ELKCommon-master";
+			sourceTree = "<group>";
+		};
+		9547E817263E3694B95963C6B2240D95 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				93087C8CCED63B979E86451561DC004A /* Pods-ELKCommon-master */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9AC62087A48B50C9402020BA58D2A804 /* ELKTencentOpenSDK */ = {
+			isa = PBXGroup;
+			children = (
+				001577CA404D266E6C742AA80DF9125D /* Frameworks */,
+				089ED73F343807596340A8DA68EA2125 /* Support Files */,
+			);
+			name = ELKTencentOpenSDK;
+			path = ELKTencentOpenSDK;
+			sourceTree = "<group>";
+		};
+		C0CAFDDB2D45FEB7BADE96E8AC03D390 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A85FCFD62E5FCA2490833C2C2AA59811 /* WeiboSDK.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -392,25 +490,45 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				D67C7BBBE56C34D87F4FBA265BAA02A3 /* Pods */,
+				F2F1A2F292F17602638C64550086D7D4 /* Pods */,
 				7B688F4A1D0FC7D61830F365A1070445 /* Products */,
-				1CA4A86ECDEA67666DCE96705409EF1B /* Targets Support Files */,
+				9547E817263E3694B95963C6B2240D95 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D67C7BBBE56C34D87F4FBA265BAA02A3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B06313F98C6A657E7765889FC99DE9B7 /* ELKChainedAlloy */,
-				466728788A1532DC76E128217D182A9F /* ELKTencentOpenSDK */,
-				5E9560F0D1094C62A3FA615958D7ADD0 /* Masonry */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2F1A2F292F17602638C64550086D7D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2320A1FD9DABC9F4C2ECD97FE7478D9F /* ELKChainedAlloy */,
+				9AC62087A48B50C9402020BA58D2A804 /* ELKTencentOpenSDK */,
+				7F6AC361D8847AD8991A4D207C15E0FD /* ELKWeiboSDK */,
+				676631E52D3025DDA658ABB219A20C35 /* Masonry */,
+				8D25D3FD5706D7870C4254B4759D2D14 /* WechatOpenSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC7F13CE5957FECF408D396EB9ADAB49 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCA65E99D2869FCC1CA356B64569F316 /* WechatOpenSDK.debug.xcconfig */,
+				7B0D54BA986E76569DABC0473CE7DEC4 /* WechatOpenSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WechatOpenSDK";
+			sourceTree = "<group>";
+		};
+		FE924E60CBF56E68279A5C2BD57CFAE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C058851A2CF40B2E00CC885E8316A07E /* libWeChatSDK.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -464,7 +582,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93EE3CCB9AFCBBE94DFB5D633DF89641 /* Headers */ = {
+		D6838CC338ED78201CDE5AA0B0F62940 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -510,18 +628,20 @@
 		};
 		9C105295C20481493518CD4F7ACD4E2C /* Pods-ELKCommon-master */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2737B02CB718E1A09730841D37AA4A84 /* Build configuration list for PBXNativeTarget "Pods-ELKCommon-master" */;
+			buildConfigurationList = CA75FCD3B3E11D121B6681FE164B763F /* Build configuration list for PBXNativeTarget "Pods-ELKCommon-master" */;
 			buildPhases = (
-				93EE3CCB9AFCBBE94DFB5D633DF89641 /* Headers */,
-				986801562492721BC4C06B2B5C239E63 /* Sources */,
-				53489DAF0581B53E1292AC1DEAD62D54 /* Frameworks */,
+				D6838CC338ED78201CDE5AA0B0F62940 /* Headers */,
+				F2FFD1C41D2CB6FE13AF6C7ED6520823 /* Sources */,
+				7DEC16DEF094AEA643E7D8324BF4EA91 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F85045F05AC2F99E55041194B6A73085 /* PBXTargetDependency */,
-				706064291583CEF5F5BC95035986D3CA /* PBXTargetDependency */,
-				6781EC62839753DD55CA89A4E3DE6266 /* PBXTargetDependency */,
+				834F7E22C230AA364076D8F77419EBB8 /* PBXTargetDependency */,
+				369511D56E1A2BB67AA2008ABF46F1B5 /* PBXTargetDependency */,
+				AEDA2FEC093F8BF36896359A17F6B2D5 /* PBXTargetDependency */,
+				D7DA5B751A6F7C0FA0D4BACD89545E26 /* PBXTargetDependency */,
+				27215C09899620FDB85BE6BA0FB29CB7 /* PBXTargetDependency */,
 			);
 			name = "Pods-ELKCommon-master";
 			productName = "Pods-ELKCommon-master";
@@ -552,8 +672,10 @@
 			targets = (
 				944B8C5B9BD9390C3B62A32D74DA1B8D /* ELKChainedAlloy */,
 				F093FCD52B3CCA063E56E5C31CD8B0F2 /* ELKTencentOpenSDK */,
+				1E7123E79CD8784BAC800268B6732A3B /* ELKWeiboSDK */,
 				55AF53E6C77A10ED4985E04D74A8878E /* Masonry */,
 				9C105295C20481493518CD4F7ACD4E2C /* Pods-ELKCommon-master */,
+				8554F6236D2AA202CF58503D2DF29730 /* WechatOpenSDK */,
 			);
 		};
 /* End PBXProject section */
@@ -574,14 +696,6 @@
 				59EA578EED8BAC126FDC60C32AE11521 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				C7920681F0164686C56327ED3C6AAC58 /* View+MASAdditions.m in Sources */,
 				C05FC6699632FE712174ED875A605410 /* ViewController+MASAdditions.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		986801562492721BC4C06B2B5C239E63 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3FC82B95EDCD475B103B5CDC6983634A /* Pods-ELKCommon-master-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,33 +723,71 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F2FFD1C41D2CB6FE13AF6C7ED6520823 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8F86D275D5F44EFFD998F7AA6CF9B95 /* Pods-ELKCommon-master-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6781EC62839753DD55CA89A4E3DE6266 /* PBXTargetDependency */ = {
+		27215C09899620FDB85BE6BA0FB29CB7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Masonry;
-			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
-			targetProxy = F61D6CF1F2866C7EC7043E34589D0073 /* PBXContainerItemProxy */;
+			name = WechatOpenSDK;
+			target = 8554F6236D2AA202CF58503D2DF29730 /* WechatOpenSDK */;
+			targetProxy = 11CD5E344B8069251635F36B0B8C8D81 /* PBXContainerItemProxy */;
 		};
-		706064291583CEF5F5BC95035986D3CA /* PBXTargetDependency */ = {
+		369511D56E1A2BB67AA2008ABF46F1B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ELKTencentOpenSDK;
 			target = F093FCD52B3CCA063E56E5C31CD8B0F2 /* ELKTencentOpenSDK */;
-			targetProxy = 8F15D5BB13E4A061E9623437B3B73263 /* PBXContainerItemProxy */;
+			targetProxy = 3407791D95B85EED1D65D4FC767C8A57 /* PBXContainerItemProxy */;
 		};
-		F85045F05AC2F99E55041194B6A73085 /* PBXTargetDependency */ = {
+		834F7E22C230AA364076D8F77419EBB8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ELKChainedAlloy;
 			target = 944B8C5B9BD9390C3B62A32D74DA1B8D /* ELKChainedAlloy */;
-			targetProxy = 974BF4F0AE2BF908814434B6000507BF /* PBXContainerItemProxy */;
+			targetProxy = 9F6003314197898853F711C7F701F7EC /* PBXContainerItemProxy */;
+		};
+		AEDA2FEC093F8BF36896359A17F6B2D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ELKWeiboSDK;
+			target = 1E7123E79CD8784BAC800268B6732A3B /* ELKWeiboSDK */;
+			targetProxy = 49A2F3B5E402A244E9D613CA31AD1839 /* PBXContainerItemProxy */;
+		};
+		D7DA5B751A6F7C0FA0D4BACD89545E26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = 579B8BF7ADE5C368773EDB65A19251E6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0410CA569F38429E760A8D02CABA37C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEE6BE77CCCA5DBEFDC05C4EE1EDE30D /* ELKWeiboSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		14A8EBBDFEB995B0F7245BADDE074B77 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6D7A6EDDA81859EC7925F767A667476 /* ELKChainedAlloy.release.xcconfig */;
+			baseConfigurationReference = 2C291724BCA6C695486F6909557C81AF /* ELKChainedAlloy.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -660,7 +812,7 @@
 		};
 		1E18E8562A887A717F43FA1AC1DCB937 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B82AA46668BE02FB55DDFC1E8AE28205 /* ELKTencentOpenSDK.release.xcconfig */;
+			baseConfigurationReference = 3AAA1FAC2D43D4495FE22B53EB82314C /* ELKTencentOpenSDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -675,9 +827,25 @@
 			};
 			name = Release;
 		};
-		2B21FDE2F4ACF6E7D2303DB8CB964358 /* Release */ = {
+		6910ABAAEC43DE37BCC68FB10625B51B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1C7D8BAF744B9CEB707737F0E4CE6D8 /* Pods-ELKCommon-master.release.xcconfig */;
+			baseConfigurationReference = DCA65E99D2869FCC1CA356B64569F316 /* WechatOpenSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DAC82313906B46E08972FEF80FB16AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97D99A0540B4F3A2D0F05472038EBAE0 /* Pods-ELKCommon-master.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -699,7 +867,7 @@
 		};
 		850ACB3E60A7D0E69C8D92A29F3A3631 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F9FA6B13C464B10399888AF9840E785 /* ELKChainedAlloy.debug.xcconfig */;
+			baseConfigurationReference = 7A295260E871F66657C8EE3A163FED92 /* ELKChainedAlloy.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -723,7 +891,7 @@
 		};
 		8AEEA5CC30001CB70A788717A32DBAB7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B90A83989C417E0F95CED847C0DE09EC /* Masonry.release.xcconfig */;
+			baseConfigurationReference = 0FD2F1C9EA11385905EE988F32FA670E /* Masonry.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -869,25 +1037,9 @@
 			};
 			name = Debug;
 		};
-		B97301609F9E439AD1EDB790593B7CD9 /* Debug */ = {
+		9A63801C9CF46675BA88956DE072EAE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F988A1B2B7C976FCCE8DE7EBD05CAE97 /* ELKTencentOpenSDK.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		F2A6A47133A0D1C3F18A45F096995632 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7967CE0B23946DD022CE12DF5DACE540 /* Pods-ELKCommon-master.debug.xcconfig */;
+			baseConfigurationReference = 1CE805EFB2E5FC43EEF26E708184E6B8 /* Pods-ELKCommon-master.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -906,9 +1058,59 @@
 			};
 			name = Debug;
 		};
+		9DBA23B3887A7DAB4E7875F48660E585 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E34578A102C9D084E5E37CBF64C06A85 /* ELKWeiboSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B97301609F9E439AD1EDB790593B7CD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA0FEA9EF43CB3A9543BE056F5156596 /* ELKTencentOpenSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C300D658D253E3D7F5E4AE6DF9BD5A2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B0D54BA986E76569DABC0473CE7DEC4 /* WechatOpenSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		F99870D874C7FA838E84D9C55C010CF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4784DEBDA30DE87451ACBD01E5ACF1B /* Masonry.debug.xcconfig */;
+			baseConfigurationReference = 5115A8D2F77CDC7671CCD55E10283C2C /* Masonry.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -941,15 +1143,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2737B02CB718E1A09730841D37AA4A84 /* Build configuration list for PBXNativeTarget "Pods-ELKCommon-master" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F2A6A47133A0D1C3F18A45F096995632 /* Debug */,
-				2B21FDE2F4ACF6E7D2303DB8CB964358 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -959,11 +1152,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4AF0DF2249DC5CF1F6B67BE5469CE54C /* Build configuration list for PBXAggregateTarget "WechatOpenSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6910ABAAEC43DE37BCC68FB10625B51B /* Debug */,
+				C300D658D253E3D7F5E4AE6DF9BD5A2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		831D41CD4283B603A25F9EA5997A8644 /* Build configuration list for PBXAggregateTarget "ELKWeiboSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DBA23B3887A7DAB4E7875F48660E585 /* Debug */,
+				0410CA569F38429E760A8D02CABA37C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9DE1039124AC8D55027624235C6CBD9C /* Build configuration list for PBXAggregateTarget "ELKTencentOpenSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B97301609F9E439AD1EDB790593B7CD9 /* Debug */,
 				1E18E8562A887A717F43FA1AC1DCB937 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA75FCD3B3E11D121B6681FE164B763F /* Build configuration list for PBXNativeTarget "Pods-ELKCommon-master" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A63801C9CF46675BA88956DE072EAE7 /* Debug */,
+				6DAC82313906B46E08972FEF80FB16AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
