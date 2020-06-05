@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "WXApi.h"
-#import "WXApiObject.h"
+#import <WechatOpenSDK/WXApi.h>
+#import <WechatOpenSDK/WXApiObject.h>
 #import "ELKWeChatShareModel.h"
 #import "ELKWeChatPayModel.h"
 #import "ELKWeChatUserInfo.h"
