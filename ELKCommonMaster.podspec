@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = 'ELKCommonMaster'
-    spec.version      = '1.0.1'
+    spec.version      = '1.0.2'
     spec.summary      = '简单易用通用三方库集成：1）微信登录、分享、支付；2）QQ登录、分享；3）新浪微博登录、分享'
     spec.description  = <<-DESC
                     简单易用通用三方库集成：
@@ -32,35 +32,35 @@ Pod::Spec.new do |spec|
         modSpec.ios.frameworks = 'Foundation', 'UIKit'
     end
     
-    spec.subspec 'ELKTencentSDK' do |ets|
-        ets.ios.vendored_frameworks = "ELKCommonSDK/ELKTencentSDK/*.framework"
+#    spec.subspec 'ELKTencentSDK' do |ets|
+#        ets.ios.vendored_frameworks = "ELKCommonSDK/ELKTencentSDK/*.framework"
         
-        ets.frameworks = "Security", "SystemConfiguration", "CoreGraphics", "CoreTelephony", "WebKit"
-        ets.libraries  = "iconv", "z", "c++", "sqlite3"
-    end
+#        ets.frameworks = "Security", "SystemConfiguration", "CoreGraphics", "CoreTelephony", "WebKit"
+#        ets.libraries  = "iconv", "z", "c++", "sqlite3"
+#    end
     
     spec.subspec 'ELKTencent' do |tenSpec|
         tenSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
         tenSpec.public_header_files = 'ELKCommonMaster/ELKTencent/**/*.h'
         
-        tenSpec.dependency 'ELKCommonMaster/ELKTencentSDK'
+        tenSpec.dependency 'ELKTencentOpenSDK'
         tenSpec.dependency 'ELKCommonMaster/ELKModule'
     end
     
-    spec.subspec 'ELKWeChatSDK' do |wcs|
-        wcs.vendored_libraries  = "ELKCommonSDK/ELKWechatSDK/*.a"
-        wcs.source_files        = "ELKCommonSDK/ELKWechatSDK/**/*.{h,m}"
-        wcs.public_header_files = "ELKCommonSDK/ELKWechatSDK/**/*.h"
+ #   spec.subspec 'ELKWeChatSDK' do |wcs|
+ #       wcs.vendored_libraries  = "ELKCommonSDK/ELKWechatSDK/*.a"
+ #       wcs.source_files        = "ELKCommonSDK/ELKWechatSDK/**/*.{h,m}"
+ #       wcs.public_header_files = "ELKCommonSDK/ELKWechatSDK/**/*.h"
         
-        wcs.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
-        wcs.libraries           = 'sqlite3', 'z'
-    end
+ #       wcs.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
+ #       wcs.libraries           = 'sqlite3', 'z'
+ #   end
     
     spec.subspec 'ELKWeChat' do |weSpec|
         weSpec.source_files = 'ELKCommonMaster/ELKWeChat/**/*.{h,m}'
         weSpec.public_header_files = 'ELKCommonMaster/ELKWeChat/**/*.h'
         
-        weSpec.dependency 'ELKCommonMaster/ELKWeChatSDK'
+        weSpec.dependency 'WechatOpenSDK'
         weSpec.dependency 'ELKCommonMaster/ELKModule'
     end
     
@@ -79,7 +79,7 @@ Pod::Spec.new do |spec|
         sinaSpec.source_files = 'ELKCommonMaster/ELKSina/**/*.{h,m}'
         sinaSpec.public_header_files = 'ELKCommonMaster/ELKSina/**/*.h'
         
-        sinaSpec.dependency 'ELKCommonMaster/ELKSinaSDK'
+        sinaSpec.dependency 'ELKWeiboSDK'
         sinaSpec.dependency 'ELKCommonMaster/ELKModule'
     end
     
