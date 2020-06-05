@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -41,7 +41,6 @@
 		ABE0C80B236DF96900D42841 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE0C80A236DF96900D42841 /* libc++.tbd */; };
 		ABE67E5B248A2D9F005B46F3 /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ABE67E50248A2D9E005B46F3 /* WeiboSDK.bundle */; };
 		ABE67E5C248A2D9F005B46F3 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE67E51248A2D9E005B46F3 /* libWeiboSDK.a */; };
-		ABE67E5D248A2D9F005B46F3 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE67E55248A2D9E005B46F3 /* TencentOpenAPI.framework */; };
 		ABE67E5E248A2D9F005B46F3 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE67E5A248A2D9F005B46F3 /* libWeChatSDK.a */; };
 		E46C6659529B4843C24DA063 /* libPods-ELKCommon-master.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 640E11E39ADD91C7D58457D7 /* libPods-ELKCommon-master.a */; };
 /* End PBXBuildFile section */
@@ -125,7 +124,6 @@
 		ABE67E51248A2D9E005B46F3 /* libWeiboSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeiboSDK.a; sourceTree = "<group>"; };
 		ABE67E52248A2D9E005B46F3 /* WBHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBHttpRequest.h; sourceTree = "<group>"; };
 		ABE67E53248A2D9E005B46F3 /* WeiboSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeiboSDK.h; sourceTree = "<group>"; };
-		ABE67E55248A2D9E005B46F3 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		ABE67E57248A2D9E005B46F3 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		ABE67E58248A2D9E005B46F3 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
 		ABE67E59248A2D9E005B46F3 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 				ABE0C7E8236DEF0D00D42841 /* WebKit.framework in Frameworks */,
 				ABE0C7E6236DEDCD00D42841 /* CoreGraphics.framework in Frameworks */,
 				ABE0C7E4236DEDC200D42841 /* CoreTelephony.framework in Frameworks */,
-				ABE67E5D248A2D9F005B46F3 /* TencentOpenAPI.framework in Frameworks */,
 				ABE0C7E2236DEDB600D42841 /* Security.framework in Frameworks */,
 				ABE0C7E0236DEDAE00D42841 /* SystemConfiguration.framework in Frameworks */,
 				ABE0C7DE236DEDA300D42841 /* libiconv.tbd in Frameworks */,
@@ -329,7 +326,6 @@
 			isa = PBXGroup;
 			children = (
 				ABE67E4F248A2D9E005B46F3 /* ELKSinaSDK */,
-				ABE67E54248A2D9E005B46F3 /* ELKTencentSDK */,
 				ABE67E56248A2D9E005B46F3 /* ELKWechatSDK */,
 			);
 			path = ELKCommonSDK;
@@ -344,14 +340,6 @@
 				ABE67E53248A2D9E005B46F3 /* WeiboSDK.h */,
 			);
 			path = ELKSinaSDK;
-			sourceTree = "<group>";
-		};
-		ABE67E54248A2D9E005B46F3 /* ELKTencentSDK */ = {
-			isa = PBXGroup;
-			children = (
-				ABE67E55248A2D9E005B46F3 /* TencentOpenAPI.framework */,
-			);
-			path = ELKTencentSDK;
 			sourceTree = "<group>";
 		};
 		ABE67E56248A2D9E005B46F3 /* ELKWechatSDK */ = {
@@ -750,10 +738,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8BTB638K2;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/ELKCommonSDK/ELKTencentSDK",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREFIX_HEADER = ELKCommonExample/Others/ELKPrefixHeader.pch;
 				INFOPLIST_FILE = ELKCommonExample/Others/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -787,10 +772,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8BTB638K2;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/ELKCommonSDK/ELKTencentSDK",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREFIX_HEADER = ELKCommonExample/Others/ELKPrefixHeader.pch;
 				INFOPLIST_FILE = ELKCommonExample/Others/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

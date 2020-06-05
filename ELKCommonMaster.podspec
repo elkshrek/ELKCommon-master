@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = 'ELKCommonMaster'
-    spec.version      = '1.0.2'
+    spec.version      = '1.0.3'
     spec.summary      = '简单易用通用三方库集成：1）微信登录、分享、支付；2）QQ登录、分享；3）新浪微博登录、分享'
     spec.description  = <<-DESC
                     简单易用通用三方库集成：
@@ -32,15 +32,15 @@ Pod::Spec.new do |spec|
         modSpec.public_header_files = 'ELKCommonMaster/ELKModule/**/*.h'
     end
     
-    spec.subspec 'ELKTencentSDK' do |ets|
-        ets.frameworks = "Security", "SystemConfiguration", "CoreGraphics", "CoreTelephony", "WebKit"
-        ets.libraries  = "iconv", "z", "c++", "sqlite3"
+#    spec.subspec 'ELKTencentSDK' do |ets|
+#        ets.frameworks = "Security", "SystemConfiguration", "CoreGraphics", "CoreTelephony", "WebKit"
+#        ets.libraries  = "iconv", "z", "c++", "sqlite3"
         
-        ets.ios.vendored_frameworks = "ELKCommonSDK/ELKTencentSDK/*.framework"
-    end
+#        ets.ios.vendored_frameworks = "ELKCommonSDK/ELKTencentSDK/*.framework"
+#    end
     
     spec.subspec 'ELKTencent' do |tenSpec|
-        tenSpec.dependency 'ELKCommonMaster/ELKTencentSDK'
+        tenSpec.dependency 'ELKTencentOpenSDK'
         tenSpec.dependency 'ELKCommonMaster/ELKModule'
         
         tenSpec.source_files = 'ELKCommonMaster/ELKTencent/**/*.{h,m}'
@@ -48,12 +48,12 @@ Pod::Spec.new do |spec|
     end
     
     spec.subspec 'ELKWeChatSDK' do |wcs|
+        wcs.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
+        wcs.libraries           = 'sqlite3', 'z'
+    
         wcs.vendored_libraries  = "ELKCommonSDK/ELKWechatSDK/*.a"
         wcs.source_files        = "ELKCommonSDK/ELKWechatSDK/**/*.{h,m}"
         wcs.public_header_files = "ELKCommonSDK/ELKWechatSDK/**/*.h"
-        
-        wcs.frameworks          = 'Photos', 'ImageIO', 'SystemConfiguration', 'CoreText', 'QuartzCore', 'Security', 'UIKit', 'Foundation', 'CoreGraphics','CoreTelephony'
-        wcs.libraries           = 'sqlite3', 'z'
     end
     
     spec.subspec 'ELKWeChat' do |weSpec|
