@@ -361,7 +361,7 @@
 				AB2DC83A236C472F0037D043 /* Sources */,
 				AB2DC83B236C472F0037D043 /* Frameworks */,
 				AB2DC83C236C472F0037D043 /* Resources */,
-				22797900F76D08F4BCE93B76 /* [CP] Copy Pods Resources */,
+				91F46E40419417373157F5F7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -478,7 +478,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		22797900F76D08F4BCE93B76 /* [CP] Copy Pods Resources */ = {
+		91F46E40419417373157F5F7 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -710,12 +710,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8BTB638K2;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/ELKCommonSDK",
-					"$(PROJECT_DIR)/ELKCommonSDK/ELKTencentSDK",
-					"$(PROJECT_DIR)/ELKCommonSDK/ELKSinaSDK",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREFIX_HEADER = ELKCommonExample/Others/ELKPrefixHeader.pch;
 				INFOPLIST_FILE = ELKCommonExample/Others/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -723,12 +718,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/ELKCommonSDK/ELKWeiboSDK",
-					"$(PROJECT_DIR)/ELKCommonSDK/ELKSinaSDK",
-					"$(PROJECT_DIR)/ELKCommonSDK/ELKWechatSDK",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
@@ -750,12 +740,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J8BTB638K2;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/ELKCommonSDK",
-					"$(PROJECT_DIR)/ELKCommonSDK/ELKTencentSDK",
-					"$(PROJECT_DIR)/ELKCommonSDK/ELKSinaSDK",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREFIX_HEADER = ELKCommonExample/Others/ELKPrefixHeader.pch;
 				INFOPLIST_FILE = ELKCommonExample/Others/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -763,12 +748,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/ELKCommonSDK/ELKWeiboSDK",
-					"$(PROJECT_DIR)/ELKCommonSDK/ELKSinaSDK",
-					"$(PROJECT_DIR)/ELKCommonSDK/ELKWechatSDK",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-framework",
