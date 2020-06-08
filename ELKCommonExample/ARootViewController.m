@@ -15,6 +15,7 @@
 
 @property (nonatomic, strong) UIButton *wcAuthButton;
 @property (nonatomic, strong) UIButton *wcShareButton;
+@property (nonatomic, strong) UIButton *wcPayButton;
 
 @property (nonatomic, strong) UIButton *qqAuthButton;
 @property (nonatomic, strong) UIButton *qqShareButton;
@@ -65,6 +66,26 @@
             NSLog(@"User Canceled WeChat Share");
         } else {
             NSLog(@"WeChat Share failed");
+        }
+    }];
+}
+- (void)wcPayAction:(UIButton *)sender
+{
+    ELKWeChatPayModel *payInfo = [[ELKWeChatPayModel alloc] init];
+    payInfo.partnerId = @"partnerId";
+    payInfo.prepayId = @"prepayId";
+    payInfo.package = @"package";
+    payInfo.nonceStr = @"nonceStr";
+    payInfo.timeStamp = @"timeStamp";
+    payInfo.sign = @"sign";
+
+    [ELKWeChatSDKMaster elk_weChatPay:payInfo block:^(ELKWeChatPayRespStatus payRespStatus) {
+        if (payRespStatus == ELKWePayRespSuccess) {
+            NSLog(@"Wechat Pay Success");
+        } else if (payRespStatus == ELKWePayRespCancel) {
+            NSLog(@"User Canceled Wechat Pay");
+        } else {
+            NSLog(@"Wechat Pay Failure");
         }
     }];
 }
@@ -141,6 +162,7 @@
     self.view.elk_setBackgroundColor(UIColor.whiteColor)
     .elk_addSubview(self.wcAuthButton)
     .elk_addSubview(self.wcShareButton)
+    .elk_addSubview(self.wcPayButton)
     .elk_addSubview(self.qqAuthButton)
     .elk_addSubview(self.qqShareButton)
     .elk_addSubview(self.sinaAuthButton)
@@ -160,9 +182,15 @@
         make.height.mas_equalTo(46.f);
         make.width.equalTo(self.wcAuthButton);
     }];
-    [self.qqAuthButton mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.wcPayButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view).offset(15.f);
         make.top.equalTo(self.wcAuthButton.mas_bottom).offset(15.f);
+        make.height.mas_equalTo(46.f);
+        make.width.equalTo(self.wcAuthButton);
+    }];
+    [self.qqAuthButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.view).offset(15.f);
+        make.top.equalTo(self.wcPayButton.mas_bottom).offset(15.f);
         make.right.equalTo(self.qqShareButton.mas_left).offset(-15.f);
         make.height.mas_equalTo(46.f);
         make.width.equalTo(self.qqShareButton);
@@ -209,6 +237,16 @@
         .elk_setTitleColorForNormal(UIColor.blackColor)
         .elk_addTarget(self, @selector(wcShareAction:), UIControlEventTouchUpInside);
         _wcShareButton;
+    });
+}
+- (UIButton *)wcPayButton
+{
+    return _wcPayButton ?: ({
+        _wcPayButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        _wcPayButton.elk_setTitleForNormal(@"微信支付")
+        .elk_setTitleColorForNormal(UIColor.blackColor)
+        .elk_addTarget(self, @selector(wcPayAction:), UIControlEventTouchUpInside);
+        _wcPayButton;
     });
 }
 - (UIButton *)qqAuthButton

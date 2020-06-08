@@ -19,6 +19,8 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleIdentifier</key>
+			<string></string>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
@@ -51,19 +53,21 @@
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>weixinulapi</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>aliyunelkcommon</string>
+				<string>wx8c9f6d3071edba08</string>
 			</array>
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>weixinulapi</string>
+			<string></string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>wx8c9f6d3071edba08</string>
+				<string>ELKCommonmaster</string>
 			</array>
 		</dict>
 	</array>
@@ -85,6 +89,8 @@
 		<string>mqqOpensdkSSoLogin</string>
 		<string>sinaweibohd</string>
 		<string>sinaweibo</string>
+		<string>sina</string>
+		<string>weibo</string>
 		<string>weibosdk</string>
 		<string>weibosdk2.5</string>
 	</array>
