@@ -1,6 +1,4 @@
-# ELKCommonMaster   
-
-## ``` ELKCommonMaster ```简单易用的登录/分享三方库集成方案    
+# ELKCommonMaster简单易用的登录/分享/支付三方库集成方案    
 
 
 ### 1、主要功能
@@ -69,57 +67,61 @@ pod 'ELKCommonMaster/ELKSina'
 
 ##### 2.3.1、配置「微信API」信息 
 
-由于苹果``` iOS 13 ```系统版本安全升级，微信SDK在``` v1.8.6 ```版本及以后支持``` Universal Links ```方式跳转，对openSDK分享进行合法性校验，具体``` Universal Links ```配置及使用参见 [微信官方接入指南](https://developers.weixin.qq.com/doc/oplatform/Mobile_App/Access_Guide/iOS.html)。
+由于苹果``` iOS 13 ```系统版本安全升级，微信SDK在``` v1.8.6 ```版本及以后支持``` Universal Links ```方式跳转，对openSDK分享进行合法性校验，具体``` Universal Links ```配置及使用参见：[微信官方接入指南](https://developers.weixin.qq.com/doc/oplatform/Mobile_App/Access_Guide/iOS.html)。
 
 1）``` Xcode ```设置``` URL scheme ```
 
 在 Xcode 中，选择你的工程设置项，选中“TARGETS”一栏，在“info”标签栏的“URL type“添加“URL scheme”，值为你在微信开放平台所注册的应用程序 id（如下图所示）。  
 
-![Wechat设置URL scheme](https://github.com/elkshrek/ELKCommon-master/blob/master/ELKDisplay/wechatScheme.png)
+![Wechat设置URL scheme](https://gitee.com/elkshrek/ELKPic/raw/pic/elkcmnmaster/cmnwechatscheme.png)
 
 2）``` Xcode ```设置``` LSApplicationQueriesSchemes ```   
 
 在 Xcode 中，选择你的工程设置项，选中“TARGETS”一栏，在“info”标签栏的“``` LSApplicationQueriesSchemes ```“添加``` weixin ```和``` weixinULAPI ```（如下图所示）。
 
-![Wechat设置LSApplicationQueriesSchemes](https://github.com/elkshrek/ELKCommon-master/blob/master/ELKDisplay/infoSchemes.png)
+![Wechat设置LSApplicationQueriesSchemes](https://gitee.com/elkshrek/ELKPic/raw/pic/elkcmnmaster/cmnwechatInfo.png)
 
 ##### 2.3.2、配置「腾讯QQ API」信息 
+
+腾讯QQ API接入具体可参考：[腾讯QQ API官方接入指南](https://wiki.open.qq.com/index.php?title=iOS_SDK环境搭建)。
 
 1）``` Xcode ```设置``` URL scheme ```
 
 在 Xcode 中，选择你的工程设置项，选中“TARGETS”一栏，在“info”标签栏的“URL type”添加“URL scheme”，新的 scheme = tencent + appid 。（如下图所示）
 
-![Tencent设置URL scheme](https://github.com/elkshrek/ELKCommon-master/blob/master/ELKDisplay/tencentScheme.png)
+![Tencent设置URL scheme](https://gitee.com/elkshrek/ELKPic/raw/pic/elkcmnmaster/cmntencentscheme.png)
 
 2）``` Xcode ```设置``` LSApplicationQueriesSchemes ```   
 
 在 Xcode 中，选择你的工程设置项，选中“TARGETS”一栏，在“info”标签栏的“``` LSApplicationQueriesSchemes ```“添加``` tencent ```和``` QQ ```（如下图所示）。
 
-![Tencent设置LSApplicationQueriesSchemes](https://github.com/elkshrek/ELKCommon-master/blob/master/ELKDisplay/TenInfoScheme.png)
+![Tencent设置LSApplicationQueriesSchemes](https://gitee.com/elkshrek/ELKPic/raw/pic/elkcmnmaster/cmntencentInfo.png)
 
 ##### 2.3.3、配置「新浪微博 API」信息 
+
+新浪微博 API接入具体可参考：[新浪微博官方接入指南](https://github.com/sinaweibosdk/weibo_ios_sdk)。
 
 1）``` Xcode ```设置``` URL scheme ```
 
 在 Xcode 中，选择你的工程设置项，选中“TARGETS”一栏，在“info”标签栏的“URL type”添加“URL scheme”，新的 scheme = wb + appkey 。（如下图所示）
 
-![sina设置URL scheme](https://github.com/elkshrek/ELKCommon-master/blob/master/ELKDisplay/sinaScheme.png)
+![sina设置URL scheme](https://gitee.com/elkshrek/ELKPic/raw/pic/elkcmnmaster/cmnsinascheme.png)
 
 2）``` Xcode ```设置``` LSApplicationQueriesSchemes ```   
 
 在 Xcode 中，选择你的工程设置项，选中“TARGETS”一栏，在“info”标签栏的“``` LSApplicationQueriesSchemes ```“添加``` sina ```、``` sinaweibo ```、``` weibo ```（如下图所示）。
 
-![sina设置LSApplicationQueriesSchemes](https://github.com/elkshrek/ELKCommon-master/blob/master/ELKDisplay/sinaInfoScheme.png)
+![sina设置LSApplicationQueriesSchemes](https://gitee.com/elkshrek/ELKPic/raw/pic/elkcmnmaster/cmnsinaInfo.png)
 
 ##### 2.3.4、配置信息总览
 
 1）Info 中``` URL scheme ```总览图：
 
-![LSApplicationQueriesSchemes总览](https://github.com/elkshrek/ELKCommon-master/blob/master/ELKDisplay/shcemeComplete.png)
+![LSApplicationQueriesSchemes总览](https://gitee.com/elkshrek/ELKPic/raw/pic/elkcmnmaster/cmnschemecomplete.png)
 
 2）Info 中``` LSApplicationQueriesSchemes  ```总览图：
 
-![LSApplicationQueriesSchemes总览](https://github.com/elkshrek/ELKCommon-master/blob/master/ELKDisplay/infoSchemeComplete.png)
+![LSApplicationQueriesSchemes总览](https://gitee.com/elkshrek/ELKPic/raw/pic/elkcmnmaster/cmnInfocomplete.png)
 
 ### 3、集成三方功能
 
@@ -463,7 +465,7 @@ payInfo.sign = @"sign";
 }
 ```
 
-3）、在用到腾讯QQ的登录、分享、功能的地方直接调用腾讯QQ的功能代码，并通过回调获取结果和数据。
+3）、在用到腾讯QQ的登录、分享功能的地方直接调用腾讯QQ的功能代码，并通过回调获取结果和数据。
 
 3.1）、腾讯 QQ 登录
 
@@ -503,7 +505,7 @@ shareModel.previewImageUrl = @"";
 }];
 ```
 
-##### 3.2.2、集成新浪微博登录、分享功能
+##### 3.2.3、集成新浪微博登录、分享功能
 
 在需要使用功能的地方导入头文件``` #import "ELKSinaSDKMaster.h" ```。
 
@@ -552,16 +554,16 @@ shareModel.previewImageUrl = @"";
 ```
 // 新浪微博登录，并获取用户信息
 [ELKSinaSDKMaster elk_sinaAuthLoginBlock:^(ELKSinaUserInfo * _Nullable userInfo, WBAuthorizeResponse * _Nonnull authResp, ELKSinaAuthRespStatus authStatus) {
-        if (authStatus == ELKSinaAuthSucData) {
-            NSLog(@"Sina logged in successfully and obtained user information : %@", userInfo);
-        } else if (authStatus == ELKSinaAuthSuccess) {
-            NSLog(@"Sina logged in successfully, but failed to get user information");
-        } else if (authStatus == ELKSinaAuthCancel) {
-            NSLog(@"User canceled Sina login");
-        } else {
-            NSLog(@"Sina login failed");
-        }
-    }];
+    if (authStatus == ELKSinaAuthSucData) {
+        NSLog(@"Sina logged in successfully and obtained user information : %@", userInfo);
+    } else if (authStatus == ELKSinaAuthSuccess) {
+        NSLog(@"Sina logged in successfully, but failed to get user information");
+    } else if (authStatus == ELKSinaAuthCancel) {
+        NSLog(@"User canceled Sina login");
+    } else {
+        NSLog(@"Sina login failed");
+    }
+}];
 ```
 
 3.2）、新浪微博分享
